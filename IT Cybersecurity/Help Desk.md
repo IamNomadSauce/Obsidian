@@ -1,0 +1,192 @@
+## Ticketing Systems
+- Tool to manage customer service requests
+- Ticket History
+	- Tracks each service instance
+	- Can escalate to higher tier tech support
+- Reasons
+	- Retain revenue
+	- Retain customers
+	- Retain your company's reputation
+- Advantages
+	- Focus
+	- Organization
+	- Effective
+	- Efficient
+## Written Communication
+- Importance
+	- States your intention
+	- Provides a reference
+	- Serves as a permanent record
+- Written communication:
+	- Clear
+		- Make notes
+		- Understand the audience
+		- Avoid jargon
+	- Concise
+		- Stay on point
+		- Use natural language
+		- Leverage document formatting
+	- Consistent
+		- Reinforce important points
+		- Keep the communication flowing
+- Communicating effectively
+	- Use proper tone
+	- Avoid passive and use active voice
+	- Ask others to review before submitting. 
+## Asset Management
+- Tracking system
+- Monitor and manage
+- Purpose:
+	- Inventory tracking
+	- Deployment
+	- Maintenance
+	- Upgrades
+	- Disposal
+- Items Tracked:
+	- Hardware
+	- Software
+	- Data
+- Examples:
+	- Make
+	- Model
+	- Date of purchase
+	- Physical location
+- Integration with financial software
+	- Track the value and depreciation of the asset over time
+- Asset Tags
+	- RFID
+	- QR code
+- Advantages:
+	- Single source of information
+	- Efficiency
+	- Productivity
+	- Team enablement
+## Information Management
+- Topology-network servers
+	- Essential servers
+	- Server location
+- Server Types:
+	- File
+	- Print
+	- Email
+	- Web
+	- Proxy
+	- Authentication
+- Documentation Best Practices
+	- Regulatory and Compliance policy
+		- Rules that governs the way a company does business
+	- Acceptable use policy
+		- Document that outlines expectations for users to use internet or corporate network services
+		- Defines acceptable use and breaches of acceptable use
+	- Knowledge base/articles
+	- Incident Documentation
+	- Inventory management
+## Standard Operating Procedures
+- Documented Policy
+- Concise Instructions
+- Defined processes
+- Types:
+	- Step-by-step
+	- Hierarchy
+		- Requires step 1 to be done before step 2
+	- Flowchart
+- Importance
+	- Promote best practices
+	- Promote consistency
+	- Improve training and onboarding
+	- Preserve organizational knowledge
+- Creating SOPs
+	- Identify goals
+	- Identify stakeholders
+	- Define end users
+	- Determine scope
+	- Identify appropriate content
+	- Implement training
+	- Test and recalibrate
+	- Ongoing review
+## Onboarding and Offboarding Employees
+- Data Captured:
+	- User information
+	- Email
+	- Equipment issued/assigned
+	- System and data access
+- Onboarding Best Practices
+	- Define process
+	- Ensure involvement of management
+	- Hold face-to-face meeting
+- Offboarding Best Practices
+	- Start as soon as possible
+	- Revoke access
+	- Back up and archive
+## Knowledge Based Articles
+- Information repository, guides and useful knowledge
+- Types:
+	- Written documents
+	- Videos
+	- Images
+	- Diagrams or animations
+- Knowledge base
+	- Easy to understand
+	- Comprehensive
+	- Engaging
+- Advantages:
+	- Assists customer support
+	- Enables users
+	- Improves site traffic
+- Best practices
+	- Know your audience
+	- Identify important topics
+	- Use rich content
+	- Make it accessible
+	- Keep titles simple and searchable
+	- Keep knowledge base well-organized
+	- Summarize documents up-front
+	- Use anchor links
+	- Keep content up to date
+## Business Process Documentation
+- Description of business processes
+- Defines functionality of processes
+- How services are delivered
+- Necessary data
+- Workflow
+- Decisions to be made
+- Good process documentation features:
+	- Well thought out
+	- Structured
+	- Documented
+- Advantages:
+	- Increased efficiency
+	- Improved delivery time
+	- Provides clarity
+	- Gain insight
+- Creating business process documentation:
+	- Name process and state goal
+	- Assign start and end points
+	- Identify inputs and outputs
+	- Define activities
+	- Organize or sequence process
+	- Assign roles
+	- Review process
+	- Include a roll-back plan
+	- Test and revise as necessary
+## Change Management
+- Minimize downtime
+- Minimize confusion
+- Reduce mistakes
+- Best Practices:
+	- Purpose of the change
+	- Scope of the change
+		- Does it affect one person, a group, or organization?
+		- Does it impact employees or customers?
+		- How long will the impact last
+	- Risk analysis
+		- What is the risk value?
+		- Is risk minor or major?
+	- Plan for change / Documentation
+		- Detailed documentation must be maintained
+		- Avoid verbal modifications
+		- Update help desk documentation
+			- patches, version numbers, resolutions
+	- End-user acceptance
+		- Explain the changes and its benefits to end-users
+	- Rollback plan

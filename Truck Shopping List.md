@@ -1,0 +1,14 @@
+- [ ] Dashboard
+	- 150
+- [ ] Dash cluster
+	-  150
+- [ ] AC Charge
+- [ ] Radio/buttons
+	- 75
+- [ ] Rear Brakes
+	- 35
+- [ ] Oil
+	- 40
+- [ ] Coolant
+	-  15
+- [ ] 

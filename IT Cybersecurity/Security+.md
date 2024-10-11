@@ -1,0 +1,3625 @@
+# Social Engineering Techniques and Attack Types
+- Social Engineering
+	- Reciprocity
+	- Commitment and Consistency
+	- Social Proof
+	- Authority
+	- Familiarity
+	- Scarcity
+- #### Phishing
+	- Uses disguised email as an attack vector
+	- Goal is to trick the recipient into believing that the message is legitimate so they click a link or download an attachment
+	- **Variants**
+		- Spear Fishing
+			- Targets certain employees
+		- Whaling
+			- Targets high-level employees or senior management
+		- Vishing
+			- Targets telephones, VoIP phones, and cell phones
+		- Smishing
+			- Uses SMS text as the vector
+		- Pharming
+			- A Web sites traffic is manipulated or spoofed, and confidential information is stolen
+			- Attackers may install a virus or Trojan that changes the host's file to direct traffic away from its intended target and toward a fake web site
+			- Crackers may also poison a DNS server to re-direct multiple users to unintentionally go to the fake site, which in turn can be used to install malware on the victim's computer
+	- **Indicators**
+		- Vague salutations
+		- Suspicious domains
+		- URL paths that are odd
+		- Wrong hypertext
+		- Awkward grammar
+		- Urgency in text
+		- Lack of contact info
+		- Spoofed headers/logos
+	- Business E-mail Compromise
+		- BEC
+		- Targets companies who outsource, conduct wire transfers, and have suppliers abroad
+		- Email accounts of high level employees are either spoofed or compromised through keyloggers
+		- **BEC Schemes**
+			- Phone invoices and transfers
+			- C-Suite (C-Team) fraud
+			- E-Mail or web mail account compromise
+			- Attorney impersonation and hoaxing
+			- Data theft of PII
+- #### SPAM
+	- Unsolicited e-mail or junk email
+	- Types:
+		- Ads
+		- Chain letters
+		- Spoofed email related to phishing campaigns
+		- Hoaxes and money scams
+		- Malware warnings
+		- Unwanted pornography related email
+	- Categories:
+		- Email spam
+		- Comment spam
+		- Trackback spam
+		- Negative SEO attacks
+		- Spiders and DDoS bots
+	- #### SPIM
+		- Spam over Instant Messaging
+		- Unsolicited instant messages
+		- Disrupts chatting and can contain viruses or spyware
+		- Block messages from sources not on your contact list to prevent
+	- #### Typosquatting
+		- Sitting on sites under someone else's brand or copyright and targeting internet users who erroneously type a web site into their browser
+		- URL hijacking, sting sites, or fake URL
+		- facebool, gooogle, amason, etc
+- #### Diving, surfing, and Pharming
+	- #### Tailgating
+	- #### Dumpster Diving
+	- #### Shoulder Surfing
+	- #### Watering Hole
+		- Leverages a compromised web server in order to target groups or associations in social networks
+		- Only members of the association
+- #### Scams & Fraud
+	- Impersonation is first attempted through IP spoofing
+	- The next vector to use phones, email, IM, SMS
+	- Next level involves masquerading as a legitimate entity
+	- The goal is theft of information/identity/PI/PII/Financials
+- #### Influence Campaigns
+	- aka Misinformation campaigns
+	- Collect tactical information about adversary or competitor
+	- Locate key influencers or stakeholders
+	- Launch propaganda or disinformation initiative
+	- Gain a competitive advantage or confuse adversary or competitor
+- #### Reasons for Social Engineering Effectiveness
+	- Lack of proper security and awareness training
+	- Inadequate acceptable use policy UAP
+	- No buy-in from management and employees for prevention measures
+	- No enforcement of policies - no carrot and no stick
+	- Outdated anti-virus, DLP, and mobile device and application management tools
+	- Poor perimeter security controls for email messaging, telephony, and web activities
+# Common Malware Attacks
+- All malware are exploits but not all exploits involve malicious code
+- Types:
+	- PUPs
+		- Potentially Unwanted Programs
+	- Ransomware
+		- Encrypts key files and holds them for ransom
+			- Usually for cryptocurrency
+		- Ransomware Campaigns
+			- Installation
+				- Crypto-ransomware installs itself after bootup
+			- Contacting Headquarters
+				- Malware contacts a server belonging to an attacker or group
+			- Handshake and Keys
+				- The ransomware client and server 'handshake' and the server generates two cryptographic keys
+			- Encryption
+				- Ransomware starts encrypting every file it finds with common file extensions
+			- Extortion
+				- A screen displays giving a time limit to pay up before the criminals destroy the key to decrypt the files
+	- Trojans and RATs
+		- Have no replicating abilities like viruses or worms
+		- Malicious code and programs that masquerade as legitimate applications or are embedded in real programs
+			- Games
+			- Tools and Utilities
+			- Device drivers
+			- Patches and updates
+			- Free/Shareware
+			- System upgrades
+		- RATs:
+			- Specific forms of Trojan horse malware - often part of multi-stages exploits
+			- Creates backdoors
+			- Uses command and control (CS, C&C) servers / botnets
+			- Ghost, PlugX, Sakula, Poison Ivy
+			- Now on mobile devices
+			- ![[Pasted image 20230918084315.png]]
+	- Worms
+		- Special form of self-replicating virus (malware) that generally spreads without user action
+		- They distribute complete copies (possibly modified) of themselves across networks
+		- A worm can consume resources, infiltrate data, or simply cause the CPU on the system to waste cycles resulting in a computer becoming unresponsive
+		- Worms do not typically need to attach to a host program or file, they can also tunnel into a system and allow for remote control of the system or service
+		- Examples:
+			- Sasser
+			- Conficker
+			- ILOVEYOU
+			- Stuxnet
+	- Spyware and adware
+		- Software that gathers data about a computer user without the user's permission or knowledge
+		- Can show ads, track information, and make modifications to endpoints without user knowledge
+		- Malware, adware, and spyware are often found among P2P networks, download sites, and bit torrents
+		- Alexa, Echo, and other *smart devices* can be used as spyware
+	- Keyloggers
+		- Malicious code that records keystrokes and sends data back to a C&C server
+		- Spyware uses keyloggers to capture passwords, credit card information, or other PII
+		- Software can also be used to track employees or family members to adhere to acceptable use
+		- Also a valuable tool for analyzing human-computer collaboration
+		- Keylogger detectors are special mitigation tools
+			- PAL KeyLogger Pro, and KeyGhost
+# Complex Malware Types
+- Rootkits
+	- Malicious modules that are placed in unauthorized areas to
+		- Access data
+		- Monitor actions
+		- Escalate privileges
+		- Modify programs
+		- Conduct further exploits
+- Backdoors
+	- Trojan
+	- Closeley related to results of botnet
+	- Generates a covert channel
+	- Remote attacker controls system
+	- Common on mobile devices
+	- Exploits
+		- Collect system and personal data from the system and even attached storage devices
+		- DoS attacks
+		- Run and terminate tasks and processes
+		- Download additional files for multi-phased attack
+		- Upload files and other content
+		- Audit the system status
+		- Open remote command line shells
+		- Modify computer settings
+- Fileless viruses
+	- Operates in memory without being stored in a file or directly installed on a computer
+	- Go directly into memory and the malicious content never reaches a hard drive
+	- Frodo & Dark Avenger
+- Botnets
+	- DDoS is most common
+	- Consists of a zombie (infected) computer and a C&C server
+	- Communications often over IRC, bot-centric P2P networks, and maybe even Social Media like Twitter
+	- Bots can exfil data, log keystrokes, scan memory, force a system to participate in crypto-mining
+- Crypto malware
+	- Advanced and evolving form of ransomware that encrypts a user's files and demands ransom
+	- Sophisticate cryptographer uses advanced encryption mechanisms so files can't be decrypted without a unique key
+- Logic Bombs
+	- Trigger the exploit when a certain event occurs
+		- Mouse movements
+		- File access
+		- Date and/or time
+		- Program execution
+		- Number of times code is run
+		- During a major event
+		- On a holiday
+- Stegomalware
+	- Steganography is anything done by a cracker to hide data in an unexpected channel
+	- A JPEG picture containing malware
+	- A RAT hidden in the icon file of a website
+	- Many stegomalware hosting sites are buried deep in the Tor network
+	- Steghide, rSteg, Crypture
+- Polymorphic packers
+	- Malware that has the ability to change and move in stages
+	- i.e.
+		- Starting out in RAM then moving into compressed RAR files deep in the file system
+	- Polymorphism is used in e-mail attacks and drive-by exploits, and also in APTs once the cracker has a foothold
+	- Polymorphic Packers are tools that bundle up different types of malware in a single package (i.e. an e-mail attachment)
+- Multipartite viruses
+	- aka Multipart virus/malware
+	- Often combines file and boot/system infector viruses
+	- Simultaneously attacks the boot sector and executable files
+- Emerging variants
+- #TODO add macro viruses
+# Password Attacks
+- Repeated attempts to identify a user account, password, or both
+- Also runs against stored hashes on systems
+- Attackers use many tools and techniques to crack passwords
+	- Online brute force
+	- Offline brute force
+	- Dictionary and word lists
+	- Cracked password lists
+	- Rainbow tables
+		- Passwords in a computer system are not stored directly in plaintext, but are protected by a cryptographic hash function
+		- A rainbow table is a precompiled dictionary database of plaintext passwords
+		- It is a list of plaintext passwords and their corresponding values that can be used to find out what plaintext password produces a certain hash value
+		- ![[Pasted image 20230918111245.png]]
+	- Spraying
+		- Password spraying attempts to access many accounts, typically targeting SSO and cloud-based applications utilizing federated authentication protocols
+		- Attackers use a few commonly used passwords instead of traditional brute-force attacks that can quickly result in the targeted account getting locked-out
+		- 'Low and Slow' method involves the threat actor attempting a single frequently used password against many accounts before moving on to attempt a second password
+	- Hybrid cracking
+# Physical Attacks
+- Malicious USB Cables
+	- Using a generic looking USB/cable that has an exploit on it that runs when plugged into a PC, can get commands from a nearby smartphone or pc.
+- Skimming and Card Cloning
+	- RFID/NFC
+	- Data stored on RFID chips can be stolen, skimmed, and scanned by anyone with an RFID reader
+	- Crackers can also clone credit and debit card information
+# Adversarial Artificial Intelligence
+- Can involve deceiving image classification algorithms
+- Attackers can also taint the training data used for machine-learning algorithms to skew or damage the results
+- Types of attacks:
+	- Evasion attacks (Adversarial input)
+	- Data poisoning
+	- Model stealing
+# Supply-Chain Attacks
+- Attackers infiltrate a system through an outside partner/vendor with access to your systems/data
+- ![[Pasted image 20230918120108.png]]
+
+# Cloud-based vs On-premise Attacks
+- Cloud-based
+	- Higher technical expertise
+	- Better physical separation
+	- Fewer vulnerabilities
+	- Newer technology
+	- Better availability, resiliency, and durability
+- On-premise
+	- More experience and familiarity with systems
+	- Transition introduces risk
+	- Single or few accounts introduce single points of failure due to unsecure access keys and management
+
+# Cryptographic Attacks
+- Hash algorithms produce a fixed-length output and there are a finite number of possible outputs
+- It is possible for two different inputs to produce an identical output - Called a hash collision.
+- MD5 should be avoided since it can generate collisions
+	- Two files with the same fingerprint
+	- One is benign and one is malware
+- SHA-1 exploits were found in 2005
+- SHA-2 is preferred
+- Birthday attacks
+	- Named after the birthday paradox where 2 individuals in a room of 32 will have the same birthday 50% of the time.
+- Known Plaintext Attacks
+	- The attacker has access to the ciphertext of several messages, but also knows something about the plaintext that underlies that ciphertext (meet-in-the-middle)
+- Ciphertext-only attacks
+	- The attacker has the ciphertext of several messages, all of which have been encrypted using the same encryption algorith, but the attacker has no knowledge of the underlying plaintext
+- Downgrade Attacks
+	- An attack that takes advantage of an application's and'or service's ability to give up a newer and more secure method of communication (encrypted) and fall-back to an older, less optimal mode (clear-text) for backward compatibility
+	- SSL/TLS is particularly vulnerable *OpenSSL*
+	- Use TLS 1.2 or higher
+
+--------------------------
+# Threat Actors and Agents
+- Threat agents/actors are the persons, methods, operations, techniques, systems, or entities that act - or have the potential to act - in order to initiate, transport, carry out, or in any way support a particular threat or exploit
+- Threats are not realized without an agent or catalyst
+- Can be an individual or group
+- The attacks can also be totally automated
+- **Actors and Threats**
+	- Human errors
+	- Hostile cyber attacks
+	- Data breaches and theft
+	- Cognitive threats via social networking
+	- Exploiting consumer electronics
+	- Interference with critical infrastructure (SCADA, PLCs)
+	- Natural disasters and structural failures
+- **APTs**
+	- Advanced Persistent Threats
+	- Usually long-term planned malware campaigns
+	- Pre-planned with cost-benefit analysis
+	- Persistent in activity and system state existence
+	- Very often from nation state actors
+	- Sophisticated multi-phased polymorphic attacks
+- **Insider Threats**
+	- Look for disgruntled or desperate employees' elevated privileges
+	- Possible blackstortion or intimidation
+	- Always consider ex-employees after a breach
+	- APTs can involve employee with fake ID or someone using 'shadow IT'
+- **State Actors**
+	- World War C involves many of the same activities as criminal syndicates
+	- Cyber warfare, espionage, and blackmail
+	- Zero-day code is sitting on systems in every country placed by different countries
+	- DDoS attacks are of great concern for government agencies and industries
+- **Hacktivists**
+- **Script Kiddies**
+	- Originate from the combination of inexperienced crackers using script viruses and prepackaged malicious code
+- **Hackers and Cracker Syndicates**
+	- Organized crime groups
+	- White hat
+		- Have extensive knowledge of the target system and application
+	- Gray hat
+		- Have some level of information about the target but need more
+	- Black hat
+		- Have very little or no knowledge of the victim and are most often external
+- **Attributes of Actors**
+	- Internal/external and structured/unstructured
+		- Structured
+			- Planned
+			- Organized
+			- Persistent
+			- Multi-phased
+			- Can be external or internal
+			- Exploit kits, zero-days, modules, ransomware
+		- Unstructured
+			- Accidental
+			- Non-malicious
+			- Drive-by web surfing
+			- No AUP
+			- Poor Awareness
+			- E-mail and webmail
+			- USBs and personal electronics
+	- Intent and motivation
+	- Sophistication levels or skillsets
+	- Threat event frequency
+	- Resources and funding
+- **Threat Vectors**
+	- Direct physical access (removable media)
+	- Local network access
+	- Remote Access 
+		- VPN or no VPN
+	- Wireless, satellite, and cellular
+	- E-mail, webmail, or messaging
+	- Supply chain
+	- Social media
+	- Personal or public cloud computing
+**Threat Intelligence Sources**
+- IoC
+	- Indicators of Compromise
+	- Network or host-based cyber observables
+	- Forensic artifacts of an incursion or disturbance
+	- A measurable event or stateful property in the cyber domain
+	- Registry entries, files on disk and in-memory, etc
+- Vulnerability Databases
+	- A collection and distribution of information about exposed computer security vulnerabilities
+	- Typically categorizes and defines an identified vulnerability and its variants with a timeline and coding system
+	- The database usually assesses the potential impact on affected systems based on a qualitative scale (1-5)
+	- May also provide mitigations, workarounds, and updates
+	- **Databases:**
+		- CVE with MITRE
+		- National Vulnerability Database with NIST
+		- ISS X-Force databes
+		- Symantic/SecurityFocus BID database
+		- @Risk from SANS.org
+	- Dark Web
+		- an overlay network
+		- Need special software
+		- Not indexed by search engines
+		- P2P networking
+		- Tor, freenet, I2P, and Riffle
+- OSINT
+	- Open-Source Intelligence
+	- Any data or information that can be collected legally from free, public sources concerning an individual or organization
+	- Can be gathered using tools like:
+		- Maltego
+		- Sharing centers
+		- Github
+	- Other sources
+		- AIS
+			- Automated Indicator Sharing
+		- STIX
+			- Structured Threat Information Exchange
+			- Structured language for cyber threat intelligence
+		- Predictive analysis and threat maps
+		- TAXII
+			- Trusted Automated Exchange of Indicator Information
+- Research Sources
+	- Vendor web sites
+	- Vulnerability feeds
+	- Conferences
+	- Academic journals
+	- RFC
+		- Request for Comments
+	- Local Industry Groups
+	- Social media
+	- Threat feeds
+	- TTP
+		- Adversary tactics, techniques, and procedures
+	- OSINT tools
+	- Emerging social media tools
+	- Word of mouth
+- #### Cloud vs. On-premise Vulnerability
+- Public Cloud
+	- Threat actors are external in the majority of attacks
+	- Access keys must be protected
+	- Many accounts to reduce attack and blast surface
+	- MSSP Managed Security Service Providers and CASB Cloud Access Service Brokers
+- On-Premise
+	- Biggest threat is privileged insiders
+		- C-suite or C-team
+		- Database engineers and architects
+		- Highly privileged security personnel
+		- HR and legal departments
+		- Disgruntled present and ex-employees
+- #### Zero-day Vulnerabilities
+- A term describing a recently discovered exploit or malware for a vulnerability that attackers launch against systems
+- Exploits can go unnoticed for years and are often sold on the black market
+- #### Weak Configurations
+- Human error is number one vulnerability
+- Deploy change, configuration, and patch management systems (automated)
+- Peer reviews and dual operator are beneficial
+- Test configurations in virtual lab or the private cloud before deployment
+- Do not be the first customer to use a new product or upgrade
+- Store config files in a secure document library such as Github or Sharepoint with strong access controls
+- Weak Configurations
+	- Open permissions, ports, and services
+	- Errors sent to loges and SIEM systems
+	- Weak encryption
+	- Unsecure protocols
+	- Default settings and passwords
+- Improperly Configured Accounts
+	- Biggest issue is overprivileged users
+	- Logging, auditing, and reporting
+	- Least privilege principle should be used
+	- Use separate account for different tasks/roles
+	- Proper permission policies
+	- Use centralized secure systems and directory services
+	- Vulnerable to privileged insiders
+	- Types:
+		- Local admin account
+		- Privileged users
+		- Forest/domain admins
+		- Emergency accounts
+		- Service accounts
+		- Application accounts
+		- Shared accounts
+		- Cloud Service Provider accounts
+- #### Third-party risks
+	- Vendor management
+	- System integration
+	- Lack of vendor support
+	- Supply chain
+	- Outsourced code development
+	- Data storage
+- #### Improper Patch Management
+	- Many organizations do not consider or continually improve their patch management plan
+	- Vulnerability/exposure reviews and gap analysis are not performed or done properly
+	- A configuration management database (CMDB) of all configuration items (CIs) should be maintained
+	- Only certain personnel should have the authority to test, apply, and determine the urgency of patching activities
+	- Agreements with any applicable vendors should also be made to address any potential issues before patch deployment.
+	- #### Impacts of Legacy Platforms
+		- Data loss, breach, and exfiltration
+		- Identity theft
+		- Financial loss
+		- Loss of reputation and goodwill
+		- Availability loss
+# Physical Security
+- Types of physical barriers
+	- Fences
+		- Can be combined with entry/exit gates
+			- Barricade gates
+			- Tire shredders
+		- Types of gates
+			- Class 1
+				- Residential gates
+			- Class 2
+				- Commercial, parking lot or garage
+			- Class 3
+				- Industrial/limited access
+				- Warehouse
+				- Factory
+				- Docks
+			- Class 4
+				- Restricted access operation requiring supervisory control
+		- Bollards
+			- Pylons meant to prohibit vehicles from entering certain areas
+			- Concrete or metal
+			- Can be mechanical and include cameras and sensors
+		- Signage
+			- Authorized personnel only
+			- Do not enter
+			- No trespassing
+- Cameras and Surveillance Methods
+	- Provide a way to monitor and record the property perimeter for intruders and potential controls
+	- Considered a deterrent and detective physical control
+	- Should trigger alerts when a camera is disabled
+	- Backup media to safe location
+	- Locate the dead spots
+	- Combine with lighting
+	- Industrial Camoflage
+- Personnel Controls
+	- Visitor logs
+		- Temporary access badges
+		- Camera station
+		- Guests may need to be escorted by another employee or security officer
+	- Security Guards
+		- Types:
+			- Detective
+			- Deterrent
+			- Preventative
+		- Considerations
+			- Contract or hire
+			- Armed or unarmend
+			- Impact on insurance policies
+			- Screening and background checks
+			- Who provides ongoing training
+	- Robot Sentries
+		- Can be used in home or commercial environments as security guards with cameras, sensors, and more
+		- Samsung SGR-A1
+- Locking Mechanisms
+	- Preventative but technically only delay an attacker
+	- Picking locks
+	- Types:
+		- Key locks
+		- Warded
+		- Wafer/tumbler
+		- Pin tumbler
+			- More secure than warded & wafer
+		- Dead bolt
+		- Interchangeable core
+		- Combination
+		- Electronic combination
+		- Keyless
+			- Buttons that are pressed in sequence
+		- Smart lock
+			- Used in most hotels
+		- Cable locks
+			- Used to secure device to desk or shelf
+		- USB data blockers
+			- Prevents infecting smartphone or tablet with malware
+- Fire Prevention and Suppression
+	- Fire Controls
+		- Prevention
+			- Fire rated construction materials, training, and safety
+		- Detection
+			- Smoke and fire detectors, sensors
+			- Control quickly, minimize damage
+		- Suppression
+			- Contain and extinguish the fire
+	- Types:
+		- Type A
+			- Common combustibles such as wood, paper, and laminates
+			- Suppressed with dry chemical, clean agent, wet chemical, water, and foam
+		- Type B
+			- Combustible liquids such as petroleum products and coolants
+			- Suppressed using halon substitutes, dry chemical, clean agent, foam, and carbon dioxide
+		- Type C
+			- Electrical equipment and wires
+			- Extinguished using dry chemical, clean agent, water mist, and carbon dioxide
+		- Type D
+			- Combustible metals
+			- Extinguished only using dry powder
+		- Type K
+			- Flammable liquids unique to cooking
+			- Extinguished using dry powder
+- Types of Sensors
+	- Lighting
+		- Use good lighting in combination with other methods/controls to deter attackers
+		- Mercury vapor
+		- Sodium vapor
+		- Quartz/halogen flood
+		- LED
+		- Continuous lighting or on a timer
+		- Trip lighting
+		- Standby lighting
+		- Emergency lighting
+	- Types
+		- Photoelectric
+		- passive infrared
+		- Vibration
+		- Acoustical
+		- Microwave
+		- Electro-mechanical
+		- Electrostatic
+		- Moisture and temperature detection
+	- Sensors trigger alarms
+		- Static or flashing light on display panel
+		- Bell right or horn blares
+		- SMS text
+		- Telephone call or software
+		- Silent alarm
+- Secure Areas
+	- Mantraps
+		- Often used to control access to a facility or a specific area of a facility
+		- An entry and exit door, but only one door can be open at a time
+		- One person at a time, no piggybacking
+		- Person can be identified and authenticating
+	- Faraday Cages
+		- Rooms/enclosures that block electromagnetic fields emanating from EMI, Carrington events, solar flares, and EMP
+	- Cable runs
+		- Under floor
+		- above ceiling panels
+		- Lock all doors to server rooms
+		- Cameras can be used with other types of sensors
+	- Safes and Vaults
+		- Used to secure most valuable physical assets
+		- Should be attached to physical infrastructure so it cannot be carried away
+	- Air Gap
+		- Secure system that has no access to the internet
+		- Used in:
+			- Military and governmental agency networks and systems
+			- Financial systems
+			- Industrial control systems
+			- Life-critical systems
+				- Nuclear power plants, computers used in aviation, computerized medical equipment
+	- Hot and Cold Aisles
+		- HVAC are vital environmental issues
+		- Recommended temp 72-76 degrees
+		- Humidity:
+			- 40-60%
+		- Maintain hot and cold aisles
+- Secure Data Destruction
+	- Data Sanitation
+		- Degaussing
+			- Removing the magnetic field of physical drive
+		- Purging
+			- Software program that clears everything off the media
+		- Wiping
+			- Overwrite every sector of drive with 1's and 0's
+		- Encryption
+			- Encrypt files before deletion or disposal of media
+	- Data Destruction
+		- Burning
+		- Shredding
+		- Pulping
+		- Pulverizing
+		- Third-party solutions
+------------------------------------
+# Virtualization
+- #### Virtualization basics and VM security
+	- VMs / Virtualization
+		- The process of running a virtual instance of a computer system in a layer abstracted from the underlying hardware server
+	- Hypervisors
+		- The software that produces and manages a virtual infrastructure, allowing multiple OSs to run on a single physical machine
+		- It is the resource 'traffic cop' between all of the virtual components
+		- The system running the hypervisor is the *host*
+		- Virtual machines running on the host are called *guests*
+		- **Vulnerabilities**
+			- VM Sprawl
+				- When the number of VMs overtakes the administrator's ability to manage them and the available resources
+				- Enforce strict process for deploying VMs
+				- Have a library of standard VM images
+				- Archive or recycle under-utilized VMs
+				- Use a Virtual Machine Lifecycle Management tool or cloud service provider-managed service
+			- VM escape
+				- A prucess running the guest VM interacts directly with the host OS
+				- More likely in a Type 2 system
+				- Patch VMs and VMware software regularly
+				- Only install what you need on the host and the VMs from trusted sources.
+				- Strong access control and passwords
+				- 
+		- Categories
+			- Type 1
+				- Bare Metal, hardware needs to support virtualization
+					- Intel VT
+					- AMD V
+				- **Proprietary**
+					- HyperV
+					- V-Sphere-VSXI
+					- OVM
+					- Fusion-Sphere
+				- **Open Source**
+					- KVM
+					- Open VZ
+					- Redhat
+					- Zin/Zen
+				- ![[Pasted image 20230918155739.png]]
+			- Type 2
+				- Sits on top of the Operating System
+				- Virtual Box
+				- ![[Pasted image 20230918163513.png]]
+# Cloud models
+- **Private**
+	- Deployed in sandbox within an organization
+	- On-premise or in a cloud
+- **Public**
+	- Deployed by a provider for customer consumption
+- **Community**
+	- Deployed by a consortium in a certain sector
+- **Hybrid**
+	- Combination of either private, public, or community
+- Cloud Computing Value Propositions
+	- Cost savings and resource pooling
+	- Rapid elasticity and agility
+	- On-demand service with broad access
+	- Measured services with visibility
+	- Security and shared responsibility
+-  ![[Pasted image 20230918165754.png]]
+- **IaaS**
+	- The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications
+	- The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly limited control of select networking components (e.g. host firewalls, sub-nets)
+	- ![[Pasted image 20230918170258.png]]
+- **PaaS**
+	- The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider
+	- The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly application hosting environment configuraitons
+	- Common Services
+		- Development and SDK platforms for Java, PHP, Python, etc
+		- Container services for Docker and Kubernetes
+		- Managed and fully managed relational and document databases
+		- Managed security and threat modeling services
+		- SSO, machine learning, AI, IoT, Blockchain, media services
+- **SaaS**
+	- The capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through a thin client interface such as a web browser
+	- The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings
+	- Common Services
+		- CRM
+		- HR tools
+		- Financial, sales, and marketing
+		- E-mail, collaboration, and storage
+		- Help Desk and Service Desk
+- #### Cloud Service Provider Concepts
+- **MSSP**
+	- Managed Security Service Providers
+	- A managed security service provider offers outsourced security monitoring and management for security systems and devices
+	- These security services can apply to on-premise resources, cloud resources, or both
+	- MSSPs use high-availability security operation centers (either from their own facilities or from other data center/cloud providers)
+	- Common MSSP services:
+		- Managed layer 307 firewalls
+		- IDS/IPS
+		- Endpoint response and detection
+		- Virtual private networking support
+		- Vulnerability scanning and anti-viral services
+- **Fog Computing**
+	- A decentralized computing arrangement where resources such as data and applications are put in logical locations between the data source and the cloud
+	- Brings analysis services to the network edge
+	- Improves performance by placing resources close to where they are needed
+	- Can also be a security countermeasure for securing data
+	- Can be considered a form of Hybrid as a Service
+	- AWS Outposts can facilitate fog computing
+- **Microservices**
+	- Microservices are specific service-oriented application components
+	- They are an architectural approach to software development where the results are made up of small independent services that communicate over well-defined APIs
+	- These services are typically maintained by small, self-contained teams of developers
+	- Microservices architectures make applications faster to develop and easier to scale
+	- They innovation and fast-tracked delivery of new application features
+	- **Features**:
+		- Tightly scoped but loosely coupled
+		- Thoroughly modular and encapsulated
+		- Independently deployable
+		- Freely scalable
+- Service providers
+	- AWS
+	- Google
+	- Oracle
+	- Microsoft
+	- ![[Pasted image 20230918172837.png]]
+- #### Infrastructure as Code
+- IAC offers a common language in a file format, defining cloud deployment of infrastructure resources in a secure and repeatable manner
+- The stack files can represent a 'single source of truth' of your deployment
+- A stack is a templatized collection of cloud provider resources that you can control as a single unit
+- A stack set allows you to generate, update, or delete stacks across multiple CSP accounts and regions using a single operation via a console or CLI
+- ![[Pasted image 20230918175822.png]]
+- #### Containerization
+- Isolated abstracted applications with all components needed
+- Portable modules across platforms and cloud providers
+- Can be server-based on serverless in the cloud
+- Contribute to immutability and rapid deployment concepts
+- Function like a virtual machine or application code
+- **Docker vs. Kubernetes**
+	- Docker
+		- Docker is a containerization platform
+		- The Docker Engine is the runtime that allows you to build and run containers
+		- Docker is currently the most popular container platform and over 30% of enterprises currently use Docker in their AWS environment
+	- Kubernetes
+		- Kubernetes is an orchestrator for container platforms
+		- It is a comprehensive system for automating deployment, scheduling, and scaling of containerized applications
+		- It is the industry leader and supports many container tools such Docker
+- ![[Pasted image 20230918180438.png]]
+- ![[Pasted image 20230918181159.png]]
+- 
+- #### Serverless Architectures
+- Lets the customer move more responsibility to the provider, while enhancing agility and innovation of applications
+- AKA Function as a Service (FaaS)
+- Also enables the customer to run container applications and services without having to consider underlying servers
+- Serverless architectures eliminate infrastructure duties such as provisioning, patching, maintenance, and capacity management
+- Reduced overhead empowers developers to get back time and energy that can be used on further delivery of reliable and scalable products and services in the cloud
+- ![[Pasted image 20230918181810.png]]
+- **Services Integration**
+	- DevOps professionals, application developers, and system architects, must determine the optimal path for integrating cloud-hosted, SaaS, and on-premises applications and services
+	- Approaches:
+		- Integration platform software
+			- Handles complex integration
+		- iPaaS
+			- Integrated Platform as a Service
+			- For those who want to outsource operational aspects of their integration middleware
+		- SaaS vendor tooling
+			- Out of the box integrations and plugins
+			- Good for non-technical people
+		- Custom Coding
+			- Code a direct integration between systems as either a stand-alone program or integrated into their application itself. 
+		- fPaaS
+			- Function Platform as a Service
+			- A suite of integrations 
+- #### Transit Gateways
+- Centralized logical routed hub in the cloud that enables consumers to connect their virtual networks and on-premises networks to a single component
+- Companies can scale their networks across multiple accounts and VNets to keep up with their growth
+- Some CSPs allow you to attach up to 5000 virtual networks to a single gateway with thousands of routes
+- They can support IPsec IKEv1 & 2 or no IPsec
+- ![[Pasted image 20230918184136.png]]
+- 
+- #### Cloud Storage Security
+- Cloud storage includes block and object storage
+- Cloud storage permissions are managed through 
+	- IAM
+		- identity and access management service , 
+	- cloud  based AD instance, 
+	- SSO using SAML 2.0
+- Can also apply Public Access Policies, ACLs and granular permissions policies to object storage
+	- AWS S3
+- Disk drives and snapshots should be encrypted by default
+- AES-128-GCM & AES-256-GCM
+- ![[Pasted image 20230918184736.png]]
+- ![[Pasted image 20230918184811.png]]
+- Fault tolerant and high-availability
+- #### Cloud Network Security
+- Varies based on virtual network subnet design
+- Must evaluate all connectivity options (Gateways, endpoints, VPN)
+- Various Layer 3.4 static and stateless firewalls
+- WAF deployment on load balancers, CDN distributions, API GWs
+- Managed threat modeling and DDoS solutions
+- ![[Pasted image 20230918185518.png]]
+- 
+- Cloud Compute Security
+- Security group firewalls and VPC endpoint policies
+- Dynamic resource allocation and visibility
+- Container security by design
+- Functions as a Service (AWS Lambda)
+- API gateway Web Application Firewall
+- OWASP Top 10 IoT Vulnerabilities
+	- Weak/guessable/hard-coded passwords
+	- Insecure network services
+	- Insecure ecosystem interfaces
+	- Lack of insecure or outdated components
+	- Insufficient privacy protection
+	- Lack of device management
+	- Insecure default settings
+	- Lack of physical hardening
+- Cloud Security Solutions
+- ![[Pasted image 20230918190933.png]]
+- **Cloud Access Security Brokers (CASB)**
+	- Software service implemented between cloud customer and SaaS provider
+	- Could be on-premise or in-service provider cloud
+	- Acts as a gatekeeper to help enforce enterprise security policies while cloud resources are being accessed
+	- Extend organizations policies beyond local infrastructure
+	- Provides visibility, compliance, data security, and threat protection
+	- Can assist with implementation and enforcement of identity and access management, as well as single-sign on
+		- Federated access with web service sign-on
+		- Implement SAML 2.0, OATH, OIDC, Active Directory Integration
+- **SWG**
+	- Next Generation Secure Web Gateway
+	- Protects your enterprise from the mounting volume and complexity of cloud-enabled threats and data theft
+	- It helps ensure that users are safely and securely utilizing cloud apps such as personal storage and the web according to AUP
+	- Features
+		- Web content filtering with dynamic ratings
+		- TLS decryption at cloud performance and scale
+		- CASB and DLP (Data Loss Prevention) services
+		- Advanced threat protection ATP including sandboxing
+		- Visibility and rich metadata context for incident handling and reporting
+	- ![[Pasted image 20230918193454.png]]
+	- **Auditing**
+		- ![[Pasted image 20230918193537.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Secure Protocols and Implementation
+- #### Types of Secure Protocols
+	- DNSSEC
+		- DNS security Extension
+		- Protects users from DNS attacks and forces systems to detect DNS attacks
+		- Adds a layer of trust on top of DNS by providing authentication while the root DNS name servers help verify domains
+		- Information published by the root is vetted by a thorough security procedure
+		- Allows you to sign your company's DNS records so that any system that has an authenticating DNS resolver will automatically verify if the records are valid or have been compromised by MITM attack
+		- No protections against DoS/DDoS attacks
+		- Adds new DNS record type in order to facilitate signature validation
+			- RRSIG
+				- Contains a cryptographic signature
+			- DNSKEY
+				- Contains a public signing key
+			- DS
+				- Contains the hash of a DNSKEY record
+			- NSEC & NSEC3
+				- for explicit denial-of-existence of a DNS record
+			- CDNSKEY & CDS
+				- For a child zone requesting updates to DS record(s) in the parent zone
+			- Cisco Umbrella / OpenDNS
+	- SSH
+		- Secure Shell (Port 22)
+		- Remote computer management that replaces Telnet.
+		- SSH2
+			- Uses symmetric encryption for the bulk data encryption and asymmetric algorithms in their key management processes.
+			- Uses DH for key exchange (Diffie Helman algo)
+	- S/MIME
+		- Secure/multipurpose Internet Mail Exchanger
+		- SMTP is not natively secure
+		- S/MIME 3 has become the standard for email message security
+		- Provides digital signatures and email message encryption
+		- Digital signatures are the most common S/MIME service
+		- ![[Pasted image 20230918211510.png]]
+		- ![[Pasted image 20230918211704.png]]
+	- Secure RTP
+		- Secure Real-Time Transport Protocol **(SRTP)** extends the RTP protocol by providing enhanced security techniques
+		- Provides encryption, integrity, and authentication verification of data and messages transported by RTP
+		- Released in 2004 by Cisco Systems and Ericsson
+	- LDAPS
+		- LDAP was based on X.500 but is a lighter, cross-platform, and standards-based solution
+		- LDAPS (TCP 636) is LDAP over SSL/TLS
+		- SASL
+			- Simple Authentication and Security Layer
+			- BIND also offers authentication services using mechanisms like Kerberos, or a client certificate sent with TLS
+	- FTPS
+		- FTP Secure
+		- FTP with SSL/TLS security
+		- server-to-server
+		- AES, RSA/DSA, and X509v3 certificates
+		- Explicit FTPS
+			- Selected parts or components for communication are encrypted
+		- Implicit FTPS
+			- All communications are encrypted
+	- SFTP
+		- IETF designed version of FTP that provides secure data access and transfer over an SSH2 channel
+		- It is a function of the SSH protocol and is also called SSH File Transfer Protocol
+		- Both commands and data are encrypted
+		- Platform-independent
+	- SNMPv3 #TODO encryption algos?
+		- 3 modes:
+			- noAuthNoPriv 
+				- No cryptographic hash or encryption (passwords)
+			- AuthNoPriv
+				- Cryptographic HMAC (SHA1 or SHA2) to secure authentication credentials and provide integrity, but no data encryption
+			- AuthPriv
+				- HMAC for integrity and secure authentication credentials, and AES encryption of data
+	- SSL/TLS
+		- Most ubiquitous certificate-based peer authentication in use on the internet (HTTPS)
+		- TLS is standardized by IETF
+		- TLS 1.3 is the most recent published version
+		- It is also used with SMTP, LDAP, and POP3
+		- The only mandatory cipher suite includes RSA for authentication, AES for confidentiality, and SHA for integrity and digital signatures
+		- ![[Pasted image 20230918214649.png]]
+	- HTTPS
+		- HTTP over SSL/TLS
+		- Most widely used protocol on the internet for any secure commercial transaction, financial service, contract, agreement, file transfer protection, and voice over video service
+		- A cryptographic key exchange happens when you first connect to a secure web site and all ensuing activities on the web site are encrypted
+	- POPS & IMAPS
+		- POPS (995)/ IMAPS (993) over SSL/TLS
+- #### Features IPsec
+	- IP Security offers security services to traffic crossing untrusted networks, like the Internet, between two or more trusted devices or networks
+	- IPsec VPNs can also be used to protect management traffic as it crosses an organization's intranet and between front-end and back-end services
+	- IPsec and TLS VPNs are both cryptography based VPNs
+	- Site-to-Site & remote-access VPNs
+	- Key Security Functions:
+		- Confidentiality (3DES, AES-128/256)
+		- Data integrity (SHA1, SHA2/3)
+		- Origin authentication
+			- Pre-shared keys or RSA or ECDSA signatures
+		- Anti-replay protection
+		- Key management (IKEv1/2,  DHKE, ECDHE)
+	- Operates in tunnel or transport modes
+	- ![[Pasted image 20230918220807.png]]
+- #### Types of Use Cases
+	- Voice and video security
+	- NTPv3/4
+	- Digitally signed API calls
+	- Routing and switching
+		- Peer authentication
+		- 802.1X (PNAC)
+		- 802.11AE MACsec
+	- Remote access seurity
+		- IPsec / SSL/TLS
+	- DNSSEC
+	- Email, web, and internet file transfer
+	- LDAPS & Kerberos
+	- DHCPv6
+- #### Endpoint Protection
+	- **AUP**
+		- The most important aspect of the written security policy from the customer perspective
+	- **Physical Security Controls**
+		- Categories
+			- Administrative / Managerial
+			- Technical
+			- Physical
+	- **Physical Security**
+		- Computer and laptop locking mechanisms
+		- Screen savers with strong passwords
+		- Disable unused peripherals
+		- Adhere to removable device AUP
+		- Use strongest biometric authentication and MFA
+		- Smart cards and tokens
+		- Place electronics in a locked drawer or cabinet
+		- Disconnect and/or remove unused computers
+		- Take responsibility for client-side encryption
+		- Protect printers and fax machines
+	- Personal Security Suites
+		- All-in-one system/vendor to get updates and upgrades from
+	- ![[Pasted image 20230918225047.png]]
+	- **EDR**
+		- Endpoint Detection and Response
+		- Investigate and detect suspicious activity
+		- Sends info to a SEIM
+		- Key EDR Features
+			- Filtering
+			- Advanced blocking
+			- Incident response
+			- Multi-threat protection
+- #### Boot Integrity
+	- UEFI
+		- Unified Extensible Firmware Interface
+		- Replaces legacy BIOS
+- Database Security
+	- Tokenization
+		- Involves sending sensitive data through an API call (or batch file) to a provider that replaces the data with non-sensitive placeholders called tokens
+		- Tokenized data is irreversible and unintelligible unlike encrypted data
+	- Hashing
+		- Transforms a string of characters into a shorter fixed length value or key that represents the original string
+		- Often used to index and retrieve items in a database because it is faster to find the data item using the shorter hashed key than using the original value
+	- Salting
+		- A value appended to password to create a different hash
+		- Protects against brute-force and rainbow/dictionary attacks
+- #### Application Security
+	- Secure Coding Practices
+		- Proper input validation
+		- Proper error/exception handling
+			- Errors should be captured with secure logging (SIEM)
+		- Normalization
+			- Involves ensuring there is no redundancy in data, and that similar items are stored together
+		- Precompiled groups of code, statements, and commands that can be called later
+			- *Code re-use*
+		- Obfuscation/Camouflage
+			- Involves writing code that humans have a hard time understanding
+	- Cookies
+		- Usually out of sync with browser same-origin policy
+		- Need to validate cookie integrity and deploy HTTP Strict Transport Security (HSTS) with subdomain coverage
+	- Securing HTTP Headers
+		- Cross-site scripting
+		- Buffer Overflows
+		- SQL Injection attacks
+		- Path traversal exploits
+			- 1. A directory traversal attack aims to access files and directories stored outside the webroot folder. By manipulating variables or URLs that reference files with “dot-dot-slash (../)” sequences and its variations or using absolute file paths, it may be possible to access arbitrary files and directories stored on the file system, including application source code or configuration and critical system files. The example output provided comes from a remote code execution vulnerability being exploited in which a directory traversal is used to access the files.
+		- Request forgery
+	- Whitelist / Blacklist
+		- Whitelisting usually involves a stateful firewall that permits traffic based on IP, services, and port numbers while implicitly denying all other traffic
+		- Blacklisting uses stateless access control lists and firewall rules to deny specific traffic based on Layer 3 and metadata in IPv4 & IPv6 headers
+	- Analyzing Code
+		- Static code analysis
+		- Dynamic code analysis
+		- Manual code review
+		- Fuzzing
+- #### Hardening Techniques
+	- Involves reducing the attack surface of infrastructure devices, client endpoints, and servers
+	- Full disk encryption (FDE)
+		- 
+	- mature and automated patch management
+	- vulnerability scanning for open ports and services
+	- change default permissions
+- #### Advanced Application Security Techniques
+	- Hardware root of trust
+		- Anchoring the trustworthiness of a system to hardware not software
+		- Hardware solutions are more secure than software solutions
+		- Less susceptible to attacks since security solutions are on-chip
+	- Foundations of a TEE or TC
+		- Trusted Execution Environments
+		- Trusted Computing
+		- TPM
+			- Module embedded in a system
+		- SED
+			- Self-encrypting drives
+		- HSM
+			- Dedicated crypto processor
+	- Opal
+		- TCG Opal Security Subsystem Class (SSC) is a group of specifications for SEDs created by the trusted Computing Group (TCG)
+		- Defines a hierarchy of security management standards to secure data from theft and tampering by unauthorized persons who can access a storage device or host system where the storage device resides
+----------------------------
+# Implementing Secure Network Designs
+- #### Network Segmentation and Zoning
+	- Zoning is used to mitigate the risk of an open network by segmenting
+	- Zoning is a logical design approach used to control and restrict access
+	- Each zone has fundamental characteristics, defined by the security
+	- ![[Pasted image 20230919093054.png]]
+	- ![[Pasted image 20230919093016.png]]
+	- **Extranets**
+		- A network with resources under the control of another organization that your organization needs access to
+			- Could be a strategic partner or a customer with a connection agreement
+	- **Honeypots**
+		- Isolated sites and services with data that appear to be valuable to an attacker
+		- Entice malicious users to connect
+			- Track and log all traffic to and from the honeypot
+			- Run IDS services and other next-gen cloud based analysis
+- #### Load Balancing Techniques
+	- Optimize application availability and performance by distributing TCP, UDP, HTTP, & TLS evenly across multiple servers.
+	- Cloud Load Balancing:
+		- Represents virtual network to the public
+		- Produces flow logs. 
+		- Runs TLS listener
+		- May also have layer 3/4 and web application firewall
+		- ![[Pasted image 20230919094506.png]]
+- #### VPNs
+	- VPN gateways are dedicated termination points (Concentrators) for site-to-site and remote-access VPNs
+	- Can support IPsec, IKEv1, IKEv2, SSL/TLS
+	- Can be physical/virtual and server or appliance-based
+	- Routers and firewalls are common VPN Concentrators/gateways
+	- **Connections:**
+		- Site-to-site or remote-access
+			- Client or clientless
+		- IPSec IKEV1 or IKEV2
+			- Tunnel mode or transport mode
+			- IPsec protocols: #TODO rearrange
+				- AH (authentication header) 
+					- Origin authentication and integrity with HMAC like SHA1/2
+				- ESP (Encapsulated Security Payload)
+					- Confidentiality using AES-128/256
+				- IPv6 requires the support of AH/ESP headers
+		- Split tunnel
+			- small office / home office or behind a router
+		- Full tunnel
+			- Everything goes back to headquarters/main vpn concentrator
+		- Always-on VPN
+			- Always connected to the headquarters
+		- Can be IPv4/6
+		- CSP-based
+			- AWS, GCP, Azure
+			- Routing is done statically or with BGP
+- #### Port Security
+	- Switch Port Security
+		- Switches function at layers 2-4
+		- Base configuration for MAC filtering
+		- Loop prevention with STP
+		- Flood guard with BPDU
+			- Bridge Protocol Data Unit ![[Pasted image 20230925090645.png]]
+		- Root guard configurations
+		- DHCP snooping binding table for dynamic ARP inspection and IP Source Guard
+		- VLANs and PVLANS 
+			- help enforce a layer 2 trust model and compartmentalization
+			- PVLAN makes a logical vlan inside of your VLAN
+		- 802.1X PNAC offers EAP-TLS, PEAP, and EAP-FAST
+		- MACsec offers AES-GCM-128/256 with GMAC
+- #### Firewalls
+	- Integrated systems of threat defense
+	- Layers 2-7
+	- Should be placed between all zones, domains, and partitions either physical or logical
+		- Network or application firewalls
+	- **Restrictive** vs. permissive firewalls
+		- Permissive system lets traffic through and acts like an intrusion prevention sensor, not allowing traffic through that meets a certain signature or anomalous behavior 
+			- i.e. spam filter
+	- **Stateless vs. stateful firewall**
+		- Stateless
+			- IP packet filter making a decision based on a set of rules
+		- Stateful
+			- Maintain constructs in memory
+				- UDP/TCP/ICMP traffic flows
+			- Most modern firewalls today
+		- Can also be VPN and NAT gateways
+	- **Next Gen Firewalls**
+		- Layer 5-7 policies
+			- DPI & AVC
+				- Deep Packet Inspection
+				- Advanced Visibility & Control
+		- Authentication proxy
+			- Connect back through LDAP to Active Directory allowing you to filter based on users /services/ports in AD policy
+			- Interactive
+				- Captive Portal
+			- Transparent
+		- Identity Services
+			- ABAC
+		- Integrated IDS/IPS
+		- **UTM**
+			- Unified Threat Management
+			- Helps secure:
+				- Conferencing
+				- Streaming
+				- DNS
+				- VSMTP
+				- VoIP
+			- Content filtering
+			- URL filtering
+			- Botnet filtering
+				- DDoS
+			- Vendor cloud correlation and reputation filtering
+	- **WAF**
+		- Web Application Firewall
+			- An appliance, server plugin, or CSP service that applies a set of rules to an HTTP/S connection
+			- WebACLs filter for common attacks:
+				- XSS
+				- SQL Injection
+				- CSRF
+					- Cross-site request forgery
+				- Buffer overflows
+				- DDoS and botnets
+				- Custom WebACL rules
+		- Layer 5-7
+		- Solutions
+			- Akamai
+			- Fortinet
+			- Cloudflare
+			- Cisco Cloud Web Security
+			- StackPath
+			- AWS
+				- CloudFront
+				- API Gateway
+				- Application ELB
+- #### Network Appliances
+	- **NAC 802.1X** 
+		- Network Admission Control
+		- 802.1X, ACL
+		- #TODO NAP
+	- **Bastion** or jump hosts
+		- accept SSH1/2 RDP over TLS
+	- Proxy Servers
+	- Network IPS sensors
+	- Port mirroring/spanning taps
+	- Advanced malware control
+	- VPN gateways
+	- Threat modeling
+		- ML algos
+	- SIEM appliances
+	- Netflow connectors
+- #### Advanced Network Environment Solutions
+	- Database Activity Monitoring
+		- A suite of tools used to identify and report on fraudulent, illegal, or other undesirable behavior concerning data
+		- Should have minimal or no impact on user operations and productivity
+		- Modern solutions deploy a 
+			- comprehensive toolkit for visibility, discovery and classification, 
+			- vulnerability protection, 
+			- application-level analysis, 
+			- intrusion prevention, 
+			- support for unstructured data security, 
+			- identity and access management integration, 
+			- and risk management support
+	- Modern Endpoint Analysis
+		- EDR
+			- Endpoint Detection and Response
+			- Lightweight sensors look for malicious code and rogue applications using a combination of behavioral analytics, heuristics, and threat intelligence
+			- i.e. Palo Alto Traps
+		- UBA
+			- User Behavioral Analytics
+			- ML/AI
+			- Honey Tokens
+	- HSM
+		- Hardware Security Modules
+		- Use tamper-proof, hardened devices
+		- Provide crypto processing & SSL offloading
+		- Protect cryptographic functions
+		- Secure cryptographic keys
+		- Apply key-use policies
+		- Can be used in place of software crypto libraries
+# Wireless, Mobile, and Embedded Device Security
+- #### Wireless Cryptographic and Authentication Protocols
+	- WPA
+		- Temp fix for WEP
+		- Uses TKIP for encryption and integrity
+		- Supports PSK and enterprise Authentication
+		- 802.11b/g/n/ac
+		- Available for SOHO products
+	- WPA2
+		- CCMP encryption
+			- 802.11i
+			- Based on AES
+			- 128-bit keys and 48-bit IV for replay attacks
+			- Has a MAC for data integrity and origin authentication
+				- Measures Authentication Code #TODO check
+		- Supports PSK and enterprise authentication
+	- ![[Pasted image 20230919135122.png]]
+	- **WPA3**
+		- Use latest security methods
+		- Disallow outdated legacy protocols
+		- Require use of PMF
+			- Protected Management Frames
+			- PMF enhances privacy protections already in place for data frames with mechanisms to improve the resiliency of mission-critical networks
+		- WPA3 Personal
+			- Natural password selection
+			- Ease of use
+			- Forward secrecy
+				- Protects data traffic even if a password is compromised after the data was transmitted
+		- **SAE**
+			- Simultaneous Authentication of Equals
+			- Password-based authentication
+			- Password-authenticated key agreement
+			- 802.11s
+			- WPA3 replaces PSK with SAE
+			- More secure initial key exchange
+		- Authenticated encryption
+			- GCMP-256 
+		- Key Derivation and Confirmation
+			- HMAC-SHA384
+		- Key establishment and authentication
+			- ECDH & ECDSA using a 384-bit elliptic curve
+		- Robust Frame Management Protection
+			- BIP-GMAC-256
+			- 256-bit Broadcast/Multicast Integrity Protocol Galois Message Authentication Code
+- #### Wireless Security Methods
+	- **WPA Modes**
+		- WPA-PSK (Personal)
+			- Shared secret key is used
+			- Manually configured on devices and AP
+			- Local access controls
+			- TKIP used for encryption
+		- WPA2-Enterprise (802.1X)
+			- Authentication server is required
+				- RADIUS used for authentication and key distribution
+			- Centralized access control
+			- TKIP used for encryption
+	- **WPA2 Modes**
+		- WPA-PSK personal
+			- AES used for encryption
+		- WPA2-enterprise
+			- Centralized access control with EAP variants
+			- AES used for encryption
+	- Wireless Captive Portals
+		- GUIs used in 802.1X to force EAP supplicants to upgrade, remediate, or get a certificate as part of Change of Authorization (CoA)
+		- Used in hotels, airports, and other commercial scenarios to gather credentials or registration profiles before users can access a public Wi-Fi
+- #### Wireless Installation Considerations
+	- RF channel selection
+	- Antenna strength and placement
+	- Interference
+	- Rogue WAP
+	- station detection
+	- etc
+- Mobile Connection Methods and Receivers
+	- **Cellular**
+		- Multiple Access technology
+		- Involves many small, interconnected transmitters
+		- 5G
+			- All 5G devices are in a cell linked to the Internet and telephone network by radio waves through a local antenna in the cell
+			- 10-Gbps
+			- Higher frequency
+			- Narrow ban is used for private small networks
+	- **Bluetooth**
+		- 2.4-2.485 GHz and agreement protocol
+		- confidentiality, authentication, and key generation with custom algorithms based on the **SAFER+ block cipher**
+	- RFID
+		- Inventory management, 
+		- asset and personnel tracking
+		- ID badges
+		- supply chain management
+		- counterfeit prevention
+	- NFC
+		- ISO/IEC 14443 defines the ID cards used to store information
+		- ISO/IEC 18000-3 specifies RFID communication used by NFC devices
+			- 18000-3 is an international standard for all devices communicating wirelessly at the 13.56-MHz frequency using Type A or Type B cards
+		- Use Cases:
+			- Attendance tracking
+			- Asset identification and tracking
+			- identity validation/access control
+			- Payments/transactions
+			- Wireless pairing
+	- Infrared
+		- Point-to-point
+			- Needs line of sight between transmitter and receiver
+		- Diffuse
+			- does not need line of sight
+	- Wireless USB
+		- IPv6 integrated
+		- Creates a PAN network
+		- WUSB
+	- GPS
+		- L1
+			- 1575.42 MHz
+		- L2
+			- 1227.60 MHz
+		- Uses atomic clocks
+- #### Mobile Device Types
+	- MicroSD HSM
+		- Used to remotely generate, backup, restore, and utilize RSA and ECC cryptographic keys
+	- SEAndroid
+		- Uses SELinux to enforce MAC (mandatory access control) over all processes
+			- Security Enhanced Linux
+		- Android can protect and compartmentalize system services, and control access to application data and system logs
+		- These together reduce the effectiveness of malicious software and protect users from probable flaws in code on mobile devices
+- #### Mobile Deployment Models
+	- BYOD
+		- Bring Your Own Device
+		- Options
+			- Unlimited access
+			- Access only to non-sensitive data and sytems
+			- Access with IT control over personal devices, app,s and stored data
+			- Access while preventing storage of local data
+	- CYOD
+		- Choose Your Own Device
+		- Must be approved by organization as opposed to BYOD
+		- Users select from a list of approved devices, usually smart phones
+		- These networks offer more stability, security, and simplified IT for most businesses
+	- COPE
+		- Corporate-owned Personally-enabled
+		- Company gives employees mobile devices
+		- Users can handle as if they were their own
+		- Prevents the need for two smartphones
+		- Programs should use containerization tools
+	- VDI for mobility devices
+		- Virtual Desktop Interface
+		- Reduces cost/complexity and improves security and uptime
+		- Increased agility, as not just for smartphones (COPE)
+		- VDI separates the app and the data
+		- Tablets using a separate Bluetooth-enabled keyboard
+- #### Mobile Device Management (MDM)
+	- EMM
+		- Enterprise Mobility Management
+		- Organizations must securely configure and implement each layer of the mobile technology stack, including hardware, firmware, os, management agen, provider agreements, and apps used for business
+		- Solutions should reduce risk while enabling employees to access the application and necessary data from nearly any location, over any network, using a wide variety of mobile devices
+		- EMM = MDM + MAM
+			- mobile device management + mobile app management
+			- MDM
+				- Enrolling devices for management
+				- Provisioning settings, like digitcal certificates and profiles
+				- Monitoring, measuring, and reporting device compliance
+				- Activities
+					- Finding lost devices and remote wiping
+					- Implementing touch ID authentication and screen locking
+					- Configure PINs and push notifications for use devices
+					- Deploying and managing full device encryption
+					- Onboarding/Offboarding, and installing certificates
+				- Advances
+					- Containerization is orchestrating the packaging, isolation, and encapsulation of apps and work data in a separate segmented user space within the device
+					- Storage Segmentation
+						- involves partitioning various types of data on devices to protect IP, PII, and PHI and support DLP initiatives
+					- Full Device Encryption (FDE)
+						- Strong encryption at the hardware level on a smartphone or other device beyond the control of the user
+			- MAM
+				- Publishing mobile apps to users
+				- Configuring and updating apps
+				- Reporting app inventory and usage
+				- Securing and removing corporate data within mobile apps
+		- MCM
+			- Mobile Content Management
+				- a.k.a. MIM
+					- Mobile information management
+		- Geofencing and Geolocation
+		- Mobile Biometrics
+		- Mobile Sandboxing
+			- Containerization and sandboxing provide protection, isolation, and integrity functionality for better levels of overall data isolation
+		- SEP
+			- Secure Enclave Processor
+			- A security circuit designed to perform secure services for the rest of the SoC
+			- Runs its own operating system (SEPOS) that has its own kernel, drivers, services, and applications
+			- Prevents main processor from gaining direct access to sensitive data and supports services such as Touch ID
+			- Contains its own set of peripherals accessible by memory-mapped dedicated I/O lines
+			- Uses inline AES to encrypt external RAM
+- #### Mobile Enforcement and Monitoring
+	- Sideloading and Third Party Apps
+		- installing apps that are not part of the official app store
+		- In COPE and CYOD environments this is a highly enforced part of the mobile device policy
+		- Managers often remove the Unknown Sources field in the device settings to block downloading of third-party apps and deal with piracy, DRM, and licensing issues
+	- Jailbreaking
+	- Rooting
+	- USB OTG
+		- allows mobile devices to connect to one another
+		- OTG-A
+		- OTG-B
+	- Tethering
+	- Mobile Devices for Payments
+		- Tokenization for payments and MFA
+		- NFC
+		- Mobile wallets for cryptocurrency
+		- Peripheral-enabled payments NFC
+		- Vendor-specific payments (Apple)
+- #### Embedded system Security and Constraints
+	- Raspberry Pi
+		- Change default passwords
+		- Change SSH port from 22 
+		- Use SSH keys instead of passwords
+		- SSH: prevent root login
+		- Install Fail2ban
+		- Stop unnecessary services
+	- Arduino
+	- FPGA
+		- Field Programmable Gate Arrays
+		- Field programmable integrated
+		- Fuse-based and battery-backed root
+		- Encrypted design bitstream
+		- Data erasure protection
+		- Glitch resistant features
+	- Tech constraints
+		- Power
+		- Compute
+		- Network
+		- Crypto
+		- Inability to patch
+		- Authentication
+		- Implied trust
+		- Range
+		- Cost
+	- Securing embedded system
+		- Test in cloud before deployment
+		- Change and configuration management
+		- patch management
+		- Digitally signed code
+		- Trusted OS and firmware
+		- Hire skilled systems/security practitioners
+- SCADA Security #TODO modbus
+	- Supervisory Control and Data Acquisition
+		- Represents the software used to collect and send data to other facility systems
+		- Programmable Logic Controllers (PLC) are the hardware component
+		- Systems that are not air-gapped introduce various threats
+	- Examples
+		- Facility and manufacturing control and management systems
+		- Water management systems
+		- Electric and nuclear power grid
+		- Solar and wind farms
+		- Traffic signals and mass transit systems
+		- Environmental control systems
+		- Manufacturing systems
+	- Security Concerns
+		- Cyber terrorism/warfare, espionage, and sabbotage
+		- Lack of security in design, operation, and deployment
+		- Lack of authentication between devices
+		- Lack of strong user authentication
+		- Lack of security in proprietary protocols, services, and applications
+		- Lack of visibility and security of Internet connectivity
+- #### Internet of Things (IoT)
+	- OWASP IoT Top Ten
+		- Weak/guessable, or hardcoded passwords
+		- Insecure network services
+		- Insecure ecosystem interfaces
+		- Lack of secure update mechanism
+		- Use of insecure or outdated components
+		- Insufficient privacy protection
+		- Insecure data transfer and storage
+		- Lack of device management
+		- Insecure default settings
+		- Lack of physical hardening
+- #### Securing Specialized Systems
+	- Securing VoIP
+		- Harden and patch the IP PBX
+		- Make sure there is security of data-in-transit and high-availability with RADIUS and backend databases
+		- On the VoIP firewalls:
+			- Allow only call control information (such as SIP)
+			- Allow lookup to the LDAPS server
+			- Allow management protocols in both signaling and media access
+			- Control the source addresses
+				- SIP : 5060/5061
+				- H.323 : TCP 1720
+	- HVAC
+	- SOC
+		- System on a Chip
+			- Combining electrical circuits of various components and software onto a single chip
+			- Common in IoT devices, mobile products, wearables, and RFID systems
+		- Security Concerns:
+			- Lack of security controls
+			- Lack of and speed of updates
+			- Privacy
+			- Malware
+			- Root access
+	- RTOS
+		- Real-time Operating System
+			- OS that serves real-time applications
+				- Processes data immediately or in tenths of seconds
+		- Security concerns
+			- Code injection
+			- Privacy
+			- Exploiting shared memory
+			- Priorities
+			- DoS attacks
+			- Inter-process communications
+	- Video Surveillance and Webcams
+		- Lack of security policy
+		- Weak passwords
+		- Poorly coded software
+		- Malware
+		- Privacy
+		- Mobile and remote access
+		- Recording and spying
+		-![[Pasted image 20230919171934.png]]
+	- Specialty Systems
+		- ![[Pasted image 20230919172210.png]]
+
+# Authentication & Authorization Design Concepts
+- #### Authentication, Authorization, and Accounting
+	- **Authentication**
+		- The process of validating that an entity (user, application, or system) is who or what they claim to be
+		- Passwords most common type
+		- Can occur in multiple layers, where origin authentication comes first followed by more advanced forms of identification and authentication
+	- **Authorization**
+		- The process of granting an authenticated entity the permission to access a resource or perform a specific function
+		- Access control, client privilege, or subject sensitivity level
+	- **Accounting**
+		- Billing and chargeback
+			- Departments are responsible for staying within established budgets
+			- Provides visibility to senior management on costs
+			- RADIUS and DIAMETER are popular IT accounting protocols
+		- Auditing and reporting
+			- Accounting is most often used for auditing the usage of resources for security, operational, and forecasting reasons
+			- Auditing and reporting may be part of governance and adherence to regulations and mandates such as GDPR or HIPAA
+- Character Mode vs. Packet Mode
+	- Character Mode
+		- Sends keystrokes to a networked device (often using RADIUS or TACACS+) through the TTY, vty, AUX, and CON ports
+	- Packet Mode
+		- Uses interface mode or a link protocol session to communicate with a device on the other side of the authenticating device
+		- Also called Network Mode since AAA is being used to grant access to a server in a network
+	- ![[Pasted image 20230919184923.png]]
+- #### Directory Services
+	- A vital AAA system for the SMB to large global enterprise
+	- It is a hierarchical structure that stores data about network objects
+	- Active Directory Domain Services (AD DS) is one of the world's most popular and it stores usernames, passwords, phone number, departments, assigned devices, and much more
+	- It also allows other authorized users and systems on the same network to access this information
+	- Active Directory Components
+		- A set of rules called the schema
+		- A global catalog of all objects
+		- A query and indexing service
+		- A replication service for data distribution
+	- LDAP
+		- Often used to provide access for management apps and browsers that need interactive read/write access to an X.500 or Active Directory service
+		- AAA systems can leverage existing user repositories for authentication
+		- For example, if a company uses LDAP, those systems can offer robust user repositories with sophisticated password management features to the AAA front end
+	- Securing the Directory
+		- Separate administrative accounts
+		- Just in time local admin passwords
+		- Implement Azure Advanced Threat Protection (ATP)
+		- Enable MFA for all administrative accounts
+		- Secure all data in transit
+- #### Federation and Technologies
+	- Involves identity providers, trusted service providers, and attestation using assertions or tokens
+	- SAML
+	- SSO
+		- Single Sign-on
+		- ![[Pasted image 20230919190508.png]]
+		- ![[Pasted image 20230919190539.png]]
+		- ![[Pasted image 20230919190603.png]]
+- #### Authentication Technologies
+	- TOTP
+		- Time-based One-time password
+	- HOTP
+		- HMAC-based one-time password
+	- SMS
+		- Short Message Service
+	- Token Key
+	- Static codes
+	- Authentication applications
+	- Push notifications
+	- Phone calls
+- #### Smart Card Authentication
+	- A form of 2-factory authentication
+	- Users connect smart cards to their host computer
+	- Software on the laptop interacts with keys or secrets
+	- The information stored on the card authenticates user
+	- CAC is used for active-duty military (Common Access Card)
+- #### Biometrics
+	- Fingerprint
+	- Facial Recognition
+		- PCA
+			- Principle Component Analysis
+	- Retinal Scans
+		- ![[Pasted image 20230919191558.png]]
+	- Voice Recognition
+		- Behavioral biometric
+	- Vein and Gain Analysis
+		- Vein:
+			- Palm vein pattern recognition
+			- Finger vein pattern recognition
+			- Retina vein pattern recognition
+		- Gait
+			- Identify people based on their unique walking pattern
+	- FAR
+		- False acceptance Rat
+		- Measures the probability that the biometric system will incorrectly accept an access effort by an unauthorized user
+			- Often specified as the ratio of the number of false acceptances divided by the amount of authentication attempts
+	- FRR
+		- False Rejection Rate
+		- The probability that the system incorrectly rejects access to an authorized person, due to failing to match the biometric input with a template
+	- CER
+		- Crossover Error Rate
+		- The value of Far and FRR when the sensitivity is setup so that FAR FRR are the same
+- #### Multi-factor Authentication
+	- Something you know 
+		- Password or passphrase
+	- Something you have 
+		- smart card, token, CAC
+	- Something you are
+		- Biometrics
+	- Attributes (ABAC)
+		- Attribute Based Access Controls
+		- Somewhere you are
+		- Something you can do
+		- Something you exhibit
+- #### Cloud vs. On-premise requirements
+	- Cloud Provider
+		- Concern is only at layer 3 and above
+		- IAM or SSO
+			- Identity Access Management
+		- Programmatic or console access
+		- Shared responsibility based on level of managed service
+	- On-premise
+		- Must include physical security and layer 2 protections
+		- More control over access model and frameworks
+		- More flexible protocols and solutions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Implementing Identity and Account Management and AAA Solutions
+- #### Identity Controls IdP
+	- A third-party authentication authority that works like a directory service.
+		- Active Directory is an IdP
+	 - Identity Providers
+	- Controls
+		- Tokens
+		- Assertions
+			- Shared Access Signature is a URI that grants restricted access rights to Azure Storage resources
+		- Certificates
+			- X.509v3 certificates can be embedded in smart cards, CAC, and OTP tokens
+- #### Account Types
+	- User Accounts
+	- Guest and Generic accounts
+	- Shared accounts and credentials
+	- Service and Application accounts
+	- Privileged and emergency (fallback) accounts
+	- A big challenge is over-privileged users
+		- The least privilege and dual operator principles should be used
+- #### Common Account policies
+- #### Advanced Account Policies
+	- Geofencing and geolocation services
+	- MDM systems have added these features for enterprise
+	- **Risk-based Attribute-Based-Access-Control**
+		- with ABAC:
+			- Policy:
+				- Manaegers can approve transactions up to their approval limit
+			- Attributes
+				- role,
+				- action ID
+				- object type
+				- amount
+				- approval limit
+- #### Authentication Management
+	- Strong passwords enforced from UAP
+	- Password Managers
+	- Password vaults
+	- Trusted Computing
+		- TPM
+			- Module embedded in a system
+			- Tamper resistant security chip installed on the device or built into PCs, tablets, and phones
+			- Provisions:
+				- Integrity
+				- Authentication
+				- Privacy
+		- SED / FDE
+			- Self-encrypting drives
+			- Pre-boot authentication, endpoint security, and device authentication
+			- FIPS 14102
+		- HSM
+			- Dedicated crypto-processor
+			- Hardened Tamper-resistant dedicated appliance or module in a PC/Server
+			- Responsibilities:
+				- Managing, processing, generating, and storing keys
+				- Verifying digital certificates
+				- SSL connection accelerator
+				- Encrypting sensitive data
+				- Verifying the integrity of stored data
+	- Knowledge Based Authentication
+		- Allows users to choose security questions and answers
+		- Goal is to prove someone is the exact person
+		- Based on severeal pieces of info that only that user could have
+		- Static or dynamic sophisticated solutions
+		- Can be combined with MFA and biometrics
+- #### Common Authentication Protocols
+	- PAP
+		- Password Authentication Protocol
+		- Provides an optional authentication phase before proceeding to the PPP (point-to-point protocol) Network Layer protocol phase
+		- Each end of the PPP link must first send LCP packets to set up the data link during the MAC Link Establishment phase
+		- By default, authentication is not mandator
+		- If authentication is desired, the PAP deployment must require the Authentication-Protocol configuration option during Link Establishment phase
+	- MS-CHAPv2
+		- Microsoft's most common iteration of the original CHAP (Challenge Authentication Protocol)
+		- Secures PPP traffic by encapsulating it a PPTP tunnel
+		- The PPP payload is encrypted using MSCHAP, and the encryption keys are generated during the user authentication
+		- After encryption, encapsulation takes place in PPP and the frame is encapsulated with GRE (Generic Routing Encapsulation) and an IP header
+		- ![[Pasted image 20230920093105.png]]
+	- 802.1X (PNAC)
+		- Port-based Network Access Control
+		- .1X is an ongoing expension of the original PPP protocols,
+			- known as PNAC
+		- Commonly used by AAA and identity services in wired and wireless network environments
+		- ![[Pasted image 20230920093401.png]]
+	- **EAP 802.1X**
+		- Extensible Authentication Protocol
+		- **PEAP**
+			- Protected EAP
+			- Encapuslated EAP with a TLS tunnel
+			- Microsoft
+		- EAP-FAST
+			- Cisco, replaces LEAP
+		- EAP-TLS
+			- Uses X.509v3 certificates
+			- Good solution for mobile devices in the enterprise or campus
+		- EAP-TTLS
+			- Tunneling EAP
+		- ![[Pasted image 20230920094833.png]]
+	- **RADIUS**
+		- Remote Authentication Dial-In User Service
+		- 
+		- Widely deployed and popular **client-server** protocol and software that enables a remote access server **(RAS)** to communicate with a central server to authenticate dial-in users and authorize their access to systems
+		- Features:
+			- Client-server model
+			- Transactions use a shared secret between the client and the RADIUS server for authentication
+			- Shared secrets are never sent over the network and only the password is encrypted
+			- **UDP 1812 - Authentication**
+			- **UDP 1813 - Accounting** 
+			- Preferred for its robust integrated accounting feature set
+		- ![[Pasted image 20230920095057.png]]
+- #### Authentication Protocols for Federation and SSO
+	- SAML
+		- Security Assertions Markup Language
+		- XML-based open-source SSO standard
+		- Used by many cloud SSO connections for thousands of large enterprises, government agencies, and service providers that communicate on the internet
+		- SAML2.0
+			- Identity provider:
+				- SAML Identity provider declares the identity of the user along with additional metadata in an assertion
+				- Directory services like LDAP and Active Directory are common identity providers
+			- Service Provider
+				- Service provider takes the assertion and passes the identity data to an application or service
+				- Common service providers are cloud services and social media sites
+	- OAuth
+		- OAuth 2.0 is an open authorization framework that allows a third-party application to get limited access to an HTTP service
+		- Developers use OAuth to publish and interact with protected data in a safe and secure manner
+		- Services provider developers can use OAuth to store protected data and give users secure delegated access
+		- Designed to work with HTTP and basically allows access tokens to be issued to third-party clients by an authorization server with the approval of the resource owner
+		- The third party then uses the access token to access the protected resources offered by the resource server
+	- OIDC
+		- OpenID Connect 1.0 is a basic identity layer on top of OAuth 2.0 protocol
+		- Verifies the end-user identity using an authorization server
+		- It can get basic profile information about the user with an interoperable REST-like methodology
+		- Supports web-based, mobile, and JavaScript clients
+		- OpenID is extensible as functionality can be added
+	- Shibboleth
+		- Free and Open-Source, popular with universities and public service organizations
+		- Connects users to both inter-organizational and intra-organizational applications and services
+		- Empowers sites to make well-informed authorization choices for discrete access to protected online resources while maintaining user privacy
+	- Kerberos
+		- SSO authentication using a secret key cryptosystem
+			- Network-wide authentication
+		- Uses a ticket for the assertion or token
+		- Performs mutual authentication of the client and the server
+		- All communications can be encrypted once authenticated
+		- Uses a trusted third-party called a Key Distribution Center (KDC)
+			- Active Directory handles/acts as the KDC
+		- ![[Pasted image 20230920103910.png]]
+- #### Access Control Schemes
+	- **DAC**
+		- Discretionary Access Control
+		- Restricts access to data and systems based on the identity of users and/or their group membership
+		- Access results are usually based on authorization granted to a user based on the various forms of credentials he/she presented at the time of authentication
+		- The owner of the resource can change its permissions at their discretion
+		- A DAC framework can deliver the capability for granular access control 
+			- i.e. Active Directory
+		- Advantages
+			- Easy to implement and operate
+			- Aligns with the least privilege security principle
+			- Object owner has control over granted access
+		- Disadvantages
+			- Documentation of the access must be strictly maintained
+			- There is a propensity for privilege (scope) creep to occur
+	- **Role-based Access Control**
+		- AWS components Managed policies #TODO check
+		- Relies on org chart, roles, and responsibilities
+		- Based on enterprise objects and architecture
+		- Framework set by administrators
+		- User does not exercise discretion
+		- Common in database applications and iAM
+		- Relational databases
+		- **Advantages**
+			- Easy to implement and control
+			- Roles are assigned using written security policy
+			- Built into many security frameworks
+			- Aligns accepted security principles
+		- **Disadvantages**
+			- Scope creep can take place over time
+			- Roles and access must be audited rigorously
+			- Multi-tenancy capabilities need things like AD OUs
+	- **Rule-based Access Control**
+		- RBAC / RB-RBAC
+		- Firewalls / Router ACL, switches
+		- Can dynamically assign roles to users based on criteria defined by the custodian or system administrator
+		- Can also be used as time-based rules if NTP is being used
+			- A user can only access the drive/server from a certain window
+		- ![[Pasted image 20230920115233.png]]
+	- **MAC**
+		- Mandatory Access Control
+			- **Strictest access control model**
+		- Strict non-discretionary model defining relationships between subjects and objects
+		- Secures data by assigning sensitivity labels, then compares the labels to the level of user sensitivity
+		- Appropriate for extremely secure systems such as multilevel secure military applications
+		- Main advantage is that access is based on *need to know*, is strictly adhered to and scope creep is minimized
+		- All MAC systems are based on the **Bell-LaPadula** model for confidentiality
+			- This was the first mathematical model with a multilevel security policy used to define the concept of a secure state machine and models of outlined rule of access
+
+# Basic Cryptography and Public Key Infrastructure
+- #### Symmetric vs. Asymmetric Cryptosystems
+	- Cryptology
+		- The study of cryptosystems
+		- **Cryptography**
+			- The study and practice of securing communications and of data at rest/storage
+			- most common applications
+				- Encryption
+				- hashing
+				- signing
+			- Involves creating cryptosystems and testing new variants and models
+		- **Cryptanalysis**
+			- The study and practice of exploiting weaknesses in communications an cryptosystems
+			- Analysts actively explore
+				- Brute force attacks
+					- Involve overcoming the entire key-space of the cryptosystem
+				- Implementation attacks
+					- Look for weaknesses in the way the cryptosystem is deployed or key management
+				- Side-channel attacks
+					- Based on information/data obtained from the implementation of the computer system
+						- CPU cache
+						- Computational timing
+						- Power monitoring
+		- **Cryptographic Services**
+			- Confidentiality
+				- Hiding the data at rest, in transit, and in use from unauthorized entities
+				- Often involves a system that converts plaintext data into cipher-text
+			- Integrity
+				- Ensures that data has not been altered while at rest or in transit
+			- Availability
+				- Protecting systems from flooding and DoS techniques
+				- Controls that provide redundancy, failover, and backups
+			- Non-repudiation
+				- Ensures original sender cannot deny sending data or engaging in a digital transaction
+		- Layers where Encryption Occurs 
+			- Layer 7
+				- PGP for email
+			- Session layer 5
+				- SSL/TLS
+			- Network layer 3
+				- IPsec
+			- Datalink Layer 2
+				- MACsec
+	- **Ciphers**
+		- An algorithm used for encryption and decription
+		- Outlines the procedures that are followed and establishes a well-defined series of steps
+			- Result is called *Ciphertext*
+		- Many different types of ciphers
+			- simple substitution
+			- Complex multi-layered modes
+		- MOdern ciphers often involve a combination of:
+			- Transposition
+				- Where the rearrange the output characters
+			- Diffusion
+				- A single change will affect multiple output characters
+			- Confusion
+				- The output is drastically different than the input
+				- Uses non-linear tables to translate data
+			- AES uses all these modes
+	- **Symmetric (Secret) Key Cryptosystems**
+		- AES, RC4, DES
+		- Uses same key to encrypt and decrypt
+		- Efficient, fast, and handles high data rates of throughput
+		- Computationally inexpensive and used on block/bulk data
+		- Shorter key lengths 40-512 bits
+		- Key management is more complex
+		- More difficult to secure than other systems
+		- No origin authentication
+		- Does not scale well
+	- **Asymmetric  Key Cryptosystems**
+		- Uses a mathematically related pair of a public and private key
+			- One is used to encrypt, the other is used to decrypt
+		- Allows for efficient key management
+		- Great for digital signatures and key exchange
+		- Highly scalable with a public key infrastructure
+		- Employs longer key length than symmetric, up to 4096 bits
+		- Slower and more computationally expensive
+		- **Services**
+			- Confidentiality
+				- Encrypt with public key
+				- Decrypt with private key
+			- Origin authentication
+				- Encrypt with private key
+				- Decrypt with public key
+- #### Characteristics of Cryptographic Keys
+	- Cryptographic keys
+		- Keys are a set of alpha-numeric characters used for converting plaintext to cipher text
+		- The only element that must remain secret in a sound cryptosystem.
+		- Keys are used to convert/encrypt cleartext into ciphertext
+	- Keyspace
+		- Represents the total number of mathematical possibilities in the set
+		- 128-bit has 2^128 possibilities
+		- Vary from 56 - 4096 bits
+	- Hash functions
+		- acts as a checksum
+	- Digital signatures
+		- Used to provide integrity, origin authentication
+	- Message Authentication Codes
+		- A form of secret key used with cryptographic hashing
+	- **Static Keys**
+		- Used for a long period of time
+		- Used for multiple times for different key establishment
+			- setting up BGP or OSPF
+	- **Session Keys**
+		- A single use symmetric key used for an entire session
+		- Encrypts and decrypts all messages for the specific session
+		- Limits amount of information encrypted with key
+		- Makes many cryptanalytic attacks more difficult
+		- Use assymetric keys (longer bits) to protect the smaller session keys (smaller bits)
+	- **Ephemeral keys**
+		- Used for a very short time period
+		- Used only for one single key establishment process
+		- Never stored in memory or retained
+	- **Key Stretching**
+		- PBKDF2 & BCRYPT 
+			- programs that use pseudorandom functions (Password + Salt) applied many times to produce longer and stronger cryptographic key for other uses
+		- ![[Pasted image 20230920133514.png]]
+	- **Key Management**
+		- Symmetric systems are more vulnerable to poor key management
+		- Only authorized persons should be involved in the life cycle (least privilege)
+		- Long-term Storage is often done with Germalto HSM or CloudHSM
+		- Removing keys from operation
+			- Destruction
+			- Deletion
+			- Termination
+- #### Block vs. Stream Cipher Suites
+	- **Block Ciphers**
+		- Operates on fixed blocks of data (bits) based on the key size
+			- 64, 128, 256, ...
+		- Messages bigger than key size are broken into blocks the size of the key and must include padding
+		- Common Block Ciphers
+			- #TODO add to flash cards
+			- DES
+			- 3DES
+			- AES-CBC
+			- AES-GCM
+			- Blowfish
+		- #### Electronic Codebook, cipher feedback
+			- #TODO ECB, CFB
+		- **Cipher Block Chaining (CBC)** Mode
+			- CBC Mode ![[Pasted image 20230920134206.png]]
+			- Step 1
+				- Split the message into blocks the same size as the key, use padding if necessary to fill in the last block
+			- Step 2
+				- XOR function on the first block along with the Initialization Vector (IV)
+				- Then encrypt with a key
+			- Step 3
+				- XOR the second block with cipher text from the first block
+				- Then encrypt with a key
+			- Step 4
+				- XOR the third block with cipher text from block 2
+				- Then encrypt with a key
+		- **Counter Mode (CTM)** 
+			- CTM ![[Pasted image 20230920134834.png]]
+			- Adds another level of non-determinism to a block cipher
+			- Splits the message up into blocks the same length as the key
+			- Adds a pseudo-random nonce
+				- Nonce is a pseudo-random input
+			- then add/concatenate an XOR function with a sequential counter
+			- Then encrypts the nonce and the counter with a symmetric key
+			- Then will XOR the results of the encryption with a plaintext block to produce a ciphertext
+			- Then repeats the whole process for each plaintext block
+		- **Galois Counter Mode (GCM) - AEAD**
+			- Provides *authenticated encryption & authenticated decryption*
+			- Gives you 
+				- Integrity
+				- Origin authentication
+				- Confidentiality
+			- AES GCM  Does not need a separate HMAC like with SHA-256
+				- Use CTM to generate the ciphertext
+				- Use Galois Mode for authentication
+			- Uses data to produce a tag
+			- ![[Pasted image 20230920155526.png]]
+			- Common to use AES in GCM GMAC
+				- AWS
+				- Google cloud
+				- Microsoft Azure
+	- **Stream Ciphers**
+		- Operate on a continuous stream of plaintext data by encrypting one bit or byte at a time
+		- Plaintext bits are typically XORed with keystream bits
+			- Keystream = random bits, bytes, numbers, characters
+		- Faster and less complex than block ciphers
+		- Modern ciphers can work in block or stream mode or both
+		- Examples
+			- FISH
+			- CryptMT
+			- Scream
+			- RC4
+			- Various cryptographic hashing
+		- ![[Pasted image 20230920160621.png]]
+	- **AES**
+		- Advanced Encryption Standard
+		- Block cipher with key sizes of:
+			- 128 bits with 10 rounds
+			- 192 bits with 12 rounds
+			- 256 bits with 14 rounds
+		- CBC & GCM modes are most common
+			- IPsec
+			- SSL/TLS
+			- Cloud service provider data encryption
+				- AWS Key Management System
+- #### Cryptographic Hashing
+	- Maps data of any input size to a fixed-length string called a hash value, message digest, or fingerprint
+	- Advanced version of a simple checksum
+	- One-way mathematical function that produces a digest of 128 - 512 bits
+	- Birthday paradox and avalanche effect
+	- Cryptographic Hash Functions #TODO add to flash cards
+		- Used for:
+			- Authentication
+			- Data integrity
+			- 
+			- Fingerprinting
+			- Storing passwords
+				- password + salt + hash-function = hashed password
+	- Types:
+		- MD5
+			- 128-bit digest is produced
+			- Not recommended 
+		- SHA-1
+			- 160-bit digest
+			- Not recommended
+		- SHA-2
+			- 256 or 512 bits
+		- SHA-3
+			- 224-512 bits
+		- RIPEMD
+			- 128, 260, 256, 320-bit versions
+	- **Origin Authentication with HMAC**
+		-  Hashed Message Authentication Codes
+		- Verify the sender and integrity
+		- A cryptographic hash with a secret key
+			- Message + hash + shared secret key = HMAC
+		- ![[Pasted image 20230920162313.png]]
+		- ![[Pasted image 20230920162522.png]]
+		- 
+- #### Key Exchange Mechanisms
+	- Asymmetric key exchange algorithms
+		- RSA - key exchange
+		- Diffie-Hellman - key agreement
+		- Elliptic Curve Diffie-Hellman
+		- ECC
+		- PGP
+		- 
+	- Diffie-Hellman Key Exchange (DHKE)
+		-  DHKE & RSA key transport are original protocols created for establishing secret keys between two parties over an unsecure channel
+		- Widely used asymmetric cryptosystem found in SSH2, TLS, and IPsec, PGP?
+		- Represents an impressive application of discrete logarithm problem
+		- ![[Pasted image 20230920164239.png]]
+		- Modes
+			- DH/DHKE
+				- Diffie-Hellman
+			- DHE/EDH
+				- Ephemeral Diffie-Hellman
+				- Provides forward secrecy
+			- ECDH
+				- Elliptic Curve Diffie-Hellman
+				- Similar security level with smaller key sizes
+					- Most efficient
+					- 3072 standard key = 256 elliptic curve key
+					- Good for mobile / IoT devices
+				- Common Uses
+					- Digital signatures
+					- Key distribution
+					- Encryption
+					- IPsec & TLS
+			- ECDHE/ECEDH
+				- Elliptic Curve Diffie-Hellman Ephemeral
+				- Combines Elliptic Curves and forward secrecy
+				- Popular mode used in TLS
+- #### Modes of Operation
+	- Authenticated
+	- Unauthenticated
+		- May only need confidentiality and not origin authentication using HMAC (GCM mode without the GMAC)
+	- Counter
+		- Adding the counter makes the algorithm less deterministic
+	- Ephemeral
+		- Using forward secrecy
+		- Not using the original key but a key derived from original key, but only used in that session and not stored in memory
+	- Perfect forward secrecy
+		- IPsec / IPv4 / IPv6
+		- A cryptographic protocol has perfect forward secrecy if the compromise of long-term keys does not allow an attacker to obtain past session keys
+		- A public key system has the optional property of forward secrecy when it generates one random secret key per session to complete a key agreement without using a deterministic algorithm
+	- Lightweight cryptography
+		- Most current cryptographic algorithms were designed for desktop/server environments
+		- There are several emerging areas such as sensor networks, healthcare, distributed control systems (SCADA), IoT, ...
+		- They are usually communicating wirelessly and working together to accomplish some task
+		- 
+- #### Advanced Cryptography Concepts
+	- **Digital Signatures**
+		- Scalable mechanisms for providing authenticity, integrity, and non-rupudiation
+			- Does not offer confidentiality
+		- Equivalent to a handwritten signature in many countries
+		- Random private/public key pair
+		- SHA-1/2/3 hash algorithm
+		- Signing algorithms
+			- RSA
+				- Rivest, Shamir, Aldeman
+			- DSA
+				- Digital Signature Algorithm
+			- ECDSA
+		- ![[Pasted image 20230920170430.png]]
+	- Quantum Computers
+		- Person computers use 1 & 0 binary
+		- Quantum computers use Qubits
+			- Subatomic particles like electrons and photons
+		- Can represent numerous possible combinations of 1s & 0s at the same time
+			- Called Superposition
+		- Will eventually undermine current cryptography
+		- Post-Quantum Computers
+			- Involves developing new cryptosystems that can be implemented using today's existing computers but that will be resistant to attacks from tomorrow's quantum computers
+				- Increase the size of the digital key
+				- Develop more complex trapdoor functions
+				- Lattice-based cryptography
+				- Supersingular isogeny key exchange
+	- Quantum Communications
+		- Leverages the laws of quantum physics and quantum computing to protect data
+		- Some organizations are transmitting highly sensitive data using quantum key distribution QKD
+		- **QKD** sends encrypted data as normal bits over the network, while the decryption key information is encoded and transmitted in a quantum state using qubits
+	- Homomorphic Encryption
+		- Helps protect data-in-use
+		- data remains encrypted while being processed
+		- CSPs can apply functions on encrypted data
+		- Commonly uses public/private key pair
+		- Uses algebraic operations on ciphertext
+	- Blockchain
+		- A public ledger consisting of a digital 'chain of blocks' storing information
+			- Transaction data such as date, time, and amount
+			- The transaction participants identities are based on digital signatures
+			- Unique cryptographic hashes that distinguish the blocks from each other
+		- These things much occur for a block to be added
+			- A transaction must take place
+			- The transaction must be verified
+			- That transaction must be stored in a block and given a hash
+- #### Common Use Cases and Limitations
+	- Must support
+		- Confidentiality
+		- Integrity
+		- Obfuscation
+			- Hiding the underlying cryptographic keys
+				- i.e. when a pen test is occurring 
+		- Authentication
+		- Non-repudiation
+			- Digital signatures
+	- Limitations
+		- Speed
+			- Symmetric key systems
+				- Efficient
+				- Fast
+				- High throughput
+			- Asymmetric key systems
+				- Slower
+				- larger keyspaces
+				- Not used to encrypt bulk data
+		- Size
+		- Weak Keys
+		- Time
+		- Longevity
+		- Predictability
+		- Key Reuse
+			- forward secrecy negates the need to reuse session keys or to use the original key
+		- Entropy
+			- Inject noise into the plaintext message to remove the structure of a plain message
+		- Computational overhead
+		- Resource vs. security constraints
+- #### Public Key Infrastructure
+	- PKI distributes, verifies, and revokes public keys in a way that is secure and scalable
+	- Digital Certificate:
+		- Scalable binding of a public key with an entity identity
+		- Registering and issuing certificates by a **Certified Authority (CA)**
+		- #TODO  ![[Pasted image 20230925095319.png]]
+			- https://smallstep.com/blog/everything-pki/
+			- https://ssd.eff.org/module/deep-dive-end-end-encryption-how-do-public-key-encryption-systems-work
+		- ![[Pasted image 20230920173910.png]]
+		- ![[Pasted image 20230920174347.png]]
+	- ![[Pasted image 20230920174456.png]]
+- #### Types of Certificates
+	- **X.509v3 Certificate Format**
+		- Fields:
+			- Subject public key info
+				- Public key algorithm
+				- Subject public key
+			- Issuer unique identifier
+			- Subject unique identifier
+			- Extensions
+			- Certificate signature algorithm
+			- Certificate signature
+		- Certificate Extensions
+			- DER
+				- Form of binary-encoding using definitive length form
+			- CER
+				- A form of binary encoding using indefinite length form
+			- PEM
+				- Privacy-enhanced Electronics Mail.
+				- A Base64 encoded DER certificate 
+					- Most common
+			- PFX
+				- A predecessor of PKCS#12
+			- P12 (PKCS#12)
+				- A standard used for exchanging public and private objects such as keys
+			- P7B
+				- A standard used for signing and encrypting data
+		- Types of X.509v3 certificates
+			- Wildcard
+				- Used with multiple subdomains
+					- (x).mycompany.com
+			- SAN
+				- Subject Alternative Name
+				- Associate additional names based on e-mail address, IP address, DNS names
+			- Code Signing
+				- Used to authenticate the:
+					- certificate
+					- Source and integrity of the code
+					- Also drivers,
+						- applications
+						- macros
+						- config files
+			- Self-signed
+				- Signed by the entity it certifies
+					- Root CAs use self-signed certs because there is no higher authority
+				- Not for public use, good for use in the lab and for testing
+			- Root CA
+				- Unsigned or self-signed that identifies the root CA
+				- Trust anchor for digital certificates in the chain of trust
+			- E-mail (S/MIME)
+				- Sign and encrypt e-mail messages
+			- Machine/computer
+				- Used by local machine or device
+				- Authenticate to the network
+				- Used to verify the machine but not the user
+			- User
+				- Used by an individual user entity 
+				- EFS, e-mail, client authentication
+		- **Certificate Validation**
+			- Domain Validation (DV)
+				- Provides proof over the control of a domain using an email or domain registry check 
+					- **(WHOIS)**
+			- Organization Validated (OV)
+				- Certificates require more validation than DV certificates, but provide more trust
+				- *Not used much today*
+			- Extended Validation (EV)
+				- Certificates provide the maximum amount of trust to visitors with green padlock
+- #### Core PKI Concepts
+	- #### Certificate Signing Request (CSR)
+		- #TODO https://www.thesslstore.com/knowledgebase/ssl-generate/cetificate-signing-request-overview/
+	- **CA Trust Models**
+		- Single CA
+			- Responsible for directly providing certificates to everyone (enterprise PKI)
+			- Must always be online
+		- Hierarchical
+			- Combination of a root CA and intermediate CAs
+			- Root provides certificate to intermediate CAs
+			- Intermediate CAs provide certificates and the 'chain' to users or other intermediate CAs
+			- Root can be online or offline
+				- Online is connected to network and issues certificates over the network
+				- Offline not connected to network and issues certificates through removable media
+			- ![[Pasted image 20230920181444.png]]
+	- **CA Certificate Chaining**
+		- How do i trust a certificate?
+			- The CA must be in trusted store
+		- Not possible to include all CAs
+		- A chain of trust must be established
+			- 'Issued to' field
+			- 'Issued by' field
+		- ![[Pasted image 20230920182213.png]]
+	- Certificate Revocation and Suspension
+		- All certificates have an expiration for security purposes
+		- Certificates can be revoked to never be used again
+		- Certificates can be suspended/held temporary and can be reactivated
+		- Extension fields are critical for added functionality and security
+		- **Certificate Revocation List (CRL)**
+			- A list of certificate serial numbers that are no longer valid or have been revoked
+			- Issued by CA who issued certificate
+			- Generated and published periodically
+				- Defined intervals or immediately
+					- Not in real time
+				- Downloaded by client regularly
+					- Not real time
+		- **OCSP**
+			- Online Certificate Status Protocol
+			- Used widely on the internet today but not every site or browser contributes to the process
+			- A list of certificates that are not valid
+				- Serial numbers
+			- generated and published immediately
+				- Online database
+				- Clients query database 24/7
+				- Web servers, ISPs, and CSPs contract DBs
+		- Certificate Stapling
+			- OCSP stapling/TLS certificate status request
+			- Alternate approach of checking the revocation status of certificate
+			- The client does not have to contact the CA for status
+			- Certificate contains a time-stamped OCSP response
+				- Signed by the CA
+				- Owner of the certificate bears the cost
+		- Certificate Pinning
+			- A manual 'allow-list' of digital certificates
+				- Supplements or replaces chain of trust
+				- Improves certificate security
+					- Only pinned certificates are trusted
+					- google pinned own web sites in Chrome
+			- Pin during application development (static) or after it is automatically learned for the first time (dynamic)
+			- Pin when you need to be 100% sure of remote host's identity and/or when you are in a hostile environment
+			- **Certificate Pinning vs. Public Key pinning**
+				- cert pinning is less flexible but easier
+	- #### Common Cryptographic Use Cases
+		- Use trusted third party CA services
+		- Use fully-tested enterprise CA
+		- Validate certificate chains
+		- Consider secure OCSP for revocation
+		- Eliminate risky manual key management processes
+		- Tightly enforce key management policies
+		- Use third-party (cloud-based MSSP) services to help ensure integrity, performance, and manageability of your PKI
+
+# Monitoring, Visibility, & Reporting
+- Windows Logging and Monitoring
+	- Event Viewer
+	- System Log
+	- Process Hacker
+	- Secure Configure Assessment (SCA)
+	- Automate Monitoring with PowerShell
+	- 3rd Party Tools
+		- Solarwinds
+- Linux Logging and Monitoring
+	- syslog-ng
+		- Newer replacement for syslog in many linux builds
+		- Takes log messages from various sources and forwards them to destinations using powerful filter directives
+	- syslogd
+		- Reads and logs messages to the system console, log files, other machines and/or users as designated by a configuration file
+	- logrotate
+		- Offers automatic rotation, compression, disposal, and emailing of log files
+		- Each log file can be handled daily, weekly, monthly, or when too large
+	- Auditd
+		- Red Hat, SELinux logging for:
+			- command execution
+			- file and directory access
+			- network connections
+		- Rules are managed by the audit.rules file or the *auditctl* command
+		- ausearch, aureport, and autrace tools
+	- ls -l
+	- netstat
+	- ps -ef
+	- top
+- Protocol Analyzer Output
+	- 
+- Cloud Computing Logging and Reporting
+	- CloudWatch and CloudTrail
+		- 
+	- VPC Flow Logs
+	- AWS Config
+	- Systems Manager
+	- GuardDuty
+- #### Log Aggregation and Collection
+	- Gather logs and alerts from as many sources as possible:
+		- system
+		- security
+		- application
+		- firewall
+		- sensors
+		- proxies
+	- SNMP traps
+	- NetFlow collection
+		- v9 preferred
+	- Next-Generation Intrusion Prevention Systems
+	- Database activity monitors
+	- VPN Gateway flow logs
+	- Next generation syslog tools
+	- Cloud-based visibility tools
+	- ML and AI data analysis tools
+	- Application Log Aggregation
+		- Input validation weaknesses
+		- Authentication attempts and failures
+		- Access control failures
+		- Tampering attempts
+		- Use of invalid or expired session tokens
+		- Exceptions raised by the OS or programs
+		- Use of administrative or elevated privileges
+		- TLS failures
+- #### Visibility and Reporting Best Practices
+	- Collect all reports from vulnerability scans and penetration testing and visualize results for non-technical executive managers
+	- Reports should have as much information as necssary but not a 'data overload'
+	- May need to express in simpler terms or have different reports for different target audiences
+	- Dashboards are very effective (R programming)
+	- Understand components of visual communications
+		- Avoid three-dimmensional representation
+		- Use a palette of sequential colors
+		- Avoid pie charts for scatterplots, bars and buccle charts, histograms, density plots, boxplots
+	- CSP tools, 
+		- CloudWatch
+		- CloudTrail
+		- Stackdriver
+		- Insights
+	- R programming and python modules
+	- Automated system reports
+	- PDF files
+	- Charts and graphs
+	- Dashboards for visibilities
+	- written summaries
+	- After-action reports
+		- Include 'lessons learned' section
+- #### Lessons Learned and After-action Reports
+	- Knowledge gained from the process of conducting the program, project, or task included in after-action report (AAR)
+	- Formal 'lessons learned' sessions usually held at the project close-out, near the completion of the initiative
+	- Recognized and documented at any point during the life cycle
+	- The purpose of documenting lessons learned is:
+		- To share and use knowledge derived from an experience
+		- Endorse the recurrence of positive outcomes
+		- prevent the recurrence of negative outcomes
+	- Incident Response Reporting
+		- Root-cause analysis
+			- Examines and determines the core reasons for any incident or failure
+			- Phases:
+				- collect
+				- record
+				- analyze
+				- then recommend
+		- IR after-action report
+			- Any time of retroactive analysis of a series of goal-oriented activities typically performed by the originators of the exercises
+			- Analytical AARs have three key goals
+				- Identifying problematic issues and areas for improvement
+				- Recommending measures to counteract challenges 
+				- Finding 'lessons learned'
+	- Forensic Reporting
+		- Meet with proper authorities
+			- Provide documents of all findings
+			- Provide expert testimony
+			- Provide any needed clarification
+			- Identify overall impact on business
+			- Recommend any countermeasures
+		- Tracking people hours and expenses
+			- who, what, when, how
+				- important for court and other proceedings
+	- AAR Structure
+		- 1. overview
+		- 2. stated objectives
+		- 3. Analysis of results
+		- 4. Analysis of the critical task performance
+		- 5. Summary
+		- 6. Recommendations
+# Analyzing Application & Network Attacks
+- #### Privilege Escalation
+	- Leverages programming errors and system design flaws to **give an attacker elevated access to the network and related systems**, data, and applications
+	- Can occur during the attack kill chain or as part of penetration testing
+	- Can be vertical vs. horizontal
+	- **APT**
+		- Advanced Persistent Threats often attempt an escalation of access privileges soon after the initial compromise phase
+		- The goal is to become a root/admin user
+			- level 15 user on a switch or router
+			- exec user
+			- Domain Admin group member, etc
+		- The higher the level, the broader the access, and the more potential there is to damage or exfiltrate critical data
+		- Least privilege principles are key for mitigation
+	- Check the OS release of the vulnerable system
+	- View its kernel version
+	- Check the available users and the current user privileges
+	- List the SUID (Set-owner User ID) files
+		- SUID is a set of temporary permissions given to the user
+	- View the installed packages, programs, and running services (outdated versions may be vulnerable)
+- #### Cross-site Scripting and Request Forgery (XSS)
+	- Flaws in pages rendered by web servers and not the web server code itself (i.e. Apache, IIS) where malicious scripts or code are injected into trusted or innocent web sites pages
+	- Malicious scripts can steal:
+		- session tokens
+		- cookies
+		- or other data stored by the browser and used with the site
+	- Attacker typically sends browser-side scripts to end user
+	- Can occur anytime a web program uses user input within the output it generates without validating or encoding
+	- #TODO **XSS Types**
+		- DOM-based XSS (Local or Type 0)
+		- Reflected XSS (Nonpersistant or Type 1)
+			- Most prevalent
+		- Stored XSS 
+			- Persistent / Type 2
+			- Stores the script and then unloads
+			- Blogs, review
+		- CSRF/XSRF 
+			- Request Forgery
+			- Attack forces an end user to perform undesirable actions in a web application in which they are authenticated
+			- Can force users to perform state-changing requests such as
+				- transferring funds
+				- Changing their e-mail address
+				- Changing their password
+			- If the victim is an administrative account, the CSRF attack can compromise the entire web application
+			- ![[Pasted image 20230921121710.png]]
+	- ![[Pasted image 20230921115623.png]]
+- #### Injection Attacks
+	- An injection attack is often the result of MITM exploit or RAT attack
+	- Malware can inject false MAC or IP address
+	- **DLL Injection** (dynamic link library)
+		- DLL Injection is where malicious code forces inself to run in place of other benign code
+		- This 'injected' code is usually written by a third-party developer, designed to perform some malicious function
+	- **SQL Injection**
+		- Involves inserting a SQL query through input data from client to server application and can allow for several exploits
+		- Read sensitive database data
+			- SELECT FROM
+		- Change database data
+			- INSERT
+			- UPDATE
+			- DELETE
+		- Execute administrative functions (e.g. shutdown DBMS)
+	- **LDAP Injection**
+		- The web applications take the input from the client in order to process it further, so the attacker exploits the data not being properly sanitized or going directly to a back-end database
+		- The attackers can render sensitive user information or change information in the LDAP directory
+	- **XML Injection**
+		- SOAP injection
+		- User input is inserted unsafely
+		- XML metacharacters can be used to modify the structure of the XML file
+		- Can interfere with application logic
+		- Performs unauthorized tasks or accesses data
+- #### Targeted Coding Attacks
+	- **Pointer/object dereference**
+		- An attacker can supply a pointer for memory locations that the program is not expecting
+			- A null-pointer dereference occurs when a pointer with a value of NULL is used as if it actually points to a valid memory area
+			- A program can possibly dereference a null pointer and in doing so, raise a NullPointerException
+			- Null pointer errors are frequently the result of one or more programmer assumptions being violates
+	- **Directory/path traversal (../)**
+		- most often launched through web browsers and other clients
+		- An HTTP exploit that allows an attacker to access restricted files, directories, and commands located outside of the root directory
+		- Attackers can modify a URI (Uniform Resource Indicator) or URL to force the web server into exposing the restricted files
+		- ![[Pasted image 20230921123607.png]]
+	- **Buffer and integer overflows**
+		- Buffer Overflow
+			- Attacker sends larger than expected input
+			- Associated buffers are filled, and adjacent memory is overwritten as a result
+			- This overwrite may contain instructions or code that crash the server resulting in a DoS
+		- Integer Overflow
+			- A type of an arithmetic overflow error when the result of an integer operation does not fit within the allocated memory space
+			- Instead of an error in the program, it usually causes the result to be unexpected
+			- These are in the top 10 of most dangerous software errors
+	- **Race conditions** - time of check/time of use
+		- A race condition 
+			- When a system or software tries to do two or more things simultaneously, but due to the type of system, the operations must be done in the correct sequence in order to function properly
+			- Race conditions are classically related to synchronous errors in software code
+			- Crackers can leverage a known race condition vulnerability to get unauthorized access to a system or network
+		- Time-of-check vs. Time-of-use
+			- TOC/TOU
+			- A race condition that occurs when an attacker tries to gain privilege to a system by 'racing' it to the resource it is attempting to access
+			- The types of programming flaws that allow for race conditions occur when the system (or application) splits up the operations of verifying credentials and providing access to a resource
+			- Can do things such as replacing a config.sys file with a different file that compromises the system before the system even loads its operating system
+	- Improper error and input handling
+		- Poorly defined validation rules used in verifying the correctness, completeness, and acceptability of input data
+		- Software applications and web servers are notorious
+		- Must establish data input, data flow, and data output requirements with designated security features in mind
+		- Collisions are in this category when the chance that two unique inputs will produce the same output (MD5 and SHA-1 are vulnerable)
+		- Can give away essential information regarding the system
+			- i.e. stack trace
+	- Session replay attacks
+		- Often part of a MITM attack
+		- An attacker steals a valid session ID of a user and reuses it to impersonate an authorized user
+		- Example:
+			- Web applications that allow reusing old session IDs or session credentials for authorization are also vulnerable to these attacks
+		- IPsec and TLS have anti-replay mechanisms to protect the secure session
+- #### Application Programming Interface Attacks
+	- API
+		- Application Programming Interface
+	- API DDoS attack involves sending traffic from many clients to overwhelm an API service
+	- Even if rate limiting controls are in place to prevent servers from crashing, they cannot always prevent service disruption and severe degradation of the API's user experience
+	- If API calls are not digitally signed or if they have embedded credentials, they can be compromised
+	- Attack vectors
+		- Login attacks 
+			- Credential stepping
+			- Keep request rates below a threshold
+			- Occasionally change IP address to avoid being detected
+		- DDoS attacks
+		- Leverage credentials
+			- Stolen credentials through attacks
+				- MITM
+		- Main in the Middle (MITM)
+- #### SSL Stripping and Pass the Hash
+	- Windows vulnerability of Windows Safe Mode
+	- Can be initiated at boot time and only loads the nominal set of drivers and services that windows needs to run.
+	- Hackers do not need the plaintext passwords to access certain services
+	- Sometimes the authentication process relies on the password's cryptographic hash and there are various tools to extract these hashes from compromised windows machines (Windows 10)
+		- Cain
+		- John the Ripper
+	- This technique is known as pass the hash and is one of the attacks that Windows Virtual Secure Module **VSM** was intended to protect against
+- #### Driver Manipulation
+	- Can be trojans, RATs, or hacked driver software to deliver the payload
+	- Shimming:
+		- The process of stealing information and money from Point-of-Sale systems, credit card readers, and ATM machines
+		- Attack is common at gas stations, convenience stores, and kiosks
+		- Can be an overlay attachment or sometimes an entirely replaced device
+	- Refactoring
+		- involves changes an application's source code without modifying the characteristics
+			- Often used to introduce legacy applications into new computer systems and devices
+			- Can also re-engineer classic attack code to create variants, hybrid viruses, and worms
+- #### Wireless Attacks
+	- **Evil twins**
+		- Malicious rogue APs, used to take sensitive data like uesrnames, passwords, and PII, fall into two categories
+			- Honeypots
+			- Evil twins
+		- evil twin ap replaces an existing network so users will connect to the fake one instead of the real one
+		- Evil twin is described as a wireless man-in-the-middle attack
+		- Evil twin is similar to a honeypot, except that the attacker attempts to appear as the valid network
+	- **Disassociation**
+		- Stations use control and management frames
+		- AP impersonation is common
+		- DoS attacks against infrastructure
+		- Use Management Frame Protection (MPP)
+			- Use WPA3 which mandates MPP
+	- **Weak IV**
+		- Weak Initialization Vectors
+		- WEP has been deprecated due to the following reasons
+			- Hackers can easily obtain challenge phrase and encrypted response to crack the WEP key
+			- Crackers have decrypted captured data traffic
+			- Provides only weak encryption of data
+			- The initialization vector is a clear-text 24-bit field
+				- a pseudo random number used along with the secret key for data encryption
+		- WEP is vulnerable to several types of attacks
+			- Passive attacks to decrypt traffic using statistical analysis
+			- Active attacks that inject new traffic from unauthorized stations using known plaintext
+			- Dictionary attacks that permit real-time automated decryption of all traffic after analyzing about 24 hours of frames
+			- Active attacks to decrypt traffic, based on compromising the AP
+	- Bluesnarfing
+		- Steals data from a wireless device using a bluetooth connection
+		- Any device with Bluetooth enabled and set to 'Discoverable' is vulnerable to attack
+		- 
+	- RFID / NFC
+		- Sniffing, spoofing, replay attacks
+		- MITM
+		- Cloning and emulation
+		- DoS
+		- Jammer system
+		- Blocker tags
+		- RFID Zipper
+		- Tracker
+		- Relay Attacks
+		- RFID malware
+	- **Rogue AP**
+		- Modern managed APs and controllers can detect other APs over the air, and if not known it is classified as a rogue
+		- The location of the rogues can be plotted on a floor-plan map
+		- If the found AP is determined to be a known internal AP, it can be marked accordingly
+		- If the AP is found to be a neighboring wireless LAN, such as in a hotspot or adjacent business, then it can be marked as a known external
+	- **Jamming**
+		- A form of wireless DoS attack
+		- Floods the RF with interference or excessive traffic so that wireless links cannot be sustained
+		- Exploit kits have several jamming modules and scripts included for hard and soft APs
+		- Some DoS attacks may not be due to malicious activity, but rather poorly written drivers on endpoint wireless NICs
+	- WPA3 attack
+		- WPA3 Dragonblood Attack
+			- One of the main advantages of WPA3 is that the Dragonfly handshake makes it near impossible to crack the network password
+			- However the Dragonblood attack gives someone within range the ability to recover a password
+			- CVE-2019-13377:
+				- timing-based side-channel attack against WPA3's Dragonfly handshake when using Brainpool curves
+	- Bluejacking
+		- Sending contact information automatically without authentication or authorization
+		- The cracker creates an address book object and a contact in the contact list
+		- They spoof a name to appear on your phone saying they have sent you some contact information and would like you to accept it
+		- Information and data is not being stolen, more of an annoyance
+	- NFC
+	- **Main-in-the-Middle Attacks**
+		- Honeypot AP induces users to connect to it
+			- AP is usually unsecured and allows any user to connect so that the data that users send through the AP is captured
+			- Connection can be used to infect the connecting client with various malware variants
+			- Example:
+				- an ad hoc network called 'free Wi-fi'
+- #### Man-in-the-Middle Attacks
+	- A system with the ability to view the communication between two or more hosts (frames, packets) injects itself in the path between the host systems
+	- Proxy ARP, DHCP Spoofing
+	- Main in the browser attack
+		- A trojan horse is used to capture and manipulate calls between the main browser and its security mechanisms (or libraries) on an ad-hoc basis
+		- The most common usage is financial fraud, which manipulates transactions of internet banking and brokerage sites
+		- Works even when other authentication factors are being used
+		- ![[Pasted image 20230921154137.png]]
+- #### Layer 2 Attacks
+	- ARP poisoning #TODO arp vs dns poisoning
+	- 
+		- Form of MITM attack that exploits ARP
+		- Malicious hosts inject false frames in order to corrupt the ARP cache buffers on endpoints, switches, servers, firewalls and routers
+		- Only works in IPv4, not IPv6
+			- IPv6 does not have ARP but rather ICMP does neighbor discovery
+		- Can be mitigated with port security, snooping binding databases on switches, and MACsec implementation 802.1AE
+	- MAC flooding
+		- Floods the switch port with MAC addresses and then switch acts as a hub
+	- MAC cloning
+		- You can change or clone a MAC address
+- DNS Attacks
+	- Domain hijacking or clickjacking
+		- aka:
+		- redress attack, 
+		- UI redress attack
+		- UI redressing
+	- Hacker uses several transparent layers to trick users into clicking on a button or link on another web page when they were actually trying to click on the top level web page
+	- Attacker hijacks clicks meant for their page and routes them to another page, often controlled by another domain or application
+	- Keystrokes can also be hijacked with skillfully constructed iframes, CSS, and text boxes
+	- Can also be done through URL redirection
+	- **DNS Poisoning**
+		- An attacker changes the name resolution information that should be in a DNS server's cache, so that client systems are redirected to incorrect websites
+		- When a DNS cache is poisoned, it is often changed in order to redirect requests for a domain to a different address and web site
+	- **Domain Reputation Attacks**
+		- Monitor domain interactions
+		- Bad domain associations
+		- Could be a spamming platform
+		- DDoS botnet takeovers
+		- Involves pentesting and threat intel
+- #### DDoS Attacks
+	- leverages inherent weaknesses in TCP/IP stack
+	- consumes a system's resources
+	- DDoS botnet has a Command and Control server that directs the zombie computers remotely, often using IRC, p2p, or even twitter
+- #### Malicious Code or Script Execution
+	- **Malicious Code**
+		- Generic term from which malware is derived
+		- A virus is an unwanted and unsolicited malicious program or piece of code that can damage an electronic system
+		- Viruses are not transferred without the help of human or system intervention
+	- **Malicious Script**
+		- Viruses written using script languages
+			- either infects other scripts or forms a part of multi-component viruses
+		- Affects only those applications for which it has been written
+		- Script viruses are spread through e-mail attachments
+# Risk Management, Privacy, & Sensitive Data Security
+- #### Risk Types
+	- Structured vs. Unstructured Threats
+	- **Structured**:
+		- Planned
+		- Organized
+		- Persistent
+		- multi-phased
+		- internal/external
+		- Exploit kits, zero-days, modules, and ransomware
+	- **Unstructured**
+		- Accidental
+		- non-malicious
+		- drive-by web surfing
+		- No AUP
+		- Poor awareness
+		- E-mail use
+		- USBs
+	- **Internal** Risks
+		- Poor physical security
+		- Lack of authentication factors
+		- Non-enforcement of security policy
+		- Substandard auditing and monitoring of privileged insiders
+		- Poor patch, configuration, and change management
+		- Lack of automated vuln assessment
+		- Absence of endpoint detection and response tools
+	- **Multiparty Risk**
+		- Organizations that operate with outsourcing, suppliers, licensees, agents, etc
+	- ![[Pasted image 20230921170222.png]]
+- #### Risk Management Strategies
+	- Risk Acceptance
+	- Risk Avoidance
+		- Choose not to undertake actions that introduce risk
+	- Risk transference/sharing
+		- Pass the risk to a third-party
+			- insurance or Cloud Service Provider
+	- Risk mitigation
+		- Implement safeguards that will eliminate or reduce risk exposure - risk may exist, but impact is reduced
+- #### Risk Analysis
+	- Defining risk
+		- Inherent/total risk
+			- risk the organization faces if safeguard is not implemented
+		- Residual risk
+			- Risk that remains once safeguard is in place
+			- Residual = inherent risk - safeguards (controls)
+	- Assessing Risk
+		- What assets are at risk
+	- Identify risks to those assets
+	- Only focus on risks that are likely to occur
+	- ![[Pasted image 20230921171600.png]]
+	- Qualitative Risk Analysis
+		- Descriptive approach using subjective opinions, history, and scenarios to determine risk levels
+			- Expert judgement
+			- Best practices
+			- Experience
+			- Intuition
+		- Often involves interviewing people (Delphi) regarding assets, known risks, known vulnerabilities, common threats, and historical impacts
+		- ![[Pasted image 20230921172017.png]]
+	- **Quantitative Risk Analysis**
+		- Scientific/mathematical approach to getting monetary and numeric results based on the following:
+			- Asset values
+			- Impact and magnitude
+				- severity of incident
+			- Probability and likelihood of occurrence
+				- threat frequency
+			- Costs and effectiveness of safeguards
+			- Probabilities based on percentages and calibrated estimation
+		- Classic Quantitative Analysis
+			- AV
+				- Asset value
+				- value of the asset according to the organization
+			- EF
+				- Exposure factor
+				- Percentage of asset loss caused by identified threat
+			- SLE
+				- Single Loss Expectancy
+				- Potential loss if attack occurs
+				- AV * EF
+			- ARO
+				- Annual Rate of Occurrence
+				- Estimated frequency the threat will occur within a single year
+			- ALE
+				- Annualized loss expectancy
+				- ALE = SLE * ARO
+			- ![[Pasted image 20230921172621.png]]
+- #### Disaster Types and Classifications
+	- Environmental
+		- Earthquakes
+		- Wildfires
+		- Floods
+		- Snow
+		- Tsunami
+		- Hurricane
+	- Man-made intentional
+		- Arson
+		- Terrorism
+		- Political
+		- Break-ins
+		- Theft
+		- Damage
+		- File destruction
+		- Information Disclosure
+	- Man-made unintentional
+		- Mistakes
+		- Power outage
+		- Illness
+		- Pandemics
+		- Information disclosure
+		- Damage
+		- File destruction
+		- Coding errors
+- Business Impact Analysis
+	- The risk assessment aspect of the BCP
+		- Identify critical functions to the business and prioritize them based on need for survival
+	- Identify the risks associated with the critical functions
+		- The probability of the risk occurring
+		- The impact the risk will have
+	- Identify how to eliminate the risk or reduce the risk
+	- **RTO**
+		- Recovery Time Objective
+		- The amount of time available to recover the resource, service, and function
+			- Must be equal to or less than MTD
+		- Any solutions must be accomplished within this time frame or it is considered loss
+			- add physical security
+			- add redundancy
+			- purchase insurance
+			- invest in backup generators
+			- invest in faster stuff
+			- Safeguard media off-site
+	- RPO
+		- Recovery Point Objective
+		- The point in time, relative to a disaster, where the recovery process begins
+			- How much work can be lost if a disruption occurs
+			- What impact will it have
+			- How do we make sure we dont lose more than X information/data
+	- MTBF
+		- Mean Time Between Failures
+		- A measure of how reliable a hardware system or component is
+		- For most devices, the measure is in thousands or tens of thousands of hours between failures
+	- MTTR
+		- Mean Time To Repair
+		- How long does it take to repair
+	- MTD
+		- Maximum Tolerable Downtime
+		- Absolute maximum amount of time that a resource, service, or function that can be unavailable before we start to experience a loss
+		- Factors to consider:
+			- Finances 
+			- life/safety
+			- regulatory
+			- legal/contracts
+			- reputation
+			- property
+- #### Privacy Breach Consequences
+	- Main causes of data breach
+		- Cyber attacks
+		- Device loss or theft
+		- Employee leakage or theft
+		- Human errors
+- #### Data Type Classification
+	- **Military Classifications**
+		- Top secret
+		- Secret
+		- Sensitive but unclassified (SBU)
+		- Confidential
+		- Unclassified
+	- **Commercial Classifications**
+		- Corporate confidential
+		- Personal confidential
+		- Trade secret/proprietary
+		- Private 
+		- Public
+- #### Data Security Roles and Responsibilities
+	- Chief Privacy Officer
+		- Ensures privacy of all data in the entire organization
+	- Owner
+		- Owner of the information
+		- Determines classification level
+	- Steward
+		- Manager of the data and metadata
+		- Ensures compliance and data quality
+	- Custodian
+		- Keeper of the information
+		- Ensures CIA is maintained
+	- Processors
+		- Handles data entry and input
+	- ![[Pasted image 20230925160557.png]]
+- #### Privacy Enhancing Technologies
+	- Tokenization for Privacy Enhancement
+		- used to remove directly identifying elements
+		- The process replaces the raw data with randomly generated tokens
+		- Original data does not leave the enterprise in order to meet regulatory requirement
+	- Data Minimization for Privacy
+		- A directive that states that collected and processed data should not be kept or used unless it is critical
+		- The details should be determined early in the lifecycle to support data privacy standards such as GDPR
+	- Masking and Anonymization
+		- Stripping out or replacing any data that can identify a subject, such as a medical patients data
+			- Personally Identifiable Information (PII)
+			- Protected Health Iformation (PHI)
+			- Payment card information (PCI-DSS)
+			- Intellectual property (ITAR & EAR)
+- #### Additional Privacy Concepts
+	- Information life cycle
+	- Impact assessment
+	- Terms of agreement
+	- Privacy Notices
+
+# Implementing Cybersecurity Resilience
+- #### Redundancy Concepts
+	- The duplication of critical components
+	- Passive redundancy uses additional capacity to reduce the impact of component failures
+		- Active/passive failover
+		- Hot spares
+		- Snapshots
+	- Active redundancy eliminates performance problems by having simultaneous capacity in use
+		- Active/active failover
+		- Hot or parallel sites
+	- **Geographic dispersal**
+		- Proper dispersal of data and system backups are key aspects of a business continuity plan
+		- Redundancy includes storing spare physical components off site as well
+	- RAID
+		- ![[Pasted image 20230921190609.png]]
+	- Network Load Balancers
+		- ![[Pasted image 20230921190816.png]]
+	- NIC Teaming
+		- Group up NICs
+		- Physical and/or virtual
+		- Fault tolerance
+		- from 1 - 32 adapters
+	- Redundant Power
+		- UPS
+		- Generators
+		- PDU
+			- Managed power distribution units
+- #### Replication Methods
+	- Replication with SAN
+		- 10/100 GB network that interconnects shared fabrics of storage devices to multiple
+		- SAN moves storage resources off the main user LAN so that each server can access shared storage as if it is a directly attached drive (typically SSD)
+		- A host will send out a block-based access request for the storage device
+		- SAN Components:
+			- Ethernet or fiber cabling
+			- Host bus adapters
+			- SAN switches
+			- Storage arrays
+		- Securing the Storage Area Network (SAN)
+			- IPsec AH for data in transit integrity and origin authentication
+			- 802.11AE MACsec can provide encryption and more on SAN frames
+			- Secure management protocols on console
+			- Harden all switches and servers
+			- Encrypt data at rest with AES-256-GCM
+	- Virtualization / VMs
+		- Hypervisors #TODO hv flashcards
+			- Software that runs virtual machines
+				- Controls interaction between the VMs and the hardware
+			- Type 1 - Bare metal or native
+				- Run directly on the underlying hardware
+				- XenServer
+				- KVM
+				- Hyper-V
+				- ESXi
+			- Type 2 - hosted
+				- Runs on the OS installed on the hardware
+		- **Vulnerabilities**
+			- VM Sprawl
+				- When the number of VMs overtakes the admin resources and ability of the system
+				- Avoidance
+					- Enforce a strict process for deploying VMs
+					- Have a library of standard VM images
+					- Archive or recycle under-utilized VMs
+					- Use a VM life-cycle management tool or a CSP managed service
+			- VM escape
+				- A serious threat where a process running in the guest VM interacts directly with the host OS
+				- Protection
+					- Patch VMs and VM software regularly
+					- Only install what you need on the host and VMs
+					- Install verified and trusted applications only
+					- Strong access control access and passwords
+		- **Containers**
+			- Isolated abstracted applications with all components needed
+			- Portable modules across platforms and cloud providers
+			- Can be server-based on serverless in the cloud
+			- Contribute to immutability and rapid deployment concepts
+			- Docker and Kubernetes are common container platforms
+- #### Backup Types
+	- **Full** Backups
+		- Backs up everything regardless of archive bit being set or not
+			- Clears the archive bit once backup completes
+		- Longest to back up
+			- Depends on how much will be backed up
+		- Quickest to restore
+			- Only the most recent full backup is required
+	- **Incremental** Backups
+		- Backs up any file that has the archive bit set
+			- Any new file or any file that has changed since the last full backup or the last incremental backup
+			- Clears the archive bit once the backup completes
+		- Quickest to back up
+			- Only files with archive bit backed up
+		- Slowest to restore
+			- The last full backup and every incremental backup since are required
+	- **Differential** Backups
+		- Backs up any file that has the archive bit set
+		- Any new file or file that has changed since the last full backup
+		- Does NOT clear the archive bit once backup completes
+		- Slow to backup but quick to restore
+		- The last full backup and the most recent differential backup needed
+	- **Snapshots**
+		- Easier and faster backups and restores
+		- Immediate point-in-time virtual copy of source typically to on-premise or cloud object storage
+			- Should be replicated to another media to be considered a backup
+		- Time to back up does not increase with amount of data
+		- Improved RTO and RPO
+		- Restores are faster and less data is lost with an outage
+- #### Non-persistence Concepts
+	- Non-persistence VDIs
+		- A type of desktop virtualization where users can preserve their personalized configurations, personal data, and instance settings so that their desktop is retrievable at log in
+		- Non-persistent desktops are thin, stateless systems where the user cannot retain data or configure a desktop instance as it is deleted at the end of the season
+		- CSPs are commonly making these services available as bastion servers or jump hosts for management
+- #### High Availability Concepts
+	- **Availability**
+		- Availability refers to system uptime
+		- Specifically the client's ability to access the service
+		- The storage system is operation and can deliver data upon request
+		- Usually measured as 99.0 - 00.000 per year of uptime
+	- **Durability**
+		- Durability is related to long-term data protection
+		- The data-at-rest does not suffer from bit rot, degradation, or other corruption
+		- CSPs offer from 11-16 '9s' of durability
+	- **Scalability**
+		- The ability of a system to increase the workload on its current hardware resources (Scale up)
+	- **Elasticity**
+		- The ability of a system to increase the workload on its current and additional dynamically added, on demand hardware resources (Scale out)
+- #### Order of Restoration
+	- Data recovery and restoration
+		- 1. Repair the hard disk drive
+		- 2. Image the drive to new drive or disk image file
+		- 3. Logical recovery of files, partition, MBR, and file system
+		- 4. Repair damaged files that were restored
+	- DRP Order of Restoration
+		- Protect people and critical assets
+		- Sustain ongoing operational viability
+		- Maintain financial stability
+		- Deliver value proposition profitably
+- #### Diversity Concepts
+	- Technologies
+	- Vendors
+	- Controls
+	- Cryptosystems
+
+# Security Assessment & Penetration Testing Techniques
+- #### Threat Hunting
+	- 1. Gain and expand visibility
+	- 2. Analyze
+	- 3. Form a hypothesis
+	- 4. Create the hunt analytic
+	- 5. Execute the hunt
+	- 6. Investigate and follow up
+	- 7. Revise the hunt analytic
+- #### Vulnerability Scanning Terminology
+	- Vulnerability scanning is the process of identifying known and unknown weaknesses in systems, applications, services, and policies using tools
+	- Vulnerability scanning is an easier and often more focused process looking for unpatched systems, misconfigurations, and open ports
+	- Typically automated and done on a routine basis (weekly, quarterly), taking at most a few hours
+	- **Terminology**
+		- True Positive
+			- accurate + action taken
+		- True Negative
+			- accurate + action not taken
+		- False Positive
+			- error + action taken
+		- False Negative
+			- error + action not taken
+	- Sources:
+		- logging systems
+		- SNMP traps and informs
+		- NetFlow v5 & v9
+		- SIEM & event management systems
+		- SOAR
+			- Security Orchestration Automation Response
+		- NGIPS alerts and logs
+			- Next-Generation Intrusion Prevention Systems
+		- Cloud-based ML and AI visibility/analysis
+	- Vulnerability Databases
+		- CVE
+			- Common Vulnerabilities and Exposures
+			- A list of entities from MITRE.org that represent publicly known cybersecurity vulnerabilities
+			- Consists of an ID number, description, and public references
+			- Used by the NVD
+				- National Vulnerabilities Databases
+		- CVSS
+			- Common Vulnerability Scoring System
+			- Open standard for weighing the severity of computer system vulnerabilities
+			- Uses a uniform and consistent scoring method ranging from 0-10
+				- 10 being highest severity
+	- Web Vulnerability Scanning
+		- The most common vuln scanners will test web applications and services to look for
+			- XSS & XSSRF
+			- SQL and other command injection
+			- Broken authentication and session management
+			- Insecure direct object references
+			- Insecure server configuration 
+				- XML
+				- PHP
+				- ...etc
+			- Exposing sensitive data
+- #### Vulnerability Scanning Tools
+	- Nessus
+	- OpenVAS
+	- Core Impact
+	- Nexpose
+	- GFI LanGuard
+	- QualysGuard
+	- OWASP ZAP
+	- Burp Suite
+	- Compliance Scanning
+- #### Syslog and SIEM
+	- **Syslog**
+		- UDP 514 / TCP 1468
+		- A standard and well-established system logging protocol defined in RFC 5424
+		- Typically sends system informational or even messages to a designated syslog server or SIEM system
+		- Predominantly used to gather various device logs from different systems in a centralized fashion for monitoring, visibility and analysis
+		- **Syslog Severity Categories**
+			- 0. Emergency
+				- System is unusable
+			- 1. Alert
+				- Action must be taken immediately
+			- 2. Critical
+				- Critical conditions
+			- 3. Error
+				- Error Conditions
+			- 4. Warning
+				- Warning conditions
+			- 5. Notice
+				- Normal but significant condition
+			- 6. Information
+				- Informational messages
+			- 7. Debug
+				- Debug-level messages
+		- ![[Pasted image 20230923141638.png]]
+	- **SIEM**
+		- **Security Information and Event Management**
+		- Centralize the storage and analysis of logs and other security-related documentation to perform near real-time analysis
+		- Can send filtered data to mining, big query, and data warehousing servers in a data senter or at a cloud service provider
+		- Allow security and network professionals to take countermeasures, perform rapid defensive actions, and hand incidents
+		- SIEM Systems
+			- Log collection and aggregation
+			- Log analysis
+			- Correlation and deduplication
+			- Log forensices
+			- IT compliance
+			- Application log monitoring
+			- Object access auditing
+			- Automated real-time alerting
+			- User activity monitoring
+			- Time synchronization
+			- Reporting
+			- File integrity monitoring
+			- system & device log monitoring
+			- Log retention (WORM)
+		- SIEM Data sources
+			- Firewalls and IPS
+			- Security appliances
+			- Infrastructure devices
+			- Endpoints and servers
+- #### Security Orchestration, Automation, Response (SOAR)
+	- SOAR is an assortment of software services and tools
+		- It allows organizations to simplify and aggregate security operations in three core areas
+			- Threat and vulnerability management
+			- Incident response
+			- Security operations automation
+		- Security automation involves performing security related tasks without the need for human intervention
+		- Can be defensive detection, response, and remediation, or offensive vulnerability assessment and penetration testing
+		- You should automate if the process is routine, monotonous, and time-sensitive
+	- SOAR Lifecycle
+		- ![[Pasted image 20230923144424.png]]
+		- 
+	- **Automation**
+		- IT automation involves generating a single task to run automatically without any human intervention
+		- Automation can involve:
+			- sending alerts to a SIEM system
+			- dynamically triggering a serverless function at a cloud provider
+			- adding a record to a database when a batch job is run
+		- Enterprises often automate both cloud-based and on-premise tasks
+	- **Orchestration**
+		- Orchestration involves managing several or many automated tasks or processes
+		- As opposed to focusing on one task, orchestration combines all the individual tasks
+		- Orchestration occurs with various technologies, applications, containers, datasets, middleware, systems, and more
+- #### Penetration Testing Terminology
+	- **Black Box Penetration Testing**
+		- A technique of testing without having any knowledge of the internal working of the application
+		- Only examines the fundamental aspects of the system and has no or little relevance with the internal logical structure of the system
+		- A software testing method in which the internal structure, design, or implementation of the component being tested is NOT known to the tester
+	- **White Box Penetration Testing**
+		- Involve the detailed investigation of internal logic, structure, and configuration of the application or system
+		- Often desirable or necessary for a penetration tester to have full knowledge of target application or system
+	- **Credentialed vs non-credentialed testing**
+		- Involves the decision to use an existing directory user account
+			- Credentialed tests would be considered a white box or gray box approach
+	- **Intrusive vs. non-intrusive (passive vs. active)**
+		- Promiscuous vs. inline
+		- Spamming or flooding vs. packet sniffing
+- #### Penetration Testing Fundamentals
+	- Rules of engagement agreement
+		- bug bounty?
+	- Reconnaissance and initial engagement
+		- Before performing penetration testing you will conduct planning and preparation, information gathering (Packet sniffing) and analysis, and passive / active vuln assessment
+		- May also involve OSINT and social engineering
+	- Privilege escalation
+		- Attempting to get root or administrative credentials to as many systems as possible
+		- CSP access keys and SSO credentials are very valuable
+		- Process:
+			- Check the OS and kernel version of system
+			- Check the available users and current privilege levels
+			- List the SUID files
+			- View the installed packages, programs, and running services
+	- **Fundamentals**
+		- Pentest life cycle
+			- Lateral movement and pivoting
+				- Pivoting allows you to jump from one segment, domain, or system to another as in VLAN hopping, port forwarding, and trust exploits
+			- Persistence
+				- The code or script attempts to be persistent if there is a logoff, reboot, or network disconnect
+				- Reverse telnet session bypasses firewalls and AV modules and remains connected persistently
+			- Cleanup
+				- Remove any artifacts of compromise or footprints
+				- Stealthy as possible
+- #### Passive Reconnaissance
+	- Less-intrusive process to daily operations and employee productivity used in early stages
+	- Passive reconnaissance and testing involves using wired and wireless packet sniffers, passive scanners, or network taps
+	- Goal is to gather metadata and copies of frames or packets to observe the contents with no remaining footprint
+	- Firewalls and other appliances have CLI-based and GUI packet tracer capabilities
+- #### Active Reconnaissance
+	- Active reconnaissance and testing typically involves an action on a target endpoint or network that could be traced back to the attacker such as running a web application, vulnerability scanning, banner grabbing, and active fingerprinting
+	- Port and address scanning
+	- Vulnerability scanning with Nessus
+	- Web application scans with ZAP or Burp Suite
+	- Banner grabbing HTTP and FTP
+	- Active fingerprinting
+- #### Exercise Teams
+	- **Red Team**
+		- Offense
+		- Vulnerability assessments
+		- Penetration tests
+		- Social engineering
+	- **Purple Team**
+		- Common goal
+		- Improving organization
+		- Security posture
+	- **Blue Team**
+		- Defense
+		- Implementing controls
+		- Security monitoring
+		- Incident response
+	- **White Team**
+		- Non participating observers
+
+# Incident Response, Digital Forensics, & Supporting Investigations
+- #### Incident Response Plans and Processes
+	- Incident Response
+		- Steps taken when a negative event disrupts normal operations
+		- severity of incident will determine level of action
+			- Is it an event or an incident
+			- How critical is the target?
+			- What is the immediate impact on operations?
+	- Goals of Incident Response
+		- Reduce the immediate impact
+		- Maintain and restore business operations
+		- Provide after-action reports and lessons learned
+		- Deter future attacks
+	- Incident Response Processes
+		- To be prepared you need a plan
+			- Documented incident types/category definitions based on risk assessments and BIA
+			- Know roles and responsibilities of the first responders
+			- Reporting requirements/escalation
+				- Contact lists, public relations, and legal obligations
+		- Cyber-incident response teams (CSIRT)
+			- May be out-sourced or swarm team
+		- Best practice is to ave pre-performed exercises, drills, and simulations
+	- **Incident Response Lifecycle**
+		- **Preparation**
+			- Involves all information gathering, missions, charters, and project initiation tasks
+				- Get buy-in and funding from executive management in order to know the scope of the incident response plan
+			- Determine the roles and responsibilities of internal employees on incident response teams
+			- Establish first responders and processes for communication to relevant stakeholders
+				- Conduct IR exercises and drills based on budget
+		- **Identification**
+			- Separate an event from an incident or breach immediately using pre-defined metrics and experience
+			- Implement techniques for categorizing and prioritizing the incident based on an established risk register or risk ledger
+				- When did it occur?
+				- How were you alerted?
+				- Who made the discovery?
+				- What is the scope of the impact?
+				- Does it qualify for escalation or disaster recovery?
+				- Can you quickly identify the root cause?
+		- Containment
+			- Implement short-term processes, such as disconnecting devices from the network
+			- Use firewalls, NG-IPS, ML algorithms, and other forensic tools to maintain separation, containment, and segregation
+			- Evaluate backups and snapshots for future recovery
+		- Eradication
+			- This step is often integrated with the previous phase, Containment, as opposed to being a separate action
+			- Involves determining the root cause of the incident and applying immediate remedies if available
+			- Involves removing all indicators of compromise and any action, artifacts, remnants, or fingerprints associated with the attack
+		- Recovery
+			- The process of restoring negatively affected data, applications, systems, and devices to an established baseline performance level or, if possible, the original state
+			- This often involves only remediation to a certain operational point and not total recovery
+			- During this process, it is vital to establish that you are not in danger of another incident or breach
+		- Lessons learned
+			- Knowledge gained from the process of conducting the program
+			- Sessions usually held at the response close-out
+			- To share and use knowledge derived from an experience
+			- Endorse the recurrence of positive outcomes
+			- Prevent the recurrence of negative outcomes
+- #### Incident Response Exercises
+	- **Plan review**
+		- Read-through
+		- Group discussion, plan auditing, and Delphi and brainstorming sessions with stakeholders
+	- **Tabletop**
+		- Examine documented plans, diagrams, and logical and virtual walkthroughs to eliminate gaps/errors
+	- #### Walkthrough 
+		- exercise
+		- Planned rehearsals and drills
+		- Performed in stages and by department/building only
+		- Should find additional gaps to those found during plan review and tabletop exercises
+	- #### Simulation
+		- Focuses on specific scenarios and areas
+		- Uses real BCP and DRP resources (recovery sites) and teams (swarm simulations)
+		- Tests snapshot recovery and hot spares
+		- May be the highest-level test that most organizations conduct
+	- #### Parallel
+		- Real-world drill while still operating business
+		- More resource-intensive than simulations
+	- #### Full Interruption
+		- Real-world drill while ceasing business activities
+		- Cost-prohibitive for most organizations
+- #### Attack Frameworks
+	- Cyber Kill Chain
+		- A succession of steps and phases used during a cyber attack
+		- Technique is used to better unedrstand malware attacks such as ransomware, APTs, and DDoS (bots)
+		- Originally developed by Lockheed-Martin
+		- ![[Pasted image 20230923163755.png]]
+		- 7-Phase Cyber Kill Chain ![[Pasted image 20230923163917.png]]
+		- 8-phase Cyber Kill Chain
+			- ![[Pasted image 20230923164929.png]]
+		- 
+	- #### Mitre Attack Matrix
+		- A knowledge base from mitre.org composed of aggressive attack methods and practices based on real-world interpretations
+		- Used for generating threat modeling and threat assessment tools in all sectors
+		- Organizations commonly use the enterprise matrix as a starting point
+		- **MITRE ATT&CK Matrix for Enterprise**
+			- Initial access
+			- Execution
+			- Persistence
+			- Privilege escalation
+			- Defense evasion
+			- Credential access
+			- Discovery
+			- Lateral movement
+			- Collection
+			- Command and Control
+			- Exfiltration
+	- Diamond Model of Intrusion Analysis
+		- Cybersecurity initiative that is renowned in the cyber security community as one of several key resources for analysts
+		- Emphasizes granular attacker activities and generates a model that helps cybersecurity analysts classify relationships between motivations, victims, and the technologies used to conduct the attack
+		- ![[Pasted image 20230923165523.png]]
+- #### Plan types for the Incident Response Team (IRT)
+	- BCP/COOP
+		- Business Continuity Planning ![[Pasted image 20230923165707.png]]
+		- Ensures business operates a pre-determined level when disaster strikes
+			- Documents approved by executive management
+		- Outlines risk to business
+			- Populates risk register/ledger
+			- Requirements to mitigate incidents
+		- Identifies procedures needed to recover from a disaster
+			- What is an acceptable amount of time?
+			- How to reduce the impact of the disaster
+	- NIST SP 800-34, Revision 1
+		- 1. Develop a continuity planning policy statement
+		- 2. Conduct the business impact analysis **BIA**
+		- 3. Identify preventive controls
+		- 4. Create contingency strategies
+		- 5. Develop an information system contingency plan
+		- 6. Ensure plan testing, training, and exercises
+		- 7. After-action report
+		- 8. Ensure plan maintenance
+	- **Disaster Recovery Planning (DRP)**
+		- Ensuring that the company can recover to an established baseline of continuity after any kind of high-level incident
+		- The tasks and processes that will be conducted when a disaster or catastrophe strikes
+		- Incident can affect a single drive, an entire server, a VLAN, an area of the facility, an entire floor or building, or the entire site or campus
+		- Disaster recovery plan is a major component of your **BCP**
+		- Outlines the technical aspects involved for restoration
+			- Order of restoration (most critical to least critical)
+			- Backups, snapshots, and restores
+			- Contact information
+			- Communication plans
+			- Chain of authority
+			- Step-by-step instructions
+			- Locations of documents, software, and keys
+	- Incident Response Teams (IRT)
+		- Also called CSIRT (Computer Security IRT)
+		- Receives alerts and alarms of security breaches
+		- First responders determine severity and priority
+		- Implements rehearsed plans and procedures
+		- Conducts analysis of activities and documents actions plan
+		- May perform forensic and investigative techniques
+		- May be a pre-designed group or an ad hoc association
+		- May be internal or external 
+		- Internal IRTs gather periodically for proactive tasks, such as DR testing, and vulnerability and penetration testing and assessment
+		- Members should come from various business units and have different skillsets
+- #### Forensic Documentation and Evidence
+	- **Involves the scientific investigation of a cyber incident**
+		- Data breach
+		- Insider attack
+		- Malware campaign
+			- Ransomware
+			- Cryptojacking
+		- DDoS
+		- Blackstortion
+		- CP files
+		- Pirated content
+		- Any illegal activities
+	- **Cyber Forensics**
+		- Investigations need to be carried out in a standardized manner
+			- Identification of the crime
+			- Collection of evidence
+			- Examination of the evidence
+			- Analysis of the evidence
+			- Reporting on the findings of the analysis
+	- **Collection of Evidence**
+		- Capture system images
+			- Use write-blockers
+			- Forensic kits
+		- Network traffic and logs
+		- Timeline of event sequence
+		- Capture video
+		- Record time offsets
+		- Take hashes
+		- Create screenshots
+		- Conduct witness interviews
+	- **Chain of Custody**
+		- Follows evidence through entire life cycle until possible court date
+		- Involves strict procedures for collecting, handling, and tagging evidence
+		- Provides a history and timeline of the handling of the evidence
+			- Maintains evidence integrity
+			- Provides accountability
+			- Prohibits tampering
+		- Anticipates any admissibility issues, such as legal holds
+	- **Forensic Techniques**
+		- Validation
+			- Encrypted volume detection
+		- Filtering
+			- Filtering SIDs on shared systems for privacy reasons
+		- Pattern matching
+			- Regular expressions and metacharacters in forensic kits
+		- Hidden data discovery and extraction
+		- Searching slack space
+		- Tracing
+- #### Forensic Acquisition Concepts and Sources
+	- **Order of Volatility**
+		- #TODO NIST SP 800-86 ? 
+		- https://csrc.nist.gov/pubs/sp/800/86/final
+		- CPU and its cache
+		- Kernel statistics, tables, and caches
+		- Memory (**RAM**)
+		- Temporary file systems, and swap/slack space
+		- Disk drives and volumes
+		- Attached removable drives
+		- Logged data to a remote location
+		- Copies of data to archived media/cloud
+	- Forensic Acquisition Concepts
+		- Know your operating systems
+		- Understand firmware attacks
+		- Look for encrypted snapshots
+- #### Digital Forensic Techniques
+	- Integrity
+	- Provenance
+		- Maintaining the history of data
+		- IPS, anomaly detection, reducing false positives
+	- Preservation
+	- e-Discovery
+		- Innovative technology that has emerged over the last decade to lower the risks and costs associated with big data, especially in litigation and internal corporate and government investigations
+		- The e-Discovery process includes four phases
+			- #TODO Legal hold
+			- Identifying and collecting documents
+			- Sorting through data by relevance
+			- Creating production sets
+			- Data management
+	- Data recovery
+	- Non-repudiation
+	- Strategic intelligence/counter-intelligence
+
+#TODO ISO 37000
+#TODO jump box
+#TODO SSL Stripping
+#TODO PIA Privacy Impact Assessment
+#TODO OBJ-5.2: The Gramm-Leach-Bliley Act (GLBA) is a United States federal law that requires financial institutions to explain how they share and protect their customers’ private information. The Health Insurance Portability and Accountability Act (HIPAA) is a US law designed to provide privacy standards to protect patients’ medical records and other health information provided to health plans, doctors, hospitals, and other health care providers. Sarbanes-Oxley (SOX) is a United States federal law that sets new or expanded requirements for all US public company boards, management, and public accounting firms. The Family Educational Rights and Privacy Act (FERPA) of 1974 is a United States federal law that governs the access to educational information and records by public entities such as potential employers, publicly funded educational institutions, and foreign governments.
+#TODO OBJ-1.7: Banner grabbing is conducted by actively connecting to the server using telnet or netcat and collecting the web server's response. This banner usually contains the server's operating system and the version number of the service (SSH) being run. This is the fastest and easiest way to determine the SSH version being run on this web server. While it is possible to use a vulnerability scanner, protocol analyzer, or to conduct a passive scan to determine the SSH version, these are more time-consuming and not fully accurate methods to determine the version being run.
+#TODO OBJ-4.2: The lessons learned report provides you with the details of the incident, its severity, the remediation method, and, most importantly, how effective your response was. Additionally, it provides recommendations for improvements in the future. A forensic analysis report would not provide recommendations for future improvements, even though it provides many of the other details. A trend analysis report describes whether behaviors have increased, decreased, or stayed the same over time. The chain of custody report is the chronological documentation or paper trail that records the custody, control, transfer, analysis, and disposition of physical or electronic evidence.
+#TODO OBJ-1.7: Threat hunting is the utilization of insights gained from threat research and threat modeling to proactively discover evidence of an adversarial TTP within a network or system. Penetration testing uses active tools and security utilities to evaluate security by simulating an attack on a system. A penetration test verifies that a threat exists, actively tests and bypasses security controls, and finally exploits vulnerabilities on the system. Information assurance (IA) is the practice of assuring information and managing risks related to the use, processing, storage, and transmission of information or data and the systems and processes used for those purposes. Incident response is an organized approach to addressing and managing the aftermath of a security breach or cyberattack, also known as an IT incident, computer incident, or security incident. The goal is to handle the situation to limit damage and reduce recovery time and costs.
+#TODO OBJ-2.8: The only truly unbreakable encryption is one that uses a one-time use pad. This ensures that every message is encrypted with a different shared key that only the two owners of the one-time use pad would know. This technique ensures that there is no pattern in the key for an attacker to guess or find. Even if one of the messages could be broken, all of the other messages would remain secure since they use different keys to encrypt them. Unfortunately, one-time use pads require that two identical copies of the pad are produced and distributed securely before they can be used. DES and AES both rely on a single shared secret key, making it vulnerable to attack. DES has already been broken, while AES remains unbroken (today). With enough time and computing power, though, an AES key could be discovered. RSA is also vulnerable to attack with enough time and computing power.
+
+![[Pasted image 20230920150323.png]]
+
+

@@ -1,0 +1,2445 @@
+MPLS (Multiprotocol Label Switching)
+mGRE (Multipoint Generic Routing Encapsulation) 
+- Point-to-Multipoint tunneling
+	- Classic GRE is Point-to-point tunneling 
+
+### Network Provider Links
+- DSL
+	- Copper phone lines
+	- Download Speeds
+		- 1-500 Mbps
+	- Upload Speeds
+		- 384 Kbps - 8 Mbps
+	- Types:
+		- Asymmetric
+		- Symmetric
+			- Equal upload/download speeds
+- Cable
+	- 20-1000 Mbps download speeds
+	- 7-50 Mbps upload speeds
+- Fiber
+	- 25 Mbps - 1 Gbps speeds
+	- 5-880 Mbps upload speeds
+- Satellite
+	- 1-100 Mbps download speeds
+	- 1-4 Mbps upload speeds
+- Metro-optical
+	- Spans distances of several hundred kilometers to serve densely concentrated metropolitan areas
+	- Network Support:
+		- Pure Ethernet
+		- Ethernet over MPLS
+		- Ethernet over DWDM
+		- Ethernet over SDH
+Service-Related Entry Points
+- Demarcation Point
+	- Location where connection is made to outside world (ISP)
+	- Division between the ISP and your network
+- Smartjack
+	- Intelligence device that provides demarcation point
+	- Built-in diagnostics options
+	- Alarm indication capabilities
+### Virtualization
+- Hypervisor
+	- Separates OS from applications and hardware
+	- Allows host to run multiple VMs as guests to maximize resource use
+	- Benefits
+		- VMs are separated from each other
+		- Easily moved or migrated
+	- Types:
+		- Type 1 - Native or bare metal
+		- Type 2 - Hosted
+- Virtual Switch (vSwitch)
+	- Application that permits communication between VMs
+	- Directs communication by checking packets before sending them to a destination
+	- Embedded in software or is part of server hardware firmware
+	- Can connect to NIC and is entirely virtual
+	- **Advantages**
+		- Eases virtual server migration and deployment
+		- Admins can manage hypervisor-deployed virtual switches
+		- Easier to roll out new functionality than a physical switch
+- Virtual Network Interface Card (vNIC)
+	- Used to connect virtual machines with other nodes
+	- Responsible for managing network communication
+	- Every VM can have one or more virtual NICs installed to provide connectivity
+	- Extra IP addresses can be assigned to a NIC to provide multiple sudnet access
+- Network Function Virtualization (NFV)
+	- Decouples network functions from hardware and runs them on a software platform instead
+	- Complements using software-defined networking for managing networks
+	- Focuses on network service optimization
+	- Created to meet service provider need for speeding up net network service deployment
+# Open Systems Interconnection Model (OSI) 
+- Layer 1 Physical
+	- Responsible for transmission of digital data bits
+		- Source device to the destination device over physical network communications media.
+	- Hardware:
+		- Cables
+		- Connectors
+		- NICs
+		- Repeaters
+		- Hubs
+	- Encoding and Signaling
+		- Transforms data from bits into signals
+		- Signals then sent over a network
+	- Functions
+		- Data transmission
+			- Through cable or radio waves
+		- Depends on topology and network design
+		- Bit rate control
+- Layer 2 Data Link
+	- Responsible for node-to-node data delivery
+		- Receives data from network layer and passes it on to physical layer
+		- Creates frames and adds physical addresses
+	- Responsibilities:
+		- Physical addressing
+		- Framing
+		- Access control
+		- Flow control
+		- Error control
+	- Transmission Control
+		- Establishing and terminating links
+		- Media Access management
+		- Flow Control
+		- Error Control
+		- Access control
+	- Medium(Media) Access Control #TODO add how many bits is the length
+		- For connection to physical media (Physical addressing)
+		- MAC address:
+			- 12-character hexadecimal
+			- Unique to every network interface
+- Layer 3 Network
+	- Accepts data from the transport layer to the data link layer
+	- **Functions**:
+		- Packet addressing
+		- Address conversion
+			- Logical address
+		- Source-to-destination delivery
+		- Routing
+			- Independent networks connected to each other
+			- Determine the best path from source to destination
+			- Pass data from router to router among the connected networks
+		- Internetworking
+			- Provide inter-networking between networks
+			- Provides logical connections between different types of networks
+			- Combine various networks to form a larger network
+		- Logical Addressing
+			- Define addressing scheme
+			- Combine any number of networks
+		- Packetizing
+			- Creates packets up receiving data from upper layers
+			- Packets are created by way of encapsulation
+			- Internet Protocol (IP) applies addresses to each packet
+		- Fragmentation
+			- Dividing larger packets into smaller fragments
+				- Can be easily sent out on physical medium
+- Layer 4 Transport
+	- Takes services from the session layer
+	- Provides services to the network layer
+	- End-to-end message delivery
+	- Error checking
+	- Message acknowledgement and traffic control
+	- Session multiplexing 
+	- Service point addressing
+	- Data Delivery:
+		- User Datagram Protocol (UDP)
+			- Connectionless
+				- Receiver does not acknowledge receipt of packet
+				- Sending device assumes
+				- Enables faster communication between devices
+		- Transmission Control Protocol (TCP)
+			- Connection-oriented Transmission
+				- SYN > SYN/ACK > ACK
+- Layer 5 Session
+	- Responsible for communication between two devices
+		- Beginning, maintenance, and ending
+		- Regulates flow of data between two devices
+	- Session protocol
+		- Defines parameters for connections
+	- Manages the transfer of data
+		- Who can transfer
+		- How long
+	- **Functions**
+		- Session establishment, maintenance, termination
+			- Enables two different machines to establish a session
+		- Session support
+			- Security
+			- Name recognition
+			- Login
+	- Dialog Control
+		- Determines which device communicates first and how data will be sent
+		- Types of dialog control
+			- Simplex
+			- Half duplex
+			- Full duplex
+	- Protocols:
+		- NetBIOS
+		- DNS
+		- RPC (Remote Procedure Call)
+		- NFS
+- Layer 6 Presentation
+	- Presents data in a uniform format
+		- Masks any difference in data between two different systems
+	- Also referred to as *translation layer*
+	- Translates data into a common format known to the application layer at the receiving station.
+	- **Functions**
+		- Character code translation
+			- ASCII
+			- EBCDIC
+		- Data conversion
+			- Bit order
+			- CR-LF
+			- Integer-floating point
+		- Data Compression
+			- Reduces the number of bits transmitted on the network
+		- Data Encryption
+- Layer 7 Application
+	- Serves as the interface for users and application processes to access network services
+		- Collection of protocols that are required to support the application
+	- Network Services
+		- FTP
+		- DHCP
+		- DNS
+		- SMTP
+		- HTTP
+	- **Functions**
+		- Allows users to interact with application
+			- Application accepts user input and passes data down to lower layers
+			- Allows for easier application compatibility and implementation
+			- Applications do not have to be re-written for different types of network environments.
+
+![[Pasted image 20230824165117.png]]
+
+
+# 802.3 Ethernet   
+- #### Ethernet Frame: 
+	- #TODO Fill in Ethernet frame with text 
+	- Preamble
+		- 7-byte 1010101
+	- SFD
+		- Start Frame Delimiter
+		- 1-byte
+	- Destination Address
+		- MAC address of destination
+	- Source Address
+		- MAC address of sender
+	- Type
+		- IPv4 or IPv6
+	- Data
+		- Payload of data being sent.
+	- Pad
+		- If the frame has fewer than 64 bytes, the NIC will fill in with information to satisfy minimum requirements
+	- FCS
+		- Frame Check Sequence
+		- Detects errors by using CRC (Cyclic Redundancy Check) algorithm and attaching the result to the end of the frame to make the FCS
+- #### Ethernet - Layer 2
+	- ![[Pasted image 20230824180333.png]]
+	- ![[Pasted image 20230825151020.png]]
+- #### IP header - Layer 3
+	- IPv4 Header:
+		- 20 bytes
+	- ![[Pasted image 20230825151732.png]]
+- #### TCP/UDP header - Layer 4
+	- 20-60 bytes
+	- Defines the port value
+	- UDP Header
+		- ![[Pasted image 20230825151732.png]]
+	- **TCP Flags**
+	- SYN
+		- Synchronization
+		- First packet sent by sender
+	- ACK
+		- Acknowledge the packet
+		- First packet sent from receiver
+	- FIN
+		- Finish
+		- Used to request termination  of connection
+	- RST
+		- Reset
+		- Request reset of connection when it suspects something is wrong
+	- PSH
+		- Push
+		- Used when buffering is needed to managed for control
+	- URG
+		- Urgent
+		- Data is forwarded immediately upon receipt
+		- Data is given priority over other packets
+	- ![[Pasted image 20230825154329.png]]
+- #### Payloads
+- Data that is being transmitted
+- **Fixed Payload**
+	- Frames become fixed in set size
+![[Pasted image 20230825154514.png]]
+- **Variable Payload**
+	- A pattern is used to determine frame size.
+![[Pasted image 20230825154811.png]]
+
+- #### MTU vs. MSS
+	- **MTU**:
+		- **Maximum Transmission Unit**
+		- The largest frame or packet.
+		- Specified at Layer 3 / Network Layer
+			- Constructed at Data Link Layer (2)
+		- Increasing MTU:
+			- More data can be transmitted
+			- Data rates increase 
+			- Enables use of jumbo frames
+			- However, some routers cannot handle larger packets.
+		- MTU Optimal Size 
+			- Typically 1500
+			- Windows
+				- ping [URL/local server or IP address] -f -l xxxx
+			- MAC
+				- ping [URL/local server or IP address] -d -s xxxx
+		- Adjusting MTU Size:
+			- Windows:
+				- netsh
+			- Linux
+				- ifconfig
+			- Mac
+				- System Preferences
+	- **MSS**
+		- Maximum Segment Size
+		- Largest amount of data a device can handle
+		- Data segment and header total size should be less than MTU size
+
+# File Transfer Protocol (FTP)
+- Transmit files
+- TCP/IP connections
+- Client-server protocol
+- Log on or anonymous
+- **Channels**
+	- Command Channel
+		- Passes on instructions
+			- *Transfer file, rename file, etc*
+	- Data Channel
+		- Moves files from place to place
+- **Modes**
+	- Active 
+		- Port 20
+		- 2-way communication
+	- Passive
+		- Port 21
+		- 1-way communication from the client to the server
+		- Good for when a firewall is present
+- Features
+	- Transfer large files
+	- Improve workflow
+	- Resume transfers
+	- Schedule transfers
+	- Recover data
+
+# Secure Shell (SSH)
+- Port 22
+- Secure access
+- Automated file transfers
+- Remote commands
+- Network infrastructure management
+- Features
+	- Client/Server model
+		- SSH client applications
+		- SSH server
+- Utilities
+	- Slogin
+	- SSH
+	- SCP
+		- Secure Copy Protocol
+		- Ensures data transfers between two hosts
+- SSH Encryption
+	- Symmetrical
+		- Shared secret key (same key used to encrypt and decrypt)
+	- Asymmetrical
+		- One key is for encrypting, the other key is for decrypting
+		- Stored separately
+	- Hashing
+		- A mathematical algorithm that can obfuscate any value
+# Secure File Transfer Protocol (SFTP)
+- #### Port 22
+- Runs over SSH
+- increased web security
+- SFTP vs. FTPS
+	- SFTP:
+		- FTP over SSH 
+		- Port 22
+		- Simplified config
+		- Reduced risk of errors
+		- Does not need additional work
+		- Works without centralized infrastructure
+		- Comes with SSH
+	- FTPS:
+		- FTP over TLS
+		- Ports 989 & 990
+		- Requires complicated configuration
+		- Prone to problems
+		- Requires X.509
+		- Risk of file corruption
+		- Cannot be used as a file system
+		- Requires additional installation and patching
+# Telnet Application Protocol
+- Port 23
+- One of earliest login protocols
+- Uses:
+	- Database access
+	- Application server program interaction
+	- Network server and device administration
+- Advantages
+	- Versatile
+	- Cross-platform
+	- Unlimited target resource access
+- Disadvantages:
+	- Unencrypted data exchange
+	- Security vulnerabilities
+	- Limited servers
+- **Commands**
+![[Pasted image 20230825175445.png]]
+
+# Simple Mail Transfer Protocol (SMTP)
+- Application layer protocol
+Ports:
+	25
+	2525
+	465/587 
+		Secure SMTP
+- Standard protocols for sending emails, *not receiving email*
+	- Receiving mail is POP3
+- Simplifies communication between email servers
+- Advantages
+	- Simplicity
+	- Reliability
+	- Ensures successful delivery
+	- Supports dedicated outgoing server
+- Disadvantages
+	- Security issues
+	- Limitations
+		- You can restrict what is sent out (Not really a disadvantage)
+			- Number of attachments and recipients can be set.
+- Phases:
+	- Handshake 
+	- Message transfer 
+	- Connection close
+
+# DNS (Domain Name system) 
+- Port: UDP 53
+- Translates domain names to IP addresses
+- Record types: #TODO 
+	- SOA
+		- Marks the start of a zone of authority
+		- SOA Structure:
+			- Class
+			- Current zone
+			- Type
+			- Primary Master
+			- Serial number
+				- Marks the uniqueness
+			- Refresh time
+			- Retry time
+			- Expiration time
+			- Time to live
+	- NS
+		- List servers for domain
+		- Points to the server that holds the records/zone for a part of the DNS tree
+	- A
+		- IPv4 *Address* record
+	- AAAA
+		- IPv6 Address record
+	- CNAME
+		- *Alias Record*
+		- Assigns an alternate host name where an address (A/AAAA) record already exists
+	- PTR
+		- Reverses the functions of A/AAAA records
+	- MX
+		- Mail Exchange
+		- Points to the server that manages email
+	- SRV
+		- Service Locator Records
+		- Query DNS for location of services that are on your network
+		- Structure:
+			- Domain Name
+				- Domain for which this record is valid
+			- TTL
+				- Time to Live
+			- Class
+				- Always IN, for internet
+			- Record Type
+				- SRV
+			- Priority
+				- Specify preference
+			- Weight
+				- Service records with equal priority are chosen according to their weight (100)
+			- Port Number
+				- Port where service is listening for this service
+			- Target
+				- The FQDN for the host computer
+	- TXT
+		- Text record
+		- Provides additional information about a named service
+- Forward and Reverse Zones:
+	- Converts name to IP address
+- DNS Servers
+	- DNS Recursor
+		- The system that will ultimately satisfy the request
+		- Examines the name and breaks it down into a hierarchy
+	- Root Nameserver
+	- TLD Nameserver
+		- .com
+		- .net
+		- .org
+	- Authoritative Nameserver
+		- There is a registration for the *website*
+		- Needs to publicly register the name to an authoritative source
+	- **Recursive vs Authoritative**
+		- Recursive
+			- Beginning of query
+			- Responds to recursive request
+			- Tracks down DNS record
+		- Authoritative
+			- End of query
+			- Holds and is responsible for DNS *resource records*
+			- Responds with queried resource record
+	- DNS Queries
+		- Recursive
+			- Ask a question, get an answer
+		- Iterative
+			- Has to re-iterate many times to get the answer
+		- Non-recursive
+			- When query issued arrives at an already authoritative server
+				- Asking for a server name when it is already the authoritative server needed
+			- Looking for something that is already on your own domain
+				- Does not need to go out into the internet to find the server
+	- DNS Caching
+		- Browser and OS level
+		- Remembering prior lookups so you don't have to go back through the recursion and iteration process again
+	- DNS Zone Transfers
+		- AXFR Protocol
+		- Replicates DNS records
+		- Edit and copy
+	- Reverse DNS Lookup
+		- Opposite of DNS Lookup
+		- Query IP Address
+		- Determines Hostname
+![[Pasted image 20230827112536.png]]
+![[Pasted image 20230829163602.png]]
+### Dynamic Host Configuration Protocol (DHCP)
+- Ports 67/68
+- Facilitates efficient communications between endpoints on a network
+	- Simplifies IP address management
+- Assigns:
+	- IP address
+	- Subnet mask
+	- Default gateway address
+	- DNS address
+- IP Address Allocation
+	- **Discover**
+		- Client sends a **Broadcast** to locate DHCP server
+		- If no response from DHCP server, Client will assign itself an **APIPA** address
+	- **Offer**
+			- DHCP Discover responds with DHCP offer
+			- Gives an IP configuration for the Client to use
+	- **Request**
+		- Client accepts by broadcasting DHCP request
+	- **ACK**
+		- DHCPAck: DHCP server responds to acceptance by sending DHCPAck message
+		- DHCPNack is used when client cannot be used
+		- DHCPDecline is used when Issued TCP/IP parameters are invalid
+	- Address Allocation
+	- *All of these are broadcasts*
+- DHCPRelease
+	- Release the IP configuration
+	- Cancel remaining lease
+- Benefits
+	- Accurate IP configuration
+	- Reduced IP conflicts
+	- Automated IP address administration
+	- Effective change management
+- Risks:
+	- Unauthorized servers
+	- Unauthorized clients
+	- IP address depletion
+- **Components**
+	- Needs a DHCP server
+		- Pool of IP addresses and assigns to each client
+	- DHCP client
+	- IP address pool
+	- Subnet
+	- Lease
+		- Length of time for reservation
+	- DHCP relay
+		- Passes the requests of the clients to another DHCP server on a different network
+		- Also called **IP Helper Address**
+
+
+### Trivial File Transfer Protocol (TFTP)
+- UDP 69
+- Simple version of FTP
+- Common uses:
+	- Booting network
+	- OS network installs
+	- Device firmware upgrade
+	- Back up and retrieval of device configuration
+	- Downloading executables
+- How it works:
+	- RRQ/WRQ request sent
+	- ACK or DATA packet response
+	- Numbered data packets sent
+	- Numbered ACK packet response
+- Limited functionality
+- Can be slow
+- Security
+	- No encryption
+	- No server authentication function
+	- Limit access to content
+
+### Hypertext Transfer Protocol (HTTP)
+- Port 80
+- Resource fetching
+- Foundation of web-based data exchange
+- Communication via messages vs. data streams
+- Sent over TCP or TLS-encrypted TCP connection
+- Considerations:
+	- Connections
+	- Simplicity
+	- Extensible
+	- Stateless
+- Uses:
+	- Caching
+	- Relaxing constraints
+	- Authentication
+	- Proxy and tunneling
+	- Sessions
+		- Using cookies
+- **Process**:
+	- Open TCP connection
+	- Send HTTP message
+		- **Request**
+			- Method
+				- GET
+				- POST
+			- Path/URL
+			- Protocol version
+			- Headers
+			- Body
+		- **Response**
+			- Protocol version
+			- Status code
+			- Status message
+			- Headers
+			- Body
+	- Read Response
+	- Close or reuse
+
+### Post Office Protocol v3 (POP3)
+- Ports:
+	- 110
+		- When unsecured
+	- 995
+		- When secured with SSL
+- Used by local email software clients to retrieve emails from a remote mail server *(Receiving Mail)*
+- Supported by virtually every email client
+- Simple to configure, operate and maintain
+- How it works:
+	- Client connects to POP3 server
+	- Authentication
+		- Username/email address and Password
+	- Message retrieval
+	- Download and delete
+- Advantages:
+	- Messages are downloaded and can be read offline
+	- Attachments open quickly
+	- Requires less server storage space
+	- Controllable capacity and size
+	- Easy to configure and use
+- Disadvantages
+	- No access from other machines
+	- Difficulty exporting
+	- Risk of data corruption and loss
+	- Risk of viruses or attacks
+
+# Network Time Protocol (NTP)
+- Port UDP 123
+- Used to sync computer clock times in a network
+- **Stratum**:
+	- 0
+		- Most accurate devices
+		- Atomic, GPS clocks
+		- Cannot be connected via LAN
+		- Reference clock
+		- Synchronization source
+	- 1
+		- Most accurate through network connection
+		- Synchronized by Stratum 0 reference clock
+	- 2
+		- Synchronized through Stratum 1 devices from the network
+		- Not as accurate as Stratum 1, jitter, delays
+	- 3
+		- Synchronized from Stratum 2 servers
+		- Identical algorithm as Stratum 2
+		- Act as server for Stratum 4 devices
+- Fault-tolerant
+- Scalable
+- Purpose:
+	- Accurate time enables proper:
+		- Sequences
+		- Security
+		- Updates
+		- Network acceleration and management
+- Features:
+	- Access highly precise atomic and GPS clocks
+	- Synchronize via primary time servers
+	- Uses UTC
+- Process
+	- Time-requested exchange initiated
+	- Delay calculated, time adjusted matched
+	- Client updates clock in intervals
+- Security Considerations
+	- Denial-of-service attacks
+		- Will reply to a packet with a spoofed source IP address
+		- Will send a long reply to a short request
+
+
+# IPAM (IP Address Management)
+- Microsoft 
+- IPv4/IPv6 address infrastructure
+- DHCP / DNS
+- Enhanced IP address management
+- All subnets managed by all servers
+- ####  Address Management
+	- Integrated
+	- Dynamic/Static
+	- Customizable inventory view
+	- Monitor IPv4/IPv6 address utilization
+	- Usage alerts and notifications (thresholds)
+- #### Multi-Server Management
+	- Discover DNS and DHCP across AD forest
+	- Configure support of DHCP servers/scopes
+	- Simultaneous updates across DHCP scopes/servers
+	- Monitor scope utilization
+	- Monitor DHCP DNS
+	- Manual addition/removal of servers
+- #### Network Audit
+	- Query event log for changes
+	- Advanced queries
+	- Export audit findings
+	- Resolve configuration problems
+- #### Role-Based Control
+	- Customize operations and access permissions
+	- Groups (security, role-based)
+- #### VASM (Virtual Address Space Management)
+	- Enables functions for virtual IP address infrastructure
+	- Same as address space management (ASM) for physical IP
+
+# Three-Tier Network Architecture
+- Core Switches
+	- Large modular devices with high throughput and advanced capabilities
+- Distribution Layer Switches
+	- Concerned with the up-link to the core switches
+- Access Switches
+	- Where individual systems connect to each other
+- Uses Spanning-Tree Protocol to prevent loops 
+- ![[Pasted image 20230829174219.png]]
+
+# SDN (Software Defined Networking) 
+- Removes individual control of individual devices and a Network Controller dictates how physical and virtual network components move traffic through the network
+	- Switches/routers/firewalls take orders from central server on how to route traffic instead of its own control plane.
+- #### Application Layer
+- #### Control Layer
+- #### Infrastructure Layer
+- #### Management Plane
+
+---------------------------
+# SAN (Storage Area Network )
+- FCP (Fiber Channel)
+- Dedicated switch
+- FCoE (Fiber Channel Over Ethernet)
+- iSCSII Internal Small Computer Systems Interface
+	- SCSI inside TCP/IP
+	- Target/Initiator
+	- Block-level storage over Ethernet
+	- Manual IP configuration
+	- Fast network adapters
+
+----------------
+# Spine and Leaf Network Topologies
+- 2-tiered network architecture
+- 
+- #### Leaf
+	- 
+- #### Spine
+	- 
+- 3-Tiered Architecture assumes more North-South traffic (Client to Server)
+- 2-Tiered Architecture assumes more East-West traffic
+- Equal Cost MultiPath **ECPM** protocol instead of STP
+- Fixed port switches
+- Better capacity, better performance, more scalable
+- ![[Pasted image 20230829175655.png]]
+
+
+
+# IMAP4 (Internet Message Access Protocol)
+- Ports:
+	- 143 (Unsecure)
+	- 993 (Secure over SSL)
+- Used for accessing email on a remote server from a local client.
+- Directly manage emails on the email server
+- Emails only downloaded once opened
+- Advantages:
+	- Access anywhere
+	- No download delays
+	- Increased efficiency and control
+	- Use offline
+- Disadvantages
+	- Requires connection
+	- Uses storage space
+	- No automatic deletion
+- IMAP vs. POP3
+	- IMAP
+		- Emails synchronized between computer and email server
+		- Can create folders on the server
+		- Can access worldwide, from multiple devices
+	- POP3
+		- Emails are retrieved from your computer and then deleted by the server
+		- Can only access on your computer
+		- Once deleted, you no longer have access
+		- Cannot create folders on the server
+
+# SNMP  (Simple Network Management Protocol)
+- #### Ports:
+	- UDP 161
+		- Used my SNMP manager when polling
+	- UDP 162
+		- Used when agent sends information to the manager via an SNMP trap
+- Enables different devices on a network to share information
+- Facilitates communication between devices with different hardware and software
+- Identifies connected devices and used to monitor network conditions and performance
+- Limitations:
+	- Restricted to SNMP compatible devices
+	- Must be enabled on the device
+- Components
+	- Manager (server)
+		- Responsible for centrally collecting and processing information they receive from Agents
+	- Agent
+		- Agent gathers info from the client and sends it to manager for processing
+	- MIB
+		- Management Information Base
+		- All of components that the agent needs to be aware of.
+		- Nodes/devices on network
+		- OID (Object Identifier) #TODO 
+- SNMPv1
+	- Poor security
+	- No encryption
+	- Vulnerable
+- SNMPv2
+	- Better security
+- SNMPv3 #TODO encryption algos
+	- Best security
+	- Encryption
+	- Authentication
+- SNMP Traps
+	- Polled traps
+		- Often checks to see if devices are ok
+	- Autonomous traps
+		- An alert when something fails or something needs to be address
+- Common SNMP Commands / PDU
+	- Protocol Data Unit
+	- GET
+		- Retrieves a value or values
+	- GET NEXT
+		- Retrieves value of next OID from MIB tree
+	- GET BULK
+		- Retrieves bulk data from large MIB table
+	- SET
+		- Changes a value within the device
+	- TRAPS
+		- Notifies about an event
+	- INFORM
+		- Notifies about an event and adds confirmation
+
+
+### Lightweight Directory Access Protocol (LDAP)
+- Ports:
+	- 3389
+	- 636
+- Maintain and organize distributed directory information
+- Manage and access information exchange over IP network
+- How it works
+	- Connect with server - port 389
+	- Client and server exchange data
+- Benefits
+	- Unique entries
+	- Allows multiple independent directories
+	- Extensible
+	- Runs directly over TCP/IT and SSL
+	- Based on existing technologies
+	- Automated, open source
+- Disadvantages
+	- Requires LDAP-compliant servers
+	- Not as user-friendly as proprietary solutions (ike Active Directory).
+- Components
+	- Attributes
+	- Entries
+		- A collection of attributes
+	- DIT
+		- Directory Information Tree
+
+### Hypertext Transfer Protocol Secure (HTTPS)
+- Port 443
+- Secure version of HTTP running over SSL
+- Provides encryption for increased security when transferring data over an unsecured network
+- Private Key/Public Key
+- Benefits
+	- Encryption
+	- Protection
+	- Verification and validation
+	- Reliability
+	- Search Engine Optimization
+- Disadvantages
+	- Cost
+	- Performance
+	- Accessibility
+	- Mixed content
+	- Computing overhead
+
+# SMB (Server Message Block)
+- Port 139/445
+- Files
+- Directories
+- Printers
+- Routers
+- How SMB works:
+	- SMB Application
+		- Both parties establish connection
+	- TCP
+		- 3-way handshake between client and server
+	- TCP protocol
+		- Data transport
+- Security considerations
+	- Supporting earlier versions increases security risk
+	- SMB 1.0 susceptible to attacks
+	- SMB 1.0 can be disabled
+- Examples
+	- Samba
+	- FreeNAS
+	- Connected NAS
+- Benefits
+	- Easy to use
+	- Shares both resources and files
+- Challenges
+	- Best used on LAN-connected hosts only
+	- Inherent authentication security
+	- Transfer speed
+
+# Syslog Analysis and Monitoring
+- Port 514 UDP
+- Enables sending data about status, events, and diagnostics
+- Most devices on your network support Syslog
+- Using Syslog
+- Application alerting
+- General, harder to predict events
+- Syslog Layers:
+	- Syslog content
+	- Syslog application
+	- Syslog transport
+- Syslog server
+	- Listener
+	- Database
+- Severity Codes
+	- 0: Emergency
+		- System is unusable
+	- 1: Alert
+		- Action must be taken immediately
+	- 2: Critical
+		- Critical conditions
+	- 3: Error
+		- Error conditions
+	- 4:  Warning
+		- Warning conditions
+	- 5: Notice
+		- Normal but significant condition
+	- 6: Informational
+		- Informational messages
+	- 7: Debug
+		- Debug-level messages
+
+# SMTP TLS Email Security
+- Communication partner authentication
+- Data integrity
+- Confidentiality
+- None-proprietary
+- Not an SMTP extension
+- Secures SMTP at transport layer
+- Similar to HTTPS
+- TLS Requirements
+	- SSL Certificates
+	- Server configuration and maintenance
+	- Additional resource allocation
+- TLS Security
+	- Protects transmissions of content
+	- No protection before or after
+	- Additional security required
+- SMTP TLS Risk:
+	- TLS not enforced
+	- Weaker encryption mechanisms may be used
+	- Mismatched encryption mechanisms can cause failure
+
+# LDAPS (Lightweight Directory Access Protocol Over Secure Socket Links)
+- Port 636
+- Cryptography
+	- TLS
+		- Newer version of SSL
+	- SSL
+- Commonly used in Microsoft environments
+- Requires a certificate from a CA
+- No user interface available for configuring 
+
+
+# IMAPS (Secure IMAP Traffic)
+- Ports:
+	- TLS:
+		- 143
+	- SSL:
+		- 993
+- IMAP
+	- Connection to email server to retrieve email
+	- Allows two-way communications
+	- Local client settings can be reflected on the server
+- SSL
+	- Encryption protocol for online communications
+	- Authentication certificates
+	- Encryption algorithm negotiated
+	- Secure data transmission
+- How IMAP over SSL works:
+	- Server sends OK indicating service ready
+	- Client responds
+	- OK response from server indicating start of negotiation
+	- Client requests capabilities again
+	- Exchange data
+# POP3 Secure
+- Ports:
+	- Secured:
+		- 995
+	- Unsecured
+		- 110
+- Implicit
+	- Connects using secure SSL channel
+	- SSL connection needs to be supported by server
+- Explicit
+	- Connects using clear text channel
+	- Issues command to secure the channel
+
+
+---------------
+
+
+----------
+# Routing:
+- Layer 3
+- Router
+	- Any device that forwards packets based on destination IP address
+- ### Routing Protocols
+	- #### RIP
+		- Routing Information Protocol
+		- LANs/WANs
+		- Application Layer
+	- #### OSPF
+		- Open Shortest Path First
+		- SPF (Shortest Path First) algorithm
+		- LSAs (Link State Advertisements)
+		- Monitors topology changes
+	- #### EIGRP
+		- Enhanced Interior Gateway Routing Protocol
+		- Cisco
+		- RTP (Reliable Transport Protocol)
+			- Runs on top of SIP
+		- DUAL (Diffusing Update Algorithm)
+	- #### BGP
+		- Border Gateway Protocol
+		- Routing protocol of the internet
+		- Uses a best path algorithm. 
+		- Customized or Automatic
+		- Supports authentication
+	- #### Link State
+		- Considers network conditions
+		- SPF algorithm
+		- Faster convergence
+		- Less overhead routing traffic
+		- More difficult to implement and maintain
+	- #### Distance Vector
+		- Hop-by-hop
+		- Relies on neighbor routers
+		- Slower to converge
+		- Easy to implement and change
+	- #### Hybrid 
+		- Mix of both Link State and Distance Vector
+		- Fast converging
+		- Scalable
+- #### Static Routes
+	- Created manually
+	- Smaller networks
+	- Manual routing table entries and updates
+	- Specifies how to reach destination using specific path
+	- Better security
+- #### Default Routes
+	- Type of static route used only in stub networks
+	- Specifies how to reach destination when path unknown
+- Administrative Distance
+	- Selects best path
+	- Two or more routes over two or more protocols
+	- Routing protocols prioritized
+- #### Interior Routing
+	- Finds network path information within an autonomous system
+	- IGP (Interior Gateway Protocol)
+	- IGRP
+	- OSPS
+- #### Exterior Routing
+	- Finds network path between different autonomous systems
+	- Exchanges routing table information
+	- BGP
+
+-------------------
+# Ethernet Switch
+- #### Layer 2 Switch
+	- Use MAC address and connects device based on MAC address
+	- Only communicates with its own network, does not support routing, only switches packets from one port to another
+	- Faster rerouting
+- #### Layer 3 Switch
+	- Uses IP addresses
+	- Higher port density and faster used in large scale enterprises
+	- Has both switching, communicates inside and outside of the network
+	- Packet analysis
+	- Hardware-base ARP
+		- Can translate MAC address to IP address
+	- VLANs
+	
+- #### VLAN
+	- Allows you to split up a physical network into multiple discrete networks without additional hardware.
+	- Each VLAN is its own broadcast domain
+	- Assign a port to a VLAN
+	- #### Trunking
+		- Process of transferring data between switches
+	- #### VLAN Tagging
+		- 802.1Q port tagging #TODO trunking
+		- Tag attached to the ethernet frame header.
+- #### Port Bonding
+	- Combine multiple connections to get more bandwidth
+	- IEEE LACP
+		- Link Aggregation Control Protocol
+	- AKA:
+		- link aggregation
+		- NIC bonding
+		- NIC teaming
+		- port aggregation
+- #### Load Balancing
+	- A server cluster that balances traffic evenly across the servers
+- #### DNS Load Balance
+	- 
+- #### Content Switch
+	- Application Layer 7
+	- 
+- #### QoS & Traffic Shaping
+	- Prioritizing traffic based on certain rules like bandwidth or type
+	- Layer 2 & 3
+- #### Network Protection
+	- #### IDS
+		- Intrusion Detection/Prevention System
+	- #### Port Mirroring
+		- Copy data from any/all physical ports on a switch to a single port
+	- #### Proxy Serving
+	- #### AAA
+		- Authentication
+		- Authorization
+		- Accounting
+- 
+# Ethernet Router
+- Connects Networks together (Layer 3)
+- Guides and directs traffic based on network address portion of an IP address
+- Reads data, prioritizes, and selects best route
+- Has firewall
+- #### Types
+	- Core
+		- Internal router in the organization
+	- Edge
+		- Connects to the internet
+		- The router between the internal and external network
+	- Distribution
+	- Wireless
+		- Home wifi
+	- Virtual
+		- Used in Cloud
+# Hubs and Bridges
+- Interconnection devices
+- #### Hub
+	- Layer 1 device
+	- Receives data frame > sends data frame out on all ports
+	- Types
+		- Passive
+			- Just handles data connection
+		- Active
+			- Can boost strength on long network lines that are at the limits of Ethernet cable
+		- Intelligent
+			- May include remote management, rate management
+- #### Bridge
+	- Layer 2 device
+	- Packet switching
+		- Examine and forward
+	- Extending networks (like a hub) but with **addressing capabilities**
+	- Preserve isolated collision domains
+
+# Firewall
+- ### Software Firewall
+	- Software application designed to protect from:
+		- Unauthorized internet usage
+		- Malicious attacks on a system
+	- Must be installed on each individual system
+- ### Hardware Firewall
+	- Device that sits on the edge of the network and protects entire network
+- Types:
+	- Application Layer
+		- block/allow port 80 or 21, etc
+	- Packet Filtering
+		- Network layer
+	- Circuit-level
+		- Block/allow if TCP or UDP connection
+	- Proxy server
+	- Next generation
+	- Stateful
+- #### Rule Actions
+	- Allow
+		- Implicit deny
+			- Deny by default
+		- Explicit allow
+			- Whitelist ports you want
+	- Deny
+	- Bypass
+	- Force Allow
+	- Log Only
+- #### Rules Format
+	- Port
+	- Source
+	- Destination
+	- Protocol
+	- Permission
+- #### Configuration
+	- Implicit
+		- Default Rules
+	- Explicit
+		- Configuring a rule yourself
+		- Overrules implicit rules
+
+# IDS (Intrusion Detection System) #TODO 
+- Monitors for malicious activity and policy violations by inspecting a copy of all traffic and reporting intrusions
+- Collects and/or reports
+- #### Classification
+	- NIDS
+		- Network Intrusion Detection System
+		- Multiple sensors across the network that report to a central application that reads from a signature file to detect out of the ordinary behavior
+	- HIDS
+		- Host-based Intrustion Detection System
+		- Runs on individual systems and monitors changes to system files or registry changes
+- #### IPS
+	- Sits inline of the network
+	- Prevents attack from happening
+	- Latency and bandwidth take a hit.
+- ![[Pasted image 20230925102646.png]]
+
+- #### Types
+	- Signature based
+	- Anomaly based
+
+# VoIP (Voice Over Internet Protocol)
+- How VoIP works
+	- Convert
+	- Compress
+	- VoIP provider
+	- Establish Call
+	- Decompress
+- Hosted VoIP
+- SIP (Session Initiation Protocol ) Trunking
+- QoS
+	- 150 ms one-way latency
+	- 1% packet loss max
+	- 30 ms jitter max
+- ![[Pasted image 20230829195343.png]]
+- ![[Pasted image 20230829195355.png]]
+
+---------
+# SCADA Supervisory Control & Data Acquisition
+- Collects and analyzes real-time data
+- Monitoring and controlling operations
+- Designed for large-scale distributed processes:
+	- Power grids
+	- Pipelines
+	- Railroads
+- #### Applications:
+	- Local or remote control
+	- Monitor, gather, and process real-time data
+	- Device interaction
+	- Record events
+- #### Systems
+	- MTU
+		- Master Terminal Unit
+		- 
+	- RTU
+		- Remote Terminal Unit
+		- Works as a controller. 
+			- Has autonomy to work on its own if it loses connection with central control
+			- Designed to take advantage of long distance communication
+		- Implementations:
+			- VxWorks
+				- Block UDP 17185 (Debugger)
+			- Schneider, 
+			- Quantum, 
+			- Microware OS-9 
+				- (Allen-Bradley PLCs)
+	- HMI
+		- Human Machine Interface
+- Transmission Control Protocols:
+	- DN3P
+		- American protocol for water and electric plants
+	- T101
+		- European version of DN3P
+
+
+
+# Cloud Computing
+- #### Public Cloud
+	- Infrastructure
+	- Applications
+	- Storage
+	- Subscription based
+	- On-demand computing
+	- Cost savings
+	- 
+- #### Private Cloud
+	- Dedicated proprietary architecture
+	- Direct control
+	- Virtualization
+	- Higher cost and more maintenance
+- #### Hybrid Cloud
+	- Combines best of both Public and Private clouds
+	- Maximum efficiency and performance
+	- Cost efficient and scalable
+- #### Community Cloud
+	- Shared between organizations
+	- Multi-tenant
+	- Collaboration on shared interests
+	- Security and compliance is a  concern
+- #### SaaS (Software as a Service)
+	- ERP
+	- CRM
+	- Databases
+	- Photoshop
+	- Features:
+		- Subscriptions
+		- Everything is a service
+		- No infrastructure investment
+		- Pay per Use
+- #### IaaS (Infrastructure as a Service)
+	- VMs
+	- OSs
+	- Networking
+	- Security
+	- Storage and backup
+	- Host website
+	- Web apps
+- #### PaaS (Platform as a Service)
+	- Developing web-based applications and services
+	- Full development environment
+	- Testing and deployment, tools, dynamic allocation
+- #### Daas (Desktop as a Service)
+	- OS in VM
+	- Cloud infrastructure
+	- Streamed Desktop
+	- Features:
+		- Subscription model
+		- Multi-user
+		- Provider-managed
+		- Self-managed images
+- #### IaC (Infrastructure as Code)
+	- Infrastructure management
+	- DevOps versioning
+	- Identical environment every time
+	- Continuous delivery
+	- Features
+		- Idempotence
+		- Identical configuration
+		- Automatic or manual
+		- Team makes changes
+		- Configure targets
+		- Source, not target, edited
+	- Implementation
+		- Early testing
+		- Avoid deployment problems
+	- Advantages
+		- Stable environments
+		- Rapid
+		- Less manual configuration
+		- Consistency
+		- Repeatable
+		- Avoid runtime problems
+		- Consistent procedures and tools
+- #### Multitenant Cloud
+	- Multiple customers use same resources
+	- Transparent
+	- Iaas, Saas, Paas
+	- Old-ways: single instance
+	- Modern way: shared infrastructure
+	- Advantages
+		- More efficient resource usage
+		- Lower costs
+	- Disadvantages
+		- Security
+		- Compliance
+		- Performance
+- #### Elastic Computing
+	- Resource allocation
+	- Determine by need
+	- Automatic
+	- Just whats needed, when needs change, resources are allocated
+	- Benefits
+		- Cost efficient
+		- Optimized resources
+
+
+# Network Interface Errors
+- #### FCS (File Check Sequence)
+	- Uses CRC (Cyclic Redundancy Checking) algorithm to see if FCS matches
+	- Often noise or EMI
+- #### Giants
+	- Packets that are too large
+	- 1518 or greater
+	- May be from duplex errors
+- #### Runts
+	- Ethernet packets smaller that 64 bytes
+	- Hardware/driver/collisions
+- #### CRC
+	- Verifies the integrity of received data
+	- If FCS number is good but CRC is bad, then fault is probably on the receiving side
+	- Faulty cabling or too many collisions
+- #### Encapsulation
+	- Can occur if an incorrect encapsulation method is assigned to an interface
+	- Reconfiguration of adapter will likely solve
+- #### HVAC
+	- Humidity 
+	- Temperature
+	- Fire prevention/detection/suppression
+- ![[Pasted image 20230830164009.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+asrt
+
+# Netflow
+- Cisco network protocol used for collecting network traffic information and monitoring network flow
+- Flow:
+	- source ip address
+	- destination ip address
+	- Source port
+	- destination port
+	- protocol
+- Flow entry expiration
+	- Inactive timeout
+		- Nothing happening
+	- Active timeout
+		- Too much is going on
+
+
+
+
+# Network Uptime and Downtime
+- Amount of time that a network is up and running
+- Industry standard 99.999%
+- **Service Level Agreements (SLA)**
+	- Commitment offered by a service provider
+	- Detailed descriptions of services offered
+	- Agreement on service performance
+	- Components:
+		- Objectives
+		- Responsibilities
+		- Scope
+		- Performance metrics
+		- Penalties
+
+# SDLC (System Development Life Cycle)
+- #### Phases:
+	- Analysis
+	- Planning
+	- Design
+	- Development
+	- Testing
+	- Deployment
+	- Maintenance
+	- Evaluation
+	- Disposal
+- ![[Pasted image 20230830165254.png]]
+
+
+
+# Network Hardening Techniques
+- #### Router Advertising Guard
+	- Filters router advertisements
+- #### Dynamic ARP Inspection
+	- Performs validation of ARP packets
+	- ![[Pasted image 20230913215248.png]]
+	- ![[Pasted image 20230913215316.png]]
+- #### Port Security
+	- Disable access to unused physical Ports
+	- Can be blocked using a Firewall
+		- Network-based
+		- Host-based
+			- Windows Firewall
+				- Inbound rules
+				- Outbound rules
+				- Connection security rules
+				- Monitoring
+- #### Control Policing
+	- Protects against DoS and reconnaissance attacks
+- #### Private VLANs
+	- Primary
+	- Community
+	- Isolated
+	- Avoid using default VLAN settings for network data
+- #### System Services
+	- More services enabled by default
+	- Disable all unnecessary services
+- #### DHCP Snooping
+	- A database of MAC addresses for all of a network's known DHCP servers and clients.  Blocks DHCP server requests from untrusted devices
+	- ![[Pasted image 20230831085723.png]]
+- #### Patches
+	- Update them as they come along
+- #### Access Control Lists
+	- Permit/Deny
+- # Multifactor Authentication
+	- Something you know
+	- Something you have
+	- Something you are
+- ### Wireless Encryption
+	- #### WEP (Wired Equivalent Privacy)
+		- 64 or 128 bit encryption via the shared passphrase
+		- Easily cracked and no longer used
+	- #### WPA (Wi-Fi Protected Access)
+		- 256-bit keys
+		- 2-modes
+			- PSK (Preshared Key) 
+				- Personal Mode
+				- Most common and easiest to setup
+			- Enterprise Mode (WPA-802.1X)
+				- Uses:
+					- 802.1X
+					- RADIUS
+					- EAP
+		- Introduced TKIP
+		- MIC (Message Integrity Checks)
+			- 32-bit cyclic redundancy check (CRC)
+				- (If 2 CRC MICs fail within 60 seconds, the address point requires TKIP to re-key the RC4 seed value)
+		- Exploitable and no longer used
+			- Deprecated in 2006
+			- WPS is the vulnerability
+			- WPS should be disabled
+	- #### EAP
+		- #TODO add to flash cards
+		- Extensible Authentication Protocol
+		- Used to handle and define authentication requests
+		- #### PEAP
+			- Protected Extensible Authentication Protocol
+			- Wireless networks & point-to-point connections
+			- Enables secure authentication for WLANs that support 802.1X port access control
+			- Authenticates with a server using public key certificates
+			- Authentication is transmitted in a secure TLS session
+		- #### EAP-FAST
+			- Flexible Authentication via Secure Tunneling
+			- Developed by Cisco
+			- Performs session authentication in wireless networks and point-to-point connection
+			- Replaced LEAP
+				- Lightweight Extensible Authentication Protocol
+		- #### EAP-TLS
+			- EAP is used to support multiple authentication methods
+			- TLS provides mutual authentication and authentication server certificate
+			- Smart cards
+			- Kerberos
+			- Digital certificates
+	- #### PSK 
+		- Pre-shared key
+		- Shared key across all devices
+			- Does not scale well
+	- #### TKIP (Temporal Key Integrity Protocol)
+		- AKA TKIP-RC4
+		- Uses RC4 algorithm for encryption
+			- Revest Cipher
+		- Provides per-packet keying to prevent eavesdropping
+		- Key is derived from MAC address and initialization vector
+		- 4-algorithms
+			- Cryptographic message
+			- Initialization-vector sequencing mechanism
+			- Per packet key mixing function
+				- Provides key generation every 10,000 packets
+	- #### AES-CCMP 
+		- Encryption algorithm used in 802.11i
+	- #### WPA2 (802.11i)
+		- Operates in Personal Mode (**PSK**) and Enterprise Mode
+		- Uses **AES** (Advanced Encryption Standard)
+			- 128-bit key and a 128-bit cipher block
+			- More secure than RC4 algorithm used with TKIP
+		- Replaced TKIP with CCM (Counter Cipher Mode) with CCMP 
+			- Still retains TKIP for backwards compatibility with WPA
+		- Can be exploited if WPS is turned on
+	- CCMP (Counter Cipher Mode with Block Chaining Message Authentication Code Protocol)
+	- #### WPA3
+		- 192-bit in Enterprise Mode.
+		- Requires CCMP-128 at a minimum for Personal Mode
+		- Uses SAE (Simultaneous Authentication of Equals)
+			- Replaces PSK
+			- Introduced with 802.11s
+- #### Geofencing Technology
+	- Define geographical boundaries using:
+		- RFID
+		- GPS
+		- Cellular
+		- Wi-Fi
+# VPN
+- #### IPsec
+	- Internet Protocol Security
+	- Set of protocols used to secure network communication
+	- Protects data exchanged between an IPsec gateway and any remote host
+	- AH
+		- Authentication Header
+		- Authenticates the identity of user or device
+	- ESP
+		- Encapsulating Security Payload
+		- Encrypts data
+	- ![[Pasted image 20230831131411.png]]
+- Secure Protocols
+	- SSL
+		- Secure Sockets Layer
+	- TLS
+		- Transport Layer Security
+	- DTLS
+		- Datagram Transport Layer Security
+- #### PPTP
+	- Advanced version of PPP
+		- Point-to-Point-Protocol
+	- Ports 47 & 1723
+	- Many known vulnerabilities
+- #### L2TP
+	- Layer 2 Tunneling Protocol
+	- Upgrade with PPTP and L2F protocols
+	- No authentication / encryption
+	- Uses IPSec for security
+	- Ports:
+		- 50
+		- 500
+		- 4500
+- #### SSL VPN
+- #### DTLS VPN
+	- Datagram TLS VPN
+- #### DMVPN
+	- Dynamic Multi-Point VPN
+- #### Host-to-site
+	- Remote user access
+	- Connect a user and a corporate LAN
+	- ![[Pasted image 20230831132156.png]]
+- #### Host-to-host 
+- #TODO 
+	- Connect two hosts
+	- Users must authenticate prior to data transmission. **Ensures:**
+		- Data authenticity
+		- Data integrity
+		- Data confidentiality
+	- ![[Pasted image 20230831132247.png]]
+- #### Site-to-site 
+- #TODO 
+	- A more persistent connection
+	- Requires a concentrator at each site
+	- L2TP
+	- Types:
+		- Intranet-based
+		- Extranet-based
+	- ![[Pasted image 20230831132651.png]]
+# RDP (Remote Desktop Protocol)
+- Microsoft protocol for accessing remote computers via desktop over the network
+	- Remote Desktop Connections
+	- Remote Assistance
+- port 3389
+- Features
+	- Encryption
+	- Smart card authentication
+	- Bandwidth reduction
+	- Resource sharing
+	- Multiple displays
+
+
+
+
+
+
+
+
+
+# VNC (Virtual Network Computing) 
+- **TCP 5900**
+- Remote desktop sharing, used while traveling and separate from lan
+- Allows one console per OS.
+	- Not encrypted by default.
+	- Client-server model. 
+	- Open source protocol.
+- Alternatives
+	- Windows Remote Desktop
+	- Apple Remote Desktop (ARD)
+# Remote Authentication and Authorization
+- #### PAP (Password Authentication Protocol)
+	- Sends passwords in plain text
+- #### CHAP
+	- Authenticator sends challenge message to client
+	- Client responds using MD5 hash value
+	- Authenticator also calculates the hash to ensure it matches prior to establishing a connection
+	- Challenge based
+- #### MS-CHAP/MS-CHAP2
+	- Uses three-way handshake process
+	- Integrates encryption and hashing algorithms
+	- More secure than CHAP
+- EAP/TLS
+	- Smart cards
+	- Kerberos
+	- Digital certificates
+- RADIUS
+	- Centralized authentication database
+	- Supports
+		- Dial-in remote access servers
+		- VPN servers
+		- Wireless access points
+
+# Out-of-Band Management
+- Separate dedicated channels or networks used to access networking equipment to be used when you have device or service failure
+- Requires dedicated communication channels
+- Also requires dedicated devices and power
+- Should not be affected by any network failure
+- **Console Servers**
+	- Can be used to provide reliable access
+	- Centralized management for any connected devices
+	- Console can be accessed using multiple methods
+- Considerations
+	- Visibility
+		- GUI
+		- CLI
+	- Data transfers
+		- Updates and patching
+		- updating code
+		- security
+# Asset Inventory Records
+- IT asset records for hardware and software are crucial to a successful security and risk management strategy
+- Inventory Record Details
+	- Unique asset identifier
+	- Qualitative and/or quantitative value
+	- Location identity
+	- Security classification or sensitivity level
+	- Asset group (if applicable)
+	- Custodian
+	- Recovery priority
+- Organizational Information
+	- Operating systems
+	- Software applications
+	- Mobile device operating systems and apps
+	- Cloud applications
+	- Virtualization
+- Software Asset Management
+	- Instances
+	- Audits
+	- Overages
+		- Track usage
+	- Software piracy
+	- Virtualization
+		- Unique licensing conditions
+	- Mobile device applications
+- Hardware Asset Management
+	- Mobile devices
+	- Desktop computers
+	- Laptops
+	- Servers
+	- Routers/switches
+	- Security appliances
+	- Other hardware as organization to manage
+		- Disk storage arrays, backup devices
+	- Disposal
+		- Donated or sold
+		- Data wiping
+	- Environmental
+		- Recycling
+		- Physical disposal
+			- Hazardous materials
+
+
+
+# Security
+- #### CIA
+	- **Confidentiality**
+		- Protect sensitive information
+		- Allow necessary access to information
+		- Special training may be required
+		- Data categorized by potential damage
+	- Integrity
+		- Maintain data accuracy and consistency
+		- Protect data from change in transit
+		- Protect data from unauthorized people
+		- Apply permissions and access controls
+		- Apply version control and detect changes
+	- Availability
+		- Maintain hardware and perform repairs
+		- Redundant storage
+		- Regular and frequent backups
+		- Avoid software conflicts
+		- Firewalls, proxy servers,
+		- anti-malware
+- #### Network Threats
+	- **External**
+		- Malware
+		- Malvertizing
+		- Phishing
+		- DoS attacks
+		- Ransomware
+		- Attackers may sit unnoticed and unchecked in systems for a long time
+		- Pentesting
+		- Most Common attacks
+			- Dos/DDoS
+			- Session hijacking
+			- Drive-by
+			- Password
+			- Phishing and spear phishing
+	- **Internal**
+		- Employees
+			- Criminals seek employee credentials
+		- Change passwords often and when employee leaves
+		- Monitor employee access
+		- Strong passwords
+	- **Vulnerabilities**
+		- **CVE**
+			- Common Vulnerabilities and Exposures
+			- Categorized list of known software security vulnerabilities and exposures, other organizations can use to protect their systems
+		- **Zero-day Vulnerability**
+			- Known security flaw in software that does not have a patch
+	- IP Spoofing
+		- Remote machine appears as local network node
+		- Backdoor/Trojan horse installed
+		- Server vulnerabilities are found
+	- Eavesdropping
+		- Listening on a connection between two nodes
+		- Attacker must have LAN access to system
+		- Generally applies to Telnet, FTP, and HTTP transfers
+		- Prevent using:
+			- cryptographic key exchange
+			- encrypted authentication
+			- and one-time passwords
+	- DoS
+		- Server is attacked by flooding it with requests
+		- Leaves legit users unable to access resources
+- #### Threat Conditions
+	- The severity levels range from zero to seven, with zero being the most severe and seven being the least severe. 
+	- #### Conditions
+		- Emergency
+		- Alert
+		- Critical
+		- Error
+		- Warning
+		- Notice
+		- Information
+		- Debugging
+	- Level 0 is used for an emergency and is considered the most severe condition because the system has become unstable. 
+	- Level 1 is used for an alert condition and means that there is a condition that should be corrected immediately. 
+	- Level 2 is used for a critical condition, and it means that there is a failure in the system’s primary application and it requires immediate attention. 
+	- Level 3 is used for an error condition, and it means that something is happening to the system that is preventing the proper function. 
+	- Level 4 is used for warning conditions and it may indicate that an error will occur if action is not taken soon. 
+	- Level 5 is used for notice conditions and it means that the events are unusual, but they are not error conditions. 
+	- Level 6 is used for information conditions and it is a normal operational message that requires no action. 
+	- Level 7 is used for debugging conditions and is just information that is useful to developers as they are debugging their networks and applications.
+- #### Principle of Least Privilege
+	- Only assign the least amount of privileges necessary to do the job
+	- Users
+	- Computers
+	- Services
+	- Networks
+	- Databases
+	- Applications
+	- Just in time privileges
+	- Perform regular auditing
+- #### RBAC (Role-based Access Control)
+	- User network access is based on their role in the organization
+	- User granted access only to what they need to perform their job
+	- Access can be restricted based on authority, job competency, and responsibility
+	- **Tool Designations**
+		- Management Role
+		- Management Group
+		- Management role scope
+		- Management role assignment
+	- **Best Practices**
+		- Snapshot current current security configuration
+		- Be familiar with employee roles
+		- Document policy
+		- Make changes
+		- Adapt as required
+- #### Zero Trust Security Model
+	- No automatic trust for what's inside or outside an organization's perimeter
+	- Everything must be verified before being allowed access to systems
+	- **Technologies**
+		- MFA
+			- Multifactor Authentication
+		- IAM
+			- Identity and access management
+		- Orchestration and analytics
+		- Encryption and scoring
+		- File system permissions
+- #### DiD (Defense in Depth)
+	- Security approach
+	- Layered defense mechanisms
+	- Redundancy increases system security
+	- Security Control Types
+		- Physical
+		- Technical
+		- Administrative
+	- Security Control Functions
+		- Preventative
+		- Detective
+		- Corrective
+- Common Network Authentication Methods
+	- MFA
+	- TACACS+
+	- RADIUS
+		- Provides centralized authentication, authorization, and accounting for network service users
+	- SSO (Single Sign On)
+	- LDAP
+		- Protocol for locating network resources
+		- Foundation for Active Directory and cloud-based directories
+	- Kerberos
+		- Protocol for providing secure authentication using secret-key cryptography
+	- Local Authentication
+	- 802.1X
+	- EAP
+- #### Security Assessments
+	- Network security measure used to find vulnerabilities
+	- **Vulnerability assessment**
+	- **Pentesting**
+	- #### General Security Assessment Steps
+		- Inventory resources
+		- Determine asset vulnerability
+		- Test defenses
+		- Remediate weak points
+		- Monitor security continuously
+- #### SIEM (Security Information and Event Management)
+	- Reporting on security events and incidents
+	- Alerting on potential security issues and store for analysis
+	- Combines security event management **(SEM)** with security information management **(SIM)**
+	- Features:
+		- Threat intelligence
+		- Security analytics
+		- Machine learning
+		- IT governance
+		- Automated remediation
+	- Enterprise SIEM
+		- Generally used by large organizations
+		- High annual cost
+		- SaaS offering
+		- Typically run on-premises due to sensitive data
+- #### Network Attack
+	- Unauthorized network access with objective to steal information or perform harmful activities
+	- Passive 
+		- Steal data without changing
+	- Active 
+		- charging
+		- removing
+		- harming data
+	- Common Network Attacks
+		- Unauthorized access
+		- DDoS
+		- Main in the Middle
+		- Code and SQL injection
+		- Privilege escalation
+		- Insider threats
+	- Common Technology-based Attacks
+		- Spoofing:
+			- Pretending to be something/someone you are not.
+			- MAC
+			- ARP
+			- Email
+			- Web address
+			- IP address
+			- DHCP
+		- Zero-day
+			- 
+		- DNS Poisoning
+		- VLAN hopping
+			- Convincing the switch to change your port connection to a *trunk link*
+		- ARP spoofing
+		- ARP Cache Poisoning
+			- ![[Pasted image 20230913215416.png]]
+			-  ![[Pasted image 20230913215356.png]]
+		- Rogue DHCP
+		- Rogue access point
+		- Evil twin
+		- Brute-force
+		- Dictionary
+		- MAC spoofing
+		- IP spoofing
+		- Deauthentication
+	- Best Practices
+		- Network segregation
+		- Regulated internet access through Proxy servers
+		- Use security devices
+		- Secure wireless networks
+		- Regularly apply updates
+- #### Ransomware
+	- Commonly accesses computers via phishing
+	- Social engineering
+	- Encrypted files are held for ransom
+	- Targets
+		- Universities and colleges
+		- Hospitals and medical facilities
+		- Law firms and government offices
+	- Prevention
+		- Keep up with OS patches and updates
+		- Be cautious about giving software admin privileges
+		- Install anti-malware software
+		- Regularly back up files
+- #### Malware
+	- Cyber attack where malicious software performs harmful actions on a system
+	- Includes: 
+		- ransomware
+		- spyware
+		- command and control
+	- Aspects
+		- Objective
+			- Stealing data
+			- Disrupting operations
+			- Extorting payment
+		- Delivery / Attack Vectors
+			- Trojan horse
+			- Virus
+			- Worm
+		- Concealment
+	- Prevention
+		- Antimalware application
+		- Ongoing education of users
+		- Prioritizing network security
+		- Performing security audits regularly
+		- Performing and verifying backups regularly
+- #### On-path Attackers
+	- Intercept/modify communication between two devices
+	- Steal data or impersonate agents
+	- Target e-mail
+		- Attackers insert themselves between e-mail server and the web and monitor e-mail communications
+	- DNS lookups
+	- public Wi-Fi
+		- Cloned Wi-Fi networks
+	- Protecting against
+		- SSL/TLS
+		- Authentication certificates
+		- S/MIME
+			- Secure/Multipurpose internet Mail Extensions
+		- VPN
+- #### Common Password Security Attacks
+	- Brute force
+		- Attacker tries all possible password combinations to access a user account
+		- Simple and easy for attackers
+	- Dictionary
+		- Attacker programmatically cycles through common words to discover password
+	- Phishing
+		- Disguised in e-mail that appear legitimate
+		- Claim suspicious activity has been detected
+		- Alternatively obtain private user information, which may help in guessing passwords
+	- Rainbow table
+		- Mathematical equations to hash algorithm password combinations to discover passwords
+	- Credential stuffing
+		- Stolen usernames and passwords are tried in varying combinations until a match is found
+		- Assumes users have the same passwords for multiple accounts
+	- Password spraying
+		- Attack attempts to match millions of accounts with commonly used passwords
+	- Keylogger Attack
+		- Attacker installs program that logs all user keystrokes
+- #### DoS / DDoS
+	- **Denial of Service Attacks**  
+		- Server is flooded with packets or requests until it becomes overwhelmed
+	- **Distributed Denial of Service**
+		- Multiple systems launch DoS attacks on one system
+	- Attack Categories
+		- Volumetric
+		- Fragmentation
+		- TCP state exhaustion
+		- Application layer
+	- Attack Forms:
+		- Ping of death
+		- UDP flood
+		- SYN (TCP) flood
+		- HTTP flood
+		- Teardrop
+	- Minimizing Attack Damage
+		- Network monitoring
+		- Simulated attacks
+		- Post-attack plan
+- #### Social Engineering Attacks
+	- Attacks that do not involve technology
+	- Tricks users into divulging information
+	- Relies on perceived trust
+	- Attack Techniques
+		- Baiting
+		- Scareware
+		- Pretexting
+		- Phishing
+		- Spear phishing
+	- Prevention
+		- Use caution opening e-mails and attachments from unfamiliar sources
+		- MFA
+		- Avoid 'Too good to be true'
+		- Regularly update antivirus and antimalware software
+
+
+# Network Troubleshooting Methodology
+- #### Methodology:
+	- Identify the problem
+		- Gather information
+		- Question users
+		- Identify symptoms
+		- Determine if anything has changed
+		- Duplicate the problem, if possible
+		- Approach multiple problems individually
+	- Establish the cause
+		- Question the obvious
+		- Consider multiple approaches
+			- Divide and conquer
+			- Top-to-Bottom/Bottom-to-Top OSI model
+	- Testing techniques
+		- If theory is confirmed; determine next steps to resolve the problem
+		- If theory is not confirmed; reestablish a new theory or cause
+	- Identify potential effects
+	- Resolving problems
+	- Verify system functionality
+	- Document processes
+- Attenuation, Latency, and Jitter
+	- Cabling doesnt meet standards
+	- Outdated or improperly installed cables
+	- Incompatible cables and connectors
+	- Poor quality patch cards
+	- Attenuation
+		- Reduction of signal strength over distance
+		- Measured in decibels or 
+		- Caused by electromagnetic field
+	- Latency
+		- Time for data to get from point to point
+		- Cumulative
+		- Transmission medium
+	- Jitter
+		- Deviation of a signal pulse
+		- Network congestion
+		- Timing drift
+		- Route changes
+		- Sequence order
+
+# High Availability
+- #### Load Balancing
+	- Distributes incoming network traffic
+	- Functions:
+		- Distribute client requests and network load
+		- Improves availability and reliability
+		- Provides flexibility
+	- Algorithms
+		- Round robin
+		- Fewest connections
+		- Least time
+		- Hash
+		- IP hash
+		- Random with choices
+	- Hardware balancing:
+		- Proprietary
+		- Specialized processors
+		- Additional infrastructure
+	- Software balancing
+		- Non-proprietary
+		- Less expensive
+		- Flexible
+		- Cloud options
+	- ![[Pasted image 20230920093731.png]]
+	- ![[Pasted image 20230904123931.png]]
+	
+- #### Dynamic Multipathing Techniques
+	- Automatically directs communication between a client and remote storage to alternative paths during failures
+	- Benefits
+		- Greater reliability
+		- Maintains critical data access
+		- Uniform balancing across multiple paths
+	- Input/Output policies
+		- Adaptive
+		- Balanced
+		- Minimumq
+		- Priority
+		- Round-robin
+		- Singleactive
+	- ![[Pasted image 20230904125252.png]]
+- #### Redundant Hardware and Clusters
+	- Redundancy
+		- Redundant components
+		- Replicated instances
+		- RAID
+		- Databases
+		- Advantages
+			- Less expensive
+			- Easier to implement and manage
+			- Can distribute load across multiple servers
+			- Scalability
+		- Disadvantages
+			- Poor availability during failures
+			- Slow response
+			- May fail to meet client requirements
+	- Clustering
+		- Group of functionally equivalent devices
+		- Structurally redundant
+		- Advantages
+			- Automatic failure recovery
+		- Disadvantages
+			- Complexity
+			- Lack of corruption recovery
+	- Failure handling
+		- Single hardware failure
+		- Service failures
+		- Recovery
+- #### Facilities and Infrastructure Support
+	- Disaster and recovery strategies
+	- Recovering your systems and data
+	- UPS
+		- Uninterruptible Power Supply
+		- Standby
+		- Line interactive
+			- Has line conditioning
+			- Brown outs
+		- Double-conversion
+	- PDU
+		- Power Distribution Unit Considerations
+		- Location
+		- Input power
+		- Equipment power needs
+		- Outlet needs
+		- Plug types
+		- Other requirements
+	- Facility Generators
+		- Classification or type
+		- Size
+		- Fuel type
+		- Location
+		- Emissions standards
+		- Runtime
+	- HVAC
+		- Location
+		- Access
+		- Parameters
+	- Fire Protection Levels
+		- Building
+		- Room
+		- Rack
+- #### NIC Teaming
+	- Enables multiple physical network adapter cards to work as a single logical interface
+	- Shared IP address
+	- Benefits
+		- Load balancing
+		- Fault tolerance
+	- Configurations
+		- Active-Passive
+		- Active-active
+	- Components
+		- Team members - physical adapters
+		- Team interfaces - assigned an IP address
+	- Modes:
+		- Switch independent
+		- LACP
+			- used to configure physical ports
+		- Static
+- #### High Availability Solutions
+	- Nearly full-time availability
+	- redundant hardware and software
+	- Avoids single points of failure
+	- Moves resources
+	- Recovers failed operations
+	- Restores services
+	- #### Measurements
+		- MTTR
+			- Mean Time To Repair
+		- MTBF
+			- Mean Time Between Failures
+		- Recovery Objectives
+			- RPO
+				- Recovery Point Objective
+				- Deals with amount of data lost
+			- RTO
+				- Recovery Time Objective
+				- Deals with amount of time lost
+	- Cloud Configurations
+		- Active-active
+		- Active-passive
+		- Multiple data-centers
+		- Diverse paths
+	- Redundancy Protocols
+		- FHRP
+			- First Hop Redundancy Protocol
+			- Sets a default gateway
+		- VRRP
+			- Virtual Routing Redundancy Protocol
+			- Combines multiple routers into a single virtual router
+			- Virtual IP that is used as default gateway
+	- Recovery Site Types
+		- Hot
+			- Another site ready to go and is up and running, minimal disruption
+		- Warm
+			- Has infrastructure in place already but not necessarily running yet or up to date
+			- May need to perform a backup first
+		- Cold
+			- Have the facility and very little infrastructure
+			- May have to move equipment and staff
+- #### Network Backup and Restore Options
+	- Copying data and configuration information to a separate, secondary device
+	- Recover data and applications after loss or damage
+	- Disaster recovery strategy
+	- Devices:
+		- Tape drive
+		- HDD/SSD
+		- Backup server
+		- Cloud
+	- Methods
+		- Full
+		- Incremental
+			- Backup only data that has changed since last full or incremental backup
+		- Differential
+			- Backup only data that has changed since last full backup
+			- Restore data quickly
+			- 
+		- CDP
+			- Continuous Data Protection
+			- Automatically and instantly backed up
+			- Always in-sync
+		- Bare-metal
+		- Instant recovery
+			- Virtual Machines
+	- System State Backup
+		- Copy of crucial OS components
+		- Quick
+		- Uses native backup tools
+	- Considerations
+		- Corruption
+		- Accessibility
+		- Failures or schedule issues
+		- Incomplete
+		- Slow
+
+
+
+# IoT
+- #### Bluetooth
+	- 802.15
+- #### Zigbee / Z-Wave
+	- Zigbee
+		- Open source
+		- 64000 devices
+		- 2.4 GHz / 915 MHz
+	- Z-Wave
+		- Proprietary
+		- 232 devices
+		- 908 - 916 MHz
+- #### Wi-Fi
+
+#### UC 
+#TODO 
+- Unified Communications
+- SIP & RTP 
+- can also use H.323 or MGCP
+	- H.323 is a video presentation protocol on port TCP 1720
+	- Media Gateway Control Protocol 
+		- VoIP or video presentation connection and session controller
+		- TCP 2427 & 2727
+
+# ICS
+- Industrial Control Systems
+- I/O functions
+- Controller
+- Operator interface
+- #### DCS
+	- Distributed Control system
+	- Reports to central ICS server
+- #### PLC
+	- Programmable Logic Control
+	- Uses ordered steps
+
+# Change Management
+- Type of Change
+- Configuration procedures
+- Rollback process
+- Potential impact
+- Notification
+# Agreements:
+- SLA
+- MOU
+- #TODO BPA, ISA
+- MSA
+- SOW
+- NDA
+# Security Assessments
+- Security Risk Assessment
+- Threat Assessment
+- Vulnerability Assessment
+- Penetration Testing
+- Posture Assessment
+- Business Risk Assessments
+- Process Assessments
+- Vendor Assessment
+# Contingency Planning Ch.18
+- Incident Response
+- Disaster Recovery
+- Network Device Backup/Restore
+- Backup Plan Assessments
+- #### Business Continuity
+	- #### Cold Site
+		- a location that consists of a building, facilities, desks, toilets, parking—everything that a business needs…except computers. A cold site generally takes more than a few days to bring online.
+	- #### Warm Site
+		- starts with the same components as a cold site, but adds computers loaded with software and functioning servers—a complete hardware infrastructure. A warm site lacks current data and may not have functioning Internet/network links. Bringing this site up to speed may start with activating your network links, and it most certainly requires loading data from recent backups. A warm site should only take a day or two to bring online.
+	- #### Hot Site
+		- has everything a warm site does, but also includes very recent backups. It might need just a little data restored from a backup to be current, but in many cases a hot site is a complete duplicate of the primary site. A proper hot site should only take a few hours to bring online.
+- Being the First Responder:
+	- Secure the Area
+	- Document the scene
+	- Collect evidence
+
+
+#TODO Chapter 15 & 16 notes (layout, redundancy, Baseline)
+
+#TODO ~~Debugging levels OBJ 3.1~~
+#TODO SNMPv3, OBJ=3.2 eDiscovery, 
+#TODO OBJ-5.3 DHCP NetBIOS nbtstat, 
+#TODO OBJ-5.5 DNS split-horizon, 
+#TODO OBJ-1.1 Encapuslation/Decapsulation, 
+#TODO OBJ-1.4 VLSM, 
+#TODO UTM, 
+#TODO ATM, 
+#TODO NAC, 
+#TODO ~~DHCP snooping vs ARP~~
+#TODO ~~throughput vs bandwidth~~
+#TODO TDMA vs CSMA/CD, 
+#TODO SQL/MySQL ports, 
+#TODO add broadcast domain distinction between switches and routers, 
+#TODO OID vs MIB, 
+#TODO 5Ghz channel overlaps & channel bonding,
+#TODO IGMP
+#TODO QoS
+#TODO Routers break up a network into different broadcast domains
+#TODO MPLS
+#TODO Hub and Spoke
+#TODO IEEE standards
+#TODO Counting collision and broadcast domains
+#TODO ~~ARP Poisoning / MAC Spoofing~~
+#TODO Different firewalls and what layer they operate at, WAF
+#TODO Snort and IDS/IPS
+#TODO Captive Portal
+#TODO Teredo Tunneling 
+#TODO RAS Remote Access Server
+#TODO mGRE
+#TODO BSSID ESSID
+#TODO CSU/DSU

@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"type":"text","text":"# RAID #TODO\n**(Redundant Array of Independent Disks)**","id":"5b341364b545c8fe","x":-420,"y":-220,"width":420,"height":122},
+		{"type":"text","text":"RAID 1","id":"43eb56c43fe606a9","x":300,"y":-308,"width":250,"height":60},
+		{"type":"text","text":"RAID 0","id":"4fdaba3540fd5086","x":300,"y":-540,"width":250,"height":60},
+		{"type":"text","text":"RAID 5","id":"8e928e4c6ebc746b","x":300,"y":-76,"width":250,"height":60},
+		{"type":"text","text":"RAID 10 (1+0)","id":"fecb5f30494f3c43","x":300,"y":156,"width":250,"height":60},
+		{"type":"text","text":"Striped set with parity. Combines both RAID 0 and RAID 1. \nMinimum 3 drives is required, the equivalent space of one drive is used for redundancy.\nIf a drive fails, speed drops until the failed drive is replaced.","id":"010faa1b11a5075b","x":702,"y":-111,"width":587,"height":131},
+		{"type":"text","text":"Disk Mirroring\nDuplexing, only 2 drives can be used.\nIf one drive fails, the other contains all data and used as primary drive","id":"c448f0380ab229ee","x":702,"y":-349,"width":378,"height":143},
+		{"type":"text","text":"Disk Striping. \nA striped set of equal space across 2 disks\nDoes not provide fault tolerance\nFaster data access","id":"968cda6b1f4267c9","x":702,"y":-593,"width":358,"height":167},
+		{"type":"file","file":"IT Cybersecurity/A+ 220-1101 & 1102/Images/Pasted image 20230809100404.png","id":"4ee56f38c3dddb46","x":1360,"y":-349,"width":400,"height":194},
+		{"type":"text","text":"Minimum of 4 drives\nHalf of total drive space","id":"de1d47d6bca8bb32","x":702,"y":124,"width":489,"height":124},
+		{"type":"file","file":"IT Cybersecurity/A+ 220-1101 & 1102/Images/Pasted image 20230809100828.png","id":"d855f39eefd87fd7","x":702,"y":300,"width":525,"height":440},
+		{"type":"file","file":"IT Cybersecurity/A+ 220-1101 & 1102/Images/Pasted image 20230809101622.png","id":"b185633753da4540","x":1320,"y":-643,"width":400,"height":267},
+		{"type":"file","file":"IT Cybersecurity/A+ 220-1101 & 1102/Images/Pasted image 20230809101721.png","id":"80fd1ae03924254f","x":1289,"y":300,"width":440,"height":440}
+	],
+	"edges":[
+		{"id":"1f6f2b7c92ff197b","fromNode":"5b341364b545c8fe","fromSide":"right","toNode":"43eb56c43fe606a9","toSide":"left"},
+		{"id":"88c49d5f845b96ad","fromNode":"5b341364b545c8fe","fromSide":"right","toNode":"4fdaba3540fd5086","toSide":"left"},
+		{"id":"ad0b4dc6d38b468b","fromNode":"5b341364b545c8fe","fromSide":"right","toNode":"8e928e4c6ebc746b","toSide":"left"},
+		{"id":"6f28fe51a0ee5a0f","fromNode":"5b341364b545c8fe","fromSide":"right","toNode":"fecb5f30494f3c43","toSide":"left"},
+		{"id":"962905b622b63cad","fromNode":"4fdaba3540fd5086","fromSide":"right","toNode":"968cda6b1f4267c9","toSide":"left"},
+		{"id":"f14405f7597e0116","fromNode":"43eb56c43fe606a9","fromSide":"right","toNode":"c448f0380ab229ee","toSide":"left"},
+		{"id":"a4719807efc9e6f2","fromNode":"8e928e4c6ebc746b","fromSide":"right","toNode":"010faa1b11a5075b","toSide":"left"},
+		{"id":"0048e1e1c0640682","fromNode":"fecb5f30494f3c43","fromSide":"bottom","toNode":"d855f39eefd87fd7","toSide":"left"},
+		{"id":"29280bd551fd403e","fromNode":"fecb5f30494f3c43","fromSide":"right","toNode":"de1d47d6bca8bb32","toSide":"left"}
+	]
+}
