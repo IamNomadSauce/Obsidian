@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODOs.md",
+                "file": "Compsci/Electronic Circuits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e4d5e12ce2c1edb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compsci/Electronic Circuits.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODOs.md",
+                "file": "Compsci/Electronic Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODOs.md",
+                "file": "Compsci/Electronic Circuits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODOs.md"
+                "file": "Compsci/Electronic Circuits.md"
               }
             }
           }
@@ -170,17 +183,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3aae1925a0d0532",
+  "active": "7e4d5e12ce2c1edb",
   "lastOpenFiles": [
-    "Compsci/Electronic Circuits.md",
-    "Compsci/Curriculum.md",
     "Compsci/Linear Algebra.md",
+    "Compsci/Operating Systems.md",
+    "Compsci/Electronic Circuits.md",
+    "Untitled",
+    "Compsci/Curriculum.md",
+    "Compsci/Algorithms.canvas",
+    "TODOs.md",
     "Untitled.canvas",
     "Config.md",
-    "TODOs.md",
     "Projects/Static Go (New HBW).md",
     "Projects/Command Center (GO).md",
-    "Compsci/Algorithms.canvas",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
     "Images/Pasted image 20240724172612.png",
     "Images",
