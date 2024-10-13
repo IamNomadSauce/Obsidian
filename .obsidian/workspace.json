@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compsci/Electronic Circuits.md",
+                "file": "Compsci/Nand2Tetris.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compsci/Electronic Circuits.md",
+                "file": "Compsci/Nand2Tetris.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compsci/Electronic Circuits.md",
+                "file": "Compsci/Nand2Tetris.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compsci/Electronic Circuits.md"
+                "file": "Compsci/Nand2Tetris.md"
               }
             }
           }
@@ -185,9 +185,10 @@
   },
   "active": "7e4d5e12ce2c1edb",
   "lastOpenFiles": [
+    "Compsci/Electronic Circuits.md",
+    "Compsci/Nand2Tetris.md",
     "Compsci/Linear Algebra.md",
     "Compsci/Operating Systems.md",
-    "Compsci/Electronic Circuits.md",
     "Untitled",
     "Compsci/Curriculum.md",
     "Compsci/Algorithms.canvas",
