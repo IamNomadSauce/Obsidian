@@ -16,3 +16,13 @@ Formal Logic
   
 General Resources
 - https://www.classcentral.com/subject/cs
+
+From Source to Binary: A C Programmer's Guide to Linking and Loading
+- https://mohitmishra786.github.io/underTheHoodOfExecutables/
+
+ECED2200 Digital Circuits
+- https://www.youtube.com/watch?v=sjk6nWCbVPo&list=PLDFF5A99731ECFC6C&index=7
+
+Latches
+- https://www.classcentral.com/classroom/youtube-eced2200-digital-circuits-lecture-latches-and-flip-flops-138941
+

@@ -16,7 +16,23 @@
                 "file": "Compsci/Electronic Circuits.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Electronic Circuits"
+            }
+          },
+          {
+            "id": "e2a7c726f6ad2738",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assembly.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Assembly"
             }
           },
           {
@@ -28,31 +44,9 @@
                 "file": "Compsci/Nand2Tetris.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "8773bb4d27ee233f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Config.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c0562e2236cb61c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODOs.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Nand2Tetris"
             }
           }
         ],
@@ -76,7 +70,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -91,7 +87,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -99,7 +97,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compsci/Nand2Tetris.md",
+                "file": "TODOs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for TODOs"
             }
           },
           {
@@ -139,10 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compsci/Nand2Tetris.md",
+                "file": "TODOs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from TODOs"
             }
           },
           {
@@ -153,7 +157,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -162,8 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compsci/Nand2Tetris.md"
-              }
+                "file": "TODOs.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of TODOs"
             }
           }
         ]
@@ -180,22 +188,28 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "7e4d5e12ce2c1edb",
+  "active": "e2a7c726f6ad2738",
   "lastOpenFiles": [
     "Compsci/Electronic Circuits.md",
+    "Assembly.md",
     "Compsci/Nand2Tetris.md",
-    "Compsci/Linear Algebra.md",
     "Compsci/Operating Systems.md",
-    "Untitled",
-    "Compsci/Curriculum.md",
-    "Compsci/Algorithms.canvas",
-    "TODOs.md",
     "Untitled.canvas",
-    "Config.md",
+    "Compsci/Algorithms.canvas",
+    "Compsci/Linear Algebra.md",
+    "Compsci/Curriculum.md",
     "Projects/Static Go (New HBW).md",
+    "TODOs.md",
+    "test2.xopp",
+    "/test2.xopp",
+    "Hedgemoney.xopp",
+    "/Hedgemoney.xopp",
+    "Untitled",
+    "Config.md",
     "Projects/Command Center (GO).md",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
     "Images/Pasted image 20240724172612.png",
@@ -235,8 +249,6 @@
     "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md",
     "IT Cybersecurity/Help Desk.md",
     "Projects/HUD Sight/HUD Sight.md",
-    "Untitled 1.md",
-    "Projects/HUD Sight",
-    "IT Cybersecurity/A+ Core2"
+    "Untitled 1.md"
   ]
 }
