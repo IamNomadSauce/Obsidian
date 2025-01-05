@@ -26,3 +26,7 @@ ECED2200 Digital Circuits
 Latches
 - https://www.classcentral.com/classroom/youtube-eced2200-digital-circuits-lecture-latches-and-flip-flops-138941
 
+Operating Systems
+- Xv6 (MIT)
+	- https://pdos.csail.mit.edu/6.828/2024/xv6.html
+	- https://github.com/mit-pdos/xv6-riscv-book
