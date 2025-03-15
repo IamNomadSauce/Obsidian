@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "49af16f2f4b81f92",
+        "id": "c1e1f444baf5ac8d",
         "type": "tabs",
         "children": [
           {
-            "id": "a3aae1925a0d0532",
+            "id": "feb413a6f8b43031",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compsci/Electronic Circuits.md",
+                "file": "C Lang/Networking with C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electronic Circuits"
-            }
-          },
-          {
-            "id": "e2a7c726f6ad2738",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compsci/Operating Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Operating Systems"
-            }
-          },
-          {
-            "id": "7e4d5e12ce2c1edb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compsci/Nand2Tetris.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Nand2Tetris"
+              "title": "Networking with C"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -122,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODOs.md",
+                "file": "C Lang/Networking with C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TODOs"
+              "title": "Backlinks for Networking with C"
             }
           },
           {
@@ -192,14 +164,22 @@
       "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "e2a7c726f6ad2738",
+  "active": "feb413a6f8b43031",
   "lastOpenFiles": [
+    "Compsci/Nand2Tetris.md",
+    "Compsci/Electronic Circuits.md",
+    "Compsci/OSTEP.md",
+    "2025-03-15.md",
+    "C Lang/Networking with C.md",
+    "Screenshot from 2025-03-15 16-34-15.png",
+    "Screenshot from 2025-03-15 16-00-02.png",
+    "C Lang",
+    "IT Cybersecurity/Network+ N10_008.md",
+    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20231010105537.png",
+    "Compsci/Operating Systems.md",
     "Compsci/Curriculum.md",
     "Compsci/Algorithms.canvas",
-    "Compsci/Nand2Tetris.md",
-    "Compsci/Operating Systems.md",
     "Assembly.md",
-    "Compsci/Electronic Circuits.md",
     "Untitled.canvas",
     "Compsci/Linear Algebra.md",
     "Projects/Static Go (New HBW).md",
@@ -208,7 +188,6 @@
     "/test2.xopp",
     "Hedgemoney.xopp",
     "/Hedgemoney.xopp",
-    "Untitled",
     "Config.md",
     "Projects/Command Center (GO).md",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
@@ -220,22 +199,18 @@
     "Images/Pasted image 20240724174446.png",
     "Images/Pasted image 20240724174327.png",
     "Images/Pasted image 20240724174311.png",
-    "Images/Pasted image 20240724172701.png",
     "Compsci",
     "Truck Shopping List.md",
     "CLI Commands.md",
     "Job Stuff.md",
     "IT Cybersecurity/TCP-IP.canvas",
-    "IT Cybersecurity/Network+ N10_008.md",
     "Projects/EV Conversion/Manifest.md",
     "Projects/EV Conversion/Kanban.canvas",
     "IT Cybersecurity/Ports and Protocols.canvas",
     "Projects/EV Conversion",
     "Projects/Twitch OBS Autorecord.md",
     "IT Cybersecurity/Network Hardware.canvas",
-    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20231019193541.png",
     "IT Cybersecurity",
-    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20231019205806.png",
     "ToDo List.md",
     "IT Cybersecurity/CySA+.canvas",
     "IT Cybersecurity/Security+.md",
@@ -246,8 +221,6 @@
     "IT Cybersecurity/A+ Core2/Viruses and Malware.md",
     "Projects/HUD Sight/File Systems.md",
     "WAN.md",
-    "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md",
-    "IT Cybersecurity/Help Desk.md",
-    "Projects/HUD Sight/HUD Sight.md"
+    "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md"
   ]
 }
