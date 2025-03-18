@@ -11,6 +11,23 @@
             "id": "feb413a6f8b43031",
             "type": "leaf",
             "state": {
+              "type": "canvas",
+              "state": {
+                "file": "C Lang/tcp_server_toupper.canvas",
+                "viewState": {
+                  "x": 2080,
+                  "y": 380,
+                  "zoom": -1.6901260572756922
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "tcp_server_toupper"
+            }
+          },
+          {
+            "id": "db95031c8fae1809",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "C Lang/Networking with C.md",
@@ -21,7 +38,8 @@
               "title": "Networking with C"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a81a435c01c561fb",
@@ -164,13 +183,16 @@
       "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "feb413a6f8b43031",
+  "active": "db95031c8fae1809",
   "lastOpenFiles": [
+    "Screenshot from 2025-03-17 20-33-06.png",
+    "C Lang/tcp_server_toupper.canvas",
+    "C Lang/Networking with C.md",
+    "Screenshot from 2025-03-16 15-12-53.png",
     "Compsci/Nand2Tetris.md",
     "Compsci/Electronic Circuits.md",
     "Compsci/OSTEP.md",
     "2025-03-15.md",
-    "C Lang/Networking with C.md",
     "Screenshot from 2025-03-15 16-34-15.png",
     "Screenshot from 2025-03-15 16-00-02.png",
     "C Lang",
@@ -198,7 +220,6 @@
     "Images/Pasted image 20240724174515.png",
     "Images/Pasted image 20240724174446.png",
     "Images/Pasted image 20240724174327.png",
-    "Images/Pasted image 20240724174311.png",
     "Compsci",
     "Truck Shopping List.md",
     "CLI Commands.md",
@@ -216,11 +237,9 @@
     "IT Cybersecurity/Security+.md",
     "IT Cybersecurity/A+ Core2/Operating System Basics.md",
     "IT Cybersecurity/PC Components.canvas",
-    "IT Cybersecurity/Security+.canvas",
     "Projects",
     "IT Cybersecurity/A+ Core2/Viruses and Malware.md",
     "Projects/HUD Sight/File Systems.md",
-    "WAN.md",
-    "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md"
+    "WAN.md"
   ]
 }
