@@ -1,14 +1,14 @@
 - [ ] 
-- [ ] Xterra
-	- [ ] New Battery
-	- [ ] Fix flat tire
-	- [ ] Duplicate title
-- [ ] Download 23andme data 
-- [ ] Upload to git:
+- [x] Xterra
+	- [x] New Battery
+	- [x] Fix flat tire
+	- [x] Duplicate title
+- [x] Download 23andme data 
+- [x] Upload to git:
 	- [x] Obsidian Repository
-	- [ ] ~/.bashrc
-	- [ ] ~/.vimrc
-	- [ ] ~/.tmux.config
+	- [x] ~/.bashrc
+	- [x] ~/.vimrc
+	- [x] ~/.tmux.config
 
 
 ```query

@@ -4,38 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "c1e1f444baf5ac8d",
+        "id": "d25e94d7aa24fb16",
         "type": "tabs",
         "children": [
           {
-            "id": "feb413a6f8b43031",
+            "id": "35454685652292d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C Lang/Pointers.md",
+                "file": "Compsci/Linear Algebra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pointers"
+              "title": "Linear Algebra"
             }
           },
           {
-            "id": "db95031c8fae1809",
+            "id": "e16e0a6b4eed0997",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C Lang/Networking with C.md",
+                "file": "Compsci/Electronic Circuits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking with C"
+              "title": "Electronic Circuits"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 218.50312423706055,
+    "collapsed": true
   },
   "right": {
     "id": "a81a435c01c561fb",
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C Lang/Networking with C.md",
+                "file": "Compsci/Electronic Circuits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Networking with C"
+              "title": "Backlinks for Electronic Circuits"
             }
           },
           {
@@ -154,13 +156,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODOs.md"
+                "file": "Compsci/Electronic Circuits.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TODOs"
+              "title": "Outline of Electronic Circuits"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -169,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -178,18 +185,34 @@
       "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "feb413a6f8b43031",
+  "active": "e16e0a6b4eed0997",
   "lastOpenFiles": [
+    "Screenshot 2025-12-12 at 22.41.54.png",
+    "Screenshot 2025-12-12 at 22.35.34.png",
+    "Screenshot 2025-12-12 at 22.31.20.png",
     "Compsci/Linear Algebra.md",
-    "C Lang/Pointers.md",
-    "Compsci/Algorithms.canvas",
-    "Compsci/Curriculum.md",
     "Compsci/Electronic Circuits.md",
+    "Untitled 2.base",
+    "Compsci/Curriculum.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Compsci/Algorithms.canvas",
+    "Projects/PNP/Untitled.md",
+    "Projects/FES/Links.md",
+    "Projects/PNP",
+    "Projects/Static Go (New HBW).md",
+    "Projects/FES",
+    "Projects/Command Center (GO).md",
+    "CLI Commands.md",
+    "Config.md",
+    "IT Cybersecurity/802.3 (Ethernet).canvas",
+    "TODOs.md",
+    "Compsci/Nand2Tetris.md",
+    "C Lang/Networking with C.md",
+    "C Lang/Pointers.md",
     "Compsci/OSTEP.md",
     "Compsci/Operating Systems.md",
-    "Compsci/Nand2Tetris.md",
     "C Lang/tcp_server_toupper.canvas",
-    "C Lang/Networking with C.md",
     "Screenshot from 2025-03-17 20-33-06.png",
     "Screenshot from 2025-03-16 15-12-53.png",
     "2025-03-15.md",
@@ -200,41 +223,25 @@
     "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20231010105537.png",
     "Assembly.md",
     "Untitled.canvas",
-    "Projects/Static Go (New HBW).md",
-    "TODOs.md",
     "test2.xopp",
     "/test2.xopp",
     "Hedgemoney.xopp",
     "/Hedgemoney.xopp",
-    "Config.md",
-    "Projects/Command Center (GO).md",
-    "IT Cybersecurity/802.3 (Ethernet).canvas",
     "Images/Pasted image 20240724172612.png",
-    "Images",
     "Images/Pasted image 20240724180640.png",
     "Images/Pasted image 20240724180637.png",
-    "Images/Pasted image 20240724174515.png",
-    "Images/Pasted image 20240724174446.png",
-    "Compsci",
     "Truck Shopping List.md",
-    "CLI Commands.md",
     "Job Stuff.md",
     "IT Cybersecurity/TCP-IP.canvas",
     "Projects/EV Conversion/Manifest.md",
     "Projects/EV Conversion/Kanban.canvas",
     "IT Cybersecurity/Ports and Protocols.canvas",
-    "Projects/EV Conversion",
     "Projects/Twitch OBS Autorecord.md",
     "IT Cybersecurity/Network Hardware.canvas",
-    "IT Cybersecurity",
     "ToDo List.md",
     "IT Cybersecurity/CySA+.canvas",
     "IT Cybersecurity/Security+.md",
     "IT Cybersecurity/A+ Core2/Operating System Basics.md",
-    "IT Cybersecurity/PC Components.canvas",
-    "Projects",
-    "IT Cybersecurity/A+ Core2/Viruses and Malware.md",
-    "Projects/HUD Sight/File Systems.md",
-    "WAN.md"
+    "IT Cybersecurity/PC Components.canvas"
   ]
 }
