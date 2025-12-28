@@ -1,0 +1,1 @@
+Eddy current loss is caused by electric currents induced within the ferromagnetic material under time varying excitation. These induced eddy currents circulate within the material dissipating power (i.e., I R losses) due to the resistivity of the material. Eddy current power loss is approximately described by the relationship Pe = keh2 f2B
