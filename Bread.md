@@ -4,7 +4,8 @@
 	- ~20g salt, 
 	- ~760g water. 
 	- #### Instructions
-		- Autolyse flour and water for an hour, mix in salt and starter. 
+		- Autolyse flour and water for an hour
+		- mix in salt and starter. 
 		- Slap and fold/rest until gluten is well formed. 
 		- Stretch and fold every ~60 min until nearly doubled in size. 
 		- Shape, and cold ferment in the fridge for ~1-2 days.
@@ -19,7 +20,7 @@
 		- 2 teaspoons [instant yeast](https://shop.kingarthurbaking.com/items/saf-red-instant-yeast)
 		- 1 1/4 cups (283g) lukewarm milk
 	- Instructions
-		- Rise for 1 hours
+		- Rise for 1-2 hours
 		- Roll into loaf shape, place in loaf pan, let rise 1-2hrs until 1" above pan line.
 		- Bake for 35-40min at 350
 

@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"02cbcf4cb818a660","type":"group","x":300,"y":-453,"width":412,"height":700,"label":"Controller"},
+		{"id":"2812f472063e3b1c","type":"group","x":-380,"y":-103,"width":290,"height":177,"label":"Water Barrel"},
+		{"id":"60f398d7b547061f","type":"group","x":-380,"y":-364,"width":290,"height":177,"label":"Water Barrel"},
+		{"id":"8ce28fc315a6f1f6","type":"text","text":"Channel 6","x":320,"y":-233,"width":250,"height":60},
+		{"id":"8002ec4e162accbe","type":"text","text":"Channel 5","x":320,"y":-153,"width":250,"height":60},
+		{"id":"0f133a89a4be643b","type":"text","text":"Channel 2","x":320,"y":87,"width":250,"height":60},
+		{"id":"4c46630c15ea05ea","type":"text","text":"Channel 1","x":320,"y":167,"width":250,"height":60},
+		{"id":"a77579d4dbe2a050","type":"text","text":"RX/TX","x":320,"y":-420,"width":250,"height":60},
+		{"id":"00ca2901803dd658","type":"text","text":"Low Level Shutoff\n","x":-360,"y":-83,"width":250,"height":60},
+		{"id":"f3010c9d3ab91c4f","type":"text","text":"Water Pump","x":-360,"y":-6,"width":250,"height":60},
+		{"id":"4c7fbfb04936a79c","type":"text","text":"Water Pump","x":-360,"y":-267,"width":250,"height":60},
+		{"id":"9b145cf47b472dc4","type":"text","text":"Low Level Shutoff\n","x":-360,"y":-344,"width":250,"height":60},
+		{"id":"b1c4e3970bb50d38","type":"text","text":"Channel 3","x":320,"y":-6,"width":250,"height":60},
+		{"id":"b6ae9b95a2a3c5e0","type":"text","text":"Channel 4","x":320,"y":-83,"width":250,"height":60},
+		{"id":"4e56875eda1c4f87","x":-650,"y":-53,"width":173,"height":60,"type":"text","text":"Valve Splitter"},
+		{"id":"194dcbadb8fa103d","x":-1000,"y":-83,"width":250,"height":60,"type":"text","text":"Tomatoes"},
+		{"id":"c25d214a95a737d6","x":-997,"y":4,"width":250,"height":60,"type":"text","text":"Lettuce"},
+		{"id":"17830aafbe50b8a9","type":"text","text":"Valve Splitter","x":-647,"y":-314,"width":173,"height":60},
+		{"id":"8565ebf03c8dc026","type":"text","text":"Cucumbers","x":-997,"y":-344,"width":250,"height":60},
+		{"id":"33777f9f270b1ea5","type":"text","text":"Herbs","x":-994,"y":-257,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"510e7e52772439cb","fromNode":"4c46630c15ea05ea","fromSide":"left","toNode":"f3010c9d3ab91c4f","toSide":"right"},
+		{"id":"0813aa81bd1515c9","fromNode":"00ca2901803dd658","fromSide":"right","toNode":"a77579d4dbe2a050","toSide":"left"},
+		{"id":"3e8632fe6fbcd421","fromNode":"0f133a89a4be643b","fromSide":"left","toNode":"4c7fbfb04936a79c","toSide":"right"},
+		{"id":"eb6780c47350acbb","fromNode":"9b145cf47b472dc4","fromSide":"right","toNode":"a77579d4dbe2a050","toSide":"left"},
+		{"id":"5d050d1731ae3458","fromNode":"f3010c9d3ab91c4f","fromSide":"left","toNode":"4e56875eda1c4f87","toSide":"right"},
+		{"id":"7713140c1351ef11","fromNode":"4e56875eda1c4f87","fromSide":"left","toNode":"c25d214a95a737d6","toSide":"right"},
+		{"id":"14f2f7adb3109e15","fromNode":"4e56875eda1c4f87","fromSide":"left","toNode":"194dcbadb8fa103d","toSide":"right"},
+		{"id":"fd3caef0a34ed6ff","fromNode":"17830aafbe50b8a9","fromSide":"left","toNode":"33777f9f270b1ea5","toSide":"right"},
+		{"id":"3886c5c583f4d335","fromNode":"17830aafbe50b8a9","fromSide":"left","toNode":"8565ebf03c8dc026","toSide":"right"},
+		{"id":"9bddf052d0f23571","fromNode":"4c7fbfb04936a79c","fromSide":"left","toNode":"17830aafbe50b8a9","toSide":"right"},
+		{"id":"ee812a14bafe691d","fromNode":"b1c4e3970bb50d38","fromSide":"left","toNode":"4e56875eda1c4f87","toSide":"bottom"},
+		{"id":"b91ac5ae5b11a41a","fromNode":"b6ae9b95a2a3c5e0","fromSide":"left","toNode":"17830aafbe50b8a9","toSide":"bottom"}
+	]
+}

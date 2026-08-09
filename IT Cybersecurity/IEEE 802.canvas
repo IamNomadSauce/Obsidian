@@ -19,7 +19,7 @@
 		{"type":"text","text":"- 5GHz\n- 1Gbps\n- 70/250m range\n\t- 300'\n- Backwards Compatible:\n\t- 802.11a\n- MU-MIMO","id":"07daf12f342448fe","x":1653,"y":948,"width":288,"height":229},
 		{"type":"text","text":"802.11ac (WiFi 5) #TODO ","id":"38a9e4158dd481a3","x":1164,"y":1032,"width":250,"height":60},
 		{"type":"text","text":"- 2.4GHz\n- 9.6Gbps\n- 70/250m range","id":"b5546777066f3028","x":2121,"y":1125,"width":250,"height":108},
-		{"type":"text","text":"# IEEE 802","id":"92cabfdc9de9babc","x":-315,"y":90,"width":175,"height":70,"color":"1"},
+		{"type":"text","text":"# IEEE 802","id":"92cabfdc9de9babc","x":-315,"y":90,"width":275,"height":110,"color":"1"},
 		{"type":"text","text":"## Frequencies","id":"f108b9f26fc4bf7d","x":-798,"y":-200,"width":250,"height":60},
 		{"type":"text","text":"802.11b","id":"263de421310a782f","x":1164,"y":30,"width":250,"height":60},
 		{"type":"text","text":"802.11a","id":"a5cbad181161ddbf","x":1164,"y":-304,"width":250,"height":60},
