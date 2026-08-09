@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gardening/How to Grow Spinach Planting, Growing & Harvesting Guide.md",
+                "file": "Gardening/schedule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to Grow Spinach Planting, Growing & Harvesting Guide"
+              "title": "schedule"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.50418853759766
+    "width": 200
   },
   "right": {
     "id": "a81a435c01c561fb",
@@ -169,14 +169,27 @@
       "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "a44cec36488bb892",
+  "active": "98c471b262fe4ac3",
   "lastOpenFiles": [
-    "Gardening/Planting and Growing Broccoli.md",
+    "Gardening/How to Grow Winter Squash Butternut, Acorn, Spaghetti & More.md",
+    "Gardening/How to Plant and Grow Zucchini & Summer Squash.md",
+    "Gardening/schedule.md",
+    "Gardening/How to Grow Tomatoes Complete Guide to Planting & Harvesting.md",
+    "Gardening/Planting and Growing Marigolds.md",
+    "Gardening/How to Grow Swiss Chard Planting, Care & Harvest Tips for Colorful Greens.md",
+    "Gardening/Planting and Growing Potatoes.md",
+    "Gardening/Planting and Growing Eggplant (Aubergines).md",
+    "Gardening/Planting and Growing Cucumber Plants.md",
+    "Gardening/How to Grow Lettuce Sowing, Planting & Harvesting Tips for Crisp Leaves.md",
+    "Gardening/Planting and Growing Dry Beans (Shelling Beans).md",
+    "Gardening/How to Grow Collard Greens Planting, Growing & Harvesting Tips.md",
+    "IT Cybersecurity/A+ Core2/Operating System Basics.md",
+    "Gardening/Planting Calendar & Schedule for  Columbia, SC - The Old Farmer’s Almanac.md",
     "Gardening/How to Grow Spinach Planting, Growing & Harvesting Guide.md",
+    "Gardening/Planting and Growing Broccoli.md",
     "Gardening/Planting and Growing Celery.md",
     "Gardening/How to Grow Green Beans Plant, Care & Harvest Guide for Bush & Pole Beans.md",
     "Gardening/How to Grow Kale Planting, Care, and Harvest Tips for Healthy Greens.md",
-    "Gardening/How to Grow Collard Greens Planting, Growing & Harvesting Tips.md",
     "IT Cybersecurity/Network+ N10_008.md",
     "Gardening",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
@@ -203,20 +216,7 @@
     "Electrical Engineering/Electronic Circuits.md",
     "Electrical Engineering/Electric Motors.md",
     "Compsci/Algorithms.canvas",
-    "Compsci/Linear Algebra.md",
-    "Compsci/Nand2Tetris.md",
-    "Compsci/Curriculum.md",
-    "Compsci/OSTEP.md",
-    "Compsci/Operating Systems.md",
-    "IT Cybersecurity/A+ Core2/Viruses and Malware.md",
-    "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md",
-    "IT Cybersecurity/A+ Core2/Operating System Basics.md",
-    "Projects/Static Go (New HBW).md",
     "Clippings",
-    "Config.md",
-    "CLI Commands.md",
-    "Assembly.md",
-    "Bread.md",
     "Screenshot 2025-12-12 at 22.41.54.png",
     "Screenshot 2025-12-12 at 22.35.34.png",
     "Compsci/C Lang/tcp_server_toupper.canvas",
