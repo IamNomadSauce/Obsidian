@@ -1,3 +1,26 @@
+
+# cURL:
+- http://<SERVER_IP>:<PORT>
+- Flags:
+- i (include)
+    - Include response headers in the output
+- v (verbose)
+- u (user)
+  - <user:password>
+  - http://admin:password@<SERVER_IP>:<PORT>
+- H (header)
+  - i.e. curl -H 'Authorization: Basic qw324ien3=' http://<SERVER_IP>:<PORT>
+  - curl -H 'Cookie: sessionqw23urs9' ...
+  - curl -H 'Content-Type: application/json' ...
+- X POST
+  - Sends a POST request
+  - curl -X POST -d 'username=admin&password=password' http://<SERVER_IP>:<PORT>
+- b 
+  - Set a cookie?
+  
+
+
+
 # nmap:
 - most effective six-probe combination host discovery
 	-  `sudo nmap -sS -p- -PE -PP -PS80,443 -PA3389 -PU40125 -A -T4 -oA <filename>-%D <*target ip*>`

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef5537a754da632b",
+        "id": "cf745b6cd81b89bc",
         "type": "tabs",
         "children": [
           {
-            "id": "98c471b262fe4ac3",
+            "id": "07d2df603128bdd7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gardening/schedule.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "schedule"
+              "title": "New tab"
             }
           }
         ]
@@ -41,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -169,63 +167,63 @@
       "xournalpp:Create new Xournal++ note": false
     }
   },
-  "active": "98c471b262fe4ac3",
+  "active": "07d2df603128bdd7",
   "lastOpenFiles": [
-    "CANBUS",
-    "Electrical Engineering/Electronic Circuits.md",
+    "Clippings/Sparse distributed memory understanding the speed and robustness of expert memory.md",
+    "Clippings/Drone Awareness Kit A Quick Guide For Small Teams.md",
+    "Untitled.md",
+    "Clippings/RatRig v4 BOM WIKI.md",
+    "Clippings/Grok.md",
+    "Untitled 11.base",
+    "Untitled 6.base",
+    "Untitled 3.base",
+    "Untitled.base",
     "Electrical Engineering/Electric Motors.md",
+    "Electrical Engineering/Electronic Circuits.md",
+    "Compsci/TinyGrad/README.md",
+    "Compsci/TinyGrad",
+    "Untitled 10.base",
+    "IT Cybersecurity/PC Components.canvas",
+    "Untitled 9.base",
+    "Compsci/Linear Algebra.md",
+    "IT Cybersecurity/A+ Core2/Operating System Basics.md",
+    "IT Cybersecurity/A+ Core2/Viruses and Malware.md",
+    "IT Cybersecurity/A+ Core2/OS Troubleshooting and Security.md",
+    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20230828083006.png",
+    "IT Cybersecurity/A+ 220-1101 & 1102/IP public private ranges.jpg",
+    "IT Cybersecurity/Cables.canvas",
+    "IT Cybersecurity/CySA+.canvas",
+    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20230828121221.png",
+    "Clippings/Wyckoff Theory – Principles, Phases, Strategies, and Trading Examples.md",
+    "Gardening/schedule.md",
+    "CANBUS",
     "Compsci/C Lang/tcp_server_toupper.canvas",
     "Compsci/C Lang/Pointers.md",
     "Compsci/C Lang/Networking with C.md",
     "Compsci/OSTEP.md",
     "Compsci/Operating Systems.md",
     "Compsci/Nand2Tetris.md",
-    "Compsci/Linear Algebra.md",
     "Compsci/Curriculum.md",
     "Compsci/Algorithms.canvas",
     "Assembly.md",
-    "Gardening/schedule.md",
     "Gardening/How to Grow Winter Squash Butternut, Acorn, Spaghetti & More.md",
     "Gardening/How to Plant and Grow Zucchini & Summer Squash.md",
     "Gardening/How to Grow Tomatoes Complete Guide to Planting & Harvesting.md",
     "Gardening/Planting and Growing Marigolds.md",
     "Gardening/How to Grow Swiss Chard Planting, Care & Harvest Tips for Colorful Greens.md",
-    "Gardening/Planting and Growing Potatoes.md",
-    "Gardening/Planting and Growing Eggplant (Aubergines).md",
-    "Gardening/Planting and Growing Cucumber Plants.md",
-    "Gardening/How to Grow Lettuce Sowing, Planting & Harvesting Tips for Crisp Leaves.md",
-    "Gardening/Planting and Growing Dry Beans (Shelling Beans).md",
-    "Gardening/How to Grow Collard Greens Planting, Growing & Harvesting Tips.md",
-    "IT Cybersecurity/A+ Core2/Operating System Basics.md",
-    "Gardening/Planting Calendar & Schedule for  Columbia, SC - The Old Farmer’s Almanac.md",
-    "Gardening/How to Grow Spinach Planting, Growing & Harvesting Guide.md",
     "Gardening",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
     "Untitled 2.base",
-    "Untitled 3.base",
-    "Untitled 1.base",
     "Untitled.canvas",
-    "Untitled.base",
     "Screenshot 2025-12-12 at 22.31.20.png",
-    "Untitled 8.base",
-    "Untitled 7.base",
-    "Untitled 6.base",
-    "Untitled 5.base",
-    "IT Cybersecurity/Cables.canvas",
     "IT Cybersecurity/IEEE 802.canvas",
     "IT Cybersecurity/Network Hardware.canvas",
     "IT Cybersecurity/Routing.canvas",
-    "IT Cybersecurity/Ports and Protocols.canvas",
-    "Projects/garden system.canvas",
-    "Clippings",
     "Screenshot 2025-12-12 at 22.41.54.png",
     "Screenshot 2025-12-12 at 22.35.34.png",
     "Screenshot from 2025-03-17 20-33-06.png",
     "Screenshot from 2025-03-16 15-12-53.png",
     "Screenshot from 2025-03-15 16-34-15.png",
-    "Screenshot from 2025-03-15 16-00-02.png",
-    "IT Cybersecurity/A+ 220-1101 & 1102/Pasted image 20231010105537.png",
-    "Images/Pasted image 20240724172612.png",
-    "Images/Pasted image 20240724180640.png"
+    "Screenshot from 2025-03-15 16-00-02.png"
   ]
 }
