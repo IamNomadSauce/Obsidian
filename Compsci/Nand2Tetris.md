@@ -1,5 +1,8 @@
 1. [ ] Boolean Logic 
 2. [ ] Boolean Arithmetic
+    - Arithmetic Logic Unit
+        - 6-control bits
+        - 2^6 potential functions (18 used in nand2tetris) 
 3. [ ] Memory
     - Register
         - Bit 
