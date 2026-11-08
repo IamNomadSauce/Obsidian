@@ -97,9 +97,13 @@
             |1|1|1|JMP|Jump|
 
 
-
             
 5. [ ] Computer Architecture
+    - instructions have the 16-bit format “ixxaccccccdddjjj”
+        - i-bit=opcode
+            - Codes the instruction type
+                - 0=A-instruction
+                - 1=C-instructions
 6. [ ] Assembler
 7. [ ] VM 1: Stack Arithmetic
 8. [ ] VM 2: Program Control

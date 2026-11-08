@@ -11,10 +11,14 @@
             "id": "07d2df603128bdd7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Electrical Engineering/Electric Motors.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Electric Motors"
             }
           }
         ]
@@ -169,6 +173,7 @@
   },
   "active": "07d2df603128bdd7",
   "lastOpenFiles": [
+    "Screenshot 2025-12-12 at 22.41.54.png",
     "Clippings/Sparse distributed memory understanding the speed and robustness of expert memory.md",
     "Clippings/Drone Awareness Kit A Quick Guide For Small Teams.md",
     "Untitled.md",
@@ -210,7 +215,6 @@
     "Gardening/How to Plant and Grow Zucchini & Summer Squash.md",
     "Gardening/How to Grow Tomatoes Complete Guide to Planting & Harvesting.md",
     "Gardening/Planting and Growing Marigolds.md",
-    "Gardening/How to Grow Swiss Chard Planting, Care & Harvest Tips for Colorful Greens.md",
     "Gardening",
     "IT Cybersecurity/802.3 (Ethernet).canvas",
     "Untitled 2.base",
@@ -219,7 +223,6 @@
     "IT Cybersecurity/IEEE 802.canvas",
     "IT Cybersecurity/Network Hardware.canvas",
     "IT Cybersecurity/Routing.canvas",
-    "Screenshot 2025-12-12 at 22.41.54.png",
     "Screenshot 2025-12-12 at 22.35.34.png",
     "Screenshot from 2025-03-17 20-33-06.png",
     "Screenshot from 2025-03-16 15-12-53.png",
