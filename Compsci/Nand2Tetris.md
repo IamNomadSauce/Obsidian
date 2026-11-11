@@ -86,7 +86,9 @@
             |1|0|1|AM|A register and Memory\[a]|
             |1|1|0|AD|A register and D register|
             |1|1|1|AMD|A register, Memory\[A], and D register|
-            - 
+            - A-D-M
+                - First and Second d-bits dictate whether to store the computed value in the A register and in the D register.
+                - Third d-bit dictates whether to store the computed value in M (Memory[A])
         - Jump Specification
             |j1|j2|j3|Mnemonic|Effect|
             |---|---|---|---|---|
@@ -98,6 +100,9 @@
             |1|0|1|JNE|If out != 0 jump|
             |1|1|0|JLE|If ous <= 0 jump|
             |1|1|1|JMP|Jump|
+            - Either fetch and execute the next instruction in the program (default)
+            - Or should fetch and execute an instruction located elsewhere in the program
+                jump-to-address is in the A-Register
 
 
             
